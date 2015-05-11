@@ -1,0 +1,121 @@
+# ::snt The accident appeared to have little effect on the Christmas party, except to lengthen it considerably. 
+# ::tok The accident appeared to have little effect on the Christmas party , except to lengthen it considerably .
+# ::alignments 16-17|0.0.3 15-16|0.0.1.0 12-13|0.0.1 10-11|0.0.0.0.0 9-10|0.0.0.0.1.0+0.0.0.0.1+0.0.0.0 6-7|0.0 5-6|0.0.2 2-3|0 1-2|0.0.0 ::annotator JAMR dev v0.3 ::date 2015-04-16T15:33:17.611
+# ::node	0	appear-01	2-3
+# ::node	0.0	effect-01	6-7
+# ::node	0.0.0	accident	1-2
+# ::node	0.0.0.0	festival	9-10
+# ::node	0.0.0.0.0	party	10-11
+# ::node	0.0.0.0.1	name	9-10
+# ::node	0.0.0.0.1.0	"Christmas"	9-10
+# ::node	0.0.1	except-00	12-13
+# ::node	0.0.1.0	it	15-16
+# ::node	0.0.2	little	5-6
+# ::node	0.0.3	considerable	16-17
+# ::root	0	appear-01
+# ::edge	appear-01	ARG1	effect-01	0	0.0	
+# ::edge	considerable	domain	effect-01	0.0.3	0.0	
+# ::edge	effect-01	ARG0	accident	0.0	0.0.0	
+# ::edge	effect-01	ARG1	little	0.0	0.0.2	
+# ::edge	except-00	ARG0	effect-01	0.0.1	0.0	
+# ::edge	except-00	ARG1	it	0.0.1	0.0.1.0	
+# ::edge	festival	name	accident	0.0.0.0	0.0.0	
+# ::edge	festival	name	name	0.0.0.0	0.0.0.0.1	
+# ::edge	name	op1	"Christmas"	0.0.0.0.1	0.0.0.0.1.0	
+# ::edge	party	mod	festival	0.0.0.0.0	0.0.0.0	
+(a / appear-01 
+      :ARG1 (e2 / effect-01 
+            :ARG0 (a2 / accident 
+                  :name-of (f / festival 
+                        :mod-of (p / party) 
+                        :name (n / name 
+                              :op1 "Christmas"))) 
+            :ARG0-of (e / except-00 
+                  :ARG1 (i / it)) 
+            :ARG1 (l / little) 
+            :domain-of (c / considerable)))
+
+# ::snt The president spoke in November.
+# ::tok The president spoke in November .
+# ::alignments 0-1|0.1 4-5|0.1.0+0.1 2-3|0 1-2|0.0 ::annotator JAMR dev v0.2 ::date 2014-10-29T20:53:39.435
+# ::node        0       speak-01        2-3
+# ::node        0.0     president       1-2
+# ::node        0.1     date-entity     4-5
+# ::node        0.1.0   11      4-5
+# ::root        0       speak-01
+# ::edge        date-entity     month   11      0.1     0.1.0   
+# ::edge        speak-01        ARG0    president       0       0.0
+# ::edge        speak-01        time    date-entity     0       0.1
+(s / speak-01 
+      :ARG0 (p / president) 
+      :time (d / date-entity 
+            :month 11))
+
+# ::snt Eighteen years ago she lost one of her six children in an accident on Stratford Road, a tragedy which has become a pawn in the pitiless point-scoring of small-town vindictiveness.  
+# ::tok Eighteen years ago she lost one of her six children in an accident on Stratford Road , a tragedy which has become a pawn in the pitiless point - scoring of small - town vindictiveness .
+# ::alignments 33-34|0.0.1.0.1 31-32|0.0.1.0.1.0 27-28|0.0.1.0.0.1.0 23-24|0 21-22|0.0 18-19|0.0.0 14-16|0.0.1.1.0+0.0.1.1.1+0.0.1.1+0.0.1 12-13|0.0.1.0 9-10|0.0.1.0.0.1 8-9|0.0.3 4-5|0.0.1.0.0 3-4|0.0.1.0.0.0 1-2|0.0.2.0+0.0.2 ::annotator JAMR dev v0.3 ::date 2015-04-16T15:33:17.856
+# ::node	0	pawn	23-24
+# ::node	0.0	become-01	21-22
+# ::node	0.0.0	tragedy	18-19
+# ::node	0.0.1	country	14-16
+# ::node	0.0.1.0	accident	12-13
+# ::node	0.0.1.0.0	lose-02	4-5
+# ::node	0.0.1.0.0.0	she	3-4
+# ::node	0.0.1.0.0.1	child	9-10
+# ::node	0.0.1.0.0.1.0	point	27-28
+# ::node	0.0.1.0.1	town	33-34
+# ::node	0.0.1.0.1.0	small	31-32
+# ::node	0.0.1.1	name	14-16
+# ::node	0.0.1.1.0	"Road"	14-16
+# ::node	0.0.1.1.1	"Stratford"	14-16
+# ::node	0.0.2	temporal-quantity	1-2
+# ::node	0.0.2.0	year	1-2
+# ::node	0.0.3	6	8-9
+# ::root	0	pawn
+(p2 / pawn 
+      :ARG2-of (b / become-01 
+            :ARG0 (t2 / tragedy) 
+            :ARG1 (c / country 
+                  :location-of (a / accident 
+                        :manner-of (l / lose-02 
+                              :ARG0 (s2 / she) 
+                              :ARG1 (c2 / child 
+                                    :topic (p / point))) 
+                        :poss-of (t / town 
+                              :mod (s / small))) 
+                  :name (n / name 
+                        :op1 "Road" 
+                        :op2 "Stratford")) 
+            :op-of (t3 / temporal-quantity 
+                  :unit (y / year)) 
+            :op-of 6))
+
+# ::snt The accident occurred on the Saturday of the annual Popular Flying Association (PFA) rally at Cranfield. 
+# ::tok The accident occurred on the Saturday of the annual Popular Flying Association ( PFA ) rally at Cranfield .
+# ::alignments 15-16|0 9-12|0.0.0.0+0.0.0.1+0.0.0.2+0.0.0+0.0 5-6|0.0.1 1-2|0.1 ::annotator JAMR dev v0.3 ::date 2015-04-16T15:33:17.885
+# ::node	0	rally-01	15-16
+# ::node	0.0	thing	9-12
+# ::node	0.0.0	name	9-12
+# ::node	0.0.0.0	"Association"	9-12
+# ::node	0.0.0.1	"Flying"	9-12
+# ::node	0.0.0.2	"Popular"	9-12
+# ::node	0.0.1	saturday	5-6
+# ::node	0.1	accident	1-2
+# ::root	0	rally-01
+# ::edge	accident	op1	rally-01	0.1	0	
+# ::edge	name	op1	"Association"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Flying"	0.0.0	0.0.0.1	
+# ::edge	name	op3	"Popular"	0.0.0	0.0.0.2	
+# ::edge	rally-01	ARG1	thing	0	0.0	
+# ::edge	saturday	topic	thing	0.0.1	0.0	
+# ::edge	thing	name	name	0.0	0.0.0	
+(r / rally-01 
+      :ARG1 (t / thing 
+            :name (n / name 
+                  :op1 "Association" 
+                  :op2 "Flying" 
+                  :op3 "Popular") 
+            :topic-of (s / saturday)) 
+      :op-of (a / accident))
+
+
