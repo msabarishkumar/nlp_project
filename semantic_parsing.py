@@ -4,7 +4,7 @@ import string
 
 debug = False
 only_features = True
-word_of_interest = "bother"
+word_of_interest = "brillian"
 
 class AMRGraph:
 	def __init__(self, node_map, edge_map, root, sentence=""):
