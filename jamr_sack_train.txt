@@ -1,0 +1,3448 @@
+# ::snt dr banda also accused senior civil servants from the north of plotting to secede from malawi and encouraged the sackings and arrests of officials of northern origins
+# ::tok dr banda also accused senior civil servants from the north of plotting to secede from malawi and encouraged the sackings and arrests of officials of northern origins
+# ::alignments 25-26|0.0.1.0.1 23-24|0.0.1.0.0+0.0.1.0 21-22|0.0.1 20-21|0.3.0.0 17-18|0.3.0 16-17|0.3 11-12|0.1 9-10|0.1.0 6-7|0.0.0+0.0 5-6|0.0.3 4-5|0.0.2 3-4|0 2-3|0.2 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:38.327
+# ::node	0	accuse-01	3-4
+# ::node	0.0	person	6-7
+# ::node	0.0.0	serve-02	6-7
+# ::node	0.0.1	arrest-01	21-22
+# ::node	0.0.1.0	have-org-role-91	23-24
+# ::node	0.0.1.0.0	official	23-24
+# ::node	0.0.1.0.1	north	25-26
+# ::node	0.0.2	senior	4-5
+# ::node	0.0.3	civil	5-6
+# ::node	0.1	plot-01	11-12
+# ::node	0.1.0	north	9-10
+# ::node	0.2	also	2-3
+# ::node	0.3	and	16-17
+# ::node	0.3.0	encourage-01	17-18
+# ::node	0.3.0.0	and	20-21
+# ::root	0	accuse-01
+# ::edge	accuse-01	ARG1	person	0	0.0	
+# ::edge	accuse-01	ARG2	plot-01	0	0.1	
+# ::edge	accuse-01	mod	also	0	0.2	
+# ::edge	and	op1	accuse-01	0.3	0	
+# ::edge	arrest-01	ARG1	person	0.0.1	0.0	
+# ::edge	arrest-01	time	have-org-role-91	0.0.1	0.0.1.0	
+# ::edge	encourage-01	ARG1	and	0.3.0	0.3.0.0	
+# ::edge	encourage-01	ARG2	and	0.3.0	0.3	
+# ::edge	have-org-role-91	ARG2	official	0.0.1.0	0.0.1.0.0	
+# ::edge	have-org-role-91	location	north	0.0.1.0	0.0.1.0.1	
+# ::edge	person	mod	civil	0.0	0.0.3	
+# ::edge	person	mod	senior	0.0	0.0.2	
+# ::edge	plot-01	ARG0	north	0.1	0.1.0	
+# ::edge	serve-02	ARG0	person	0.0.0	0.0	
+(a4 / accuse-01 
+      :ARG1 (p2 / person 
+            :ARG0-of (s / serve-02) 
+            :ARG1-of (a / arrest-01 
+                  :time (h / have-org-role-91 
+                        :ARG2 (o / official) 
+                        :location (n / north))) 
+            :mod (s2 / senior) 
+            :mod (c / civil)) 
+      :ARG2 (p / plot-01 
+            :ARG0 (n2 / north)) 
+      :mod (a5 / also) 
+      :op-of (a3 / and 
+            :ARG2-of (e / encourage-01 
+                  :ARG1 (a2 / and))))
+
+# ::snt coming so soon after the profumo scandal and just a year after supermacs sacking of a third of his entire cabinet it really was a bit more than a thatcher punch and judy show
+# ::tok coming so soon after the profumo scandal and just a year after supermacs sacking of a third of his entire cabinet it really was a bit more than a thatcher punch and judy show
+# ::alignments 33-34|0 31-32|0.2 30-31|0.2.1 25-26|0.1 22-23|0.0 21-22|0.2.1.1.1 20-21|0.2.1.1 19-20|0.2.1.1.0 11-12|0.2.1.0.0.0 10-11|0.2.1.0.0 8-9|0.2.1.0 7-8|0.2.0 6-7|0.2.0.0 3-4|0.2.0.0.0 2-3|0.2.0.0.0.0 1-2|0.2.0.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:39.078
+# ::node	0	show-01	33-34
+# ::node	0.0	really	22-23
+# ::node	0.1	bit	25-26
+# ::node	0.2	and	31-32
+# ::node	0.2.0	and	7-8
+# ::node	0.2.0.0	scandal	6-7
+# ::node	0.2.0.0.0	after	3-4
+# ::node	0.2.0.0.0.0	soon	2-3
+# ::node	0.2.0.0.0.0.0	so	1-2
+# ::node	0.2.1	punch-01	30-31
+# ::node	0.2.1.0	just	8-9
+# ::node	0.2.1.0.0	year	10-11
+# ::node	0.2.1.0.0.0	after	11-12
+# ::node	0.2.1.1	cabinet	20-21
+# ::node	0.2.1.1.0	entire	19-20
+# ::node	0.2.1.1.1	it	21-22
+# ::root	0	show-01
+# ::edge	after	op1	scandal	0.2.0.0.0	0.2.0.0	
+# ::edge	after	op1	year	0.2.1.0.0.0	0.2.1.0.0	
+# ::edge	and	op1	and	0.2	0.2.0	
+# ::edge	and	op1	scandal	0.2.0	0.2.0.0	
+# ::edge	and	op2	punch-01	0.2	0.2.1	
+# ::edge	and	op3	show-01	0.2	0	
+# ::edge	cabinet	mod	entire	0.2.1.1	0.2.1.1.0	
+# ::edge	cabinet	poss	it	0.2.1.1	0.2.1.1.1	
+# ::edge	punch-01	ARG0	just	0.2.1	0.2.1.0	
+# ::edge	punch-01	ARG1	cabinet	0.2.1	0.2.1.1	
+# ::edge	show-01	ARG0	really	0	0.0	
+# ::edge	show-01	ARG1	bit	0	0.1	
+# ::edge	soon	mod	so	0.2.0.0.0.0	0.2.0.0.0.0.0	
+# ::edge	soon	op1	after	0.2.0.0.0.0	0.2.0.0.0	
+# ::edge	year	mod	just	0.2.1.0.0	0.2.1.0	
+(s / show-01 
+      :ARG0 (r / really) 
+      :ARG1 (b / bit) 
+      :op-of (a / and 
+            :op1 (a3 / and 
+                  :op1 (s2 / scandal 
+                        :op-of (a4 / after 
+                              :op-of (s3 / soon 
+                                    :mod (s4 / so))))) 
+            :op2 (p / punch-01 
+                  :ARG0 (j / just 
+                        :mod-of (y / year 
+                              :op-of (a2 / after))) 
+                  :ARG1 (c / cabinet 
+                        :mod (e / entire) 
+                        :poss (i / it)))))
+
+# ::snt we each had a man wrapped in sacking and helmeted with a biscuit tin and we are throwing them up in the air to kill them with the fall
+# ::tok we each had a man wrapped in sacking and helmeted with a biscuit tin and we are throwing them up in the air to kill them with the fall
+# ::alignments 24-25|0.1.0.0 22-23|0.1.2 17-18|0.1 15-16|0.1.0 14-15|0 13-14|0.0 8-9|0.1.1.0.1 5-6|0.1.1.0 4-5|0.1.1.0.0 1-2|0.1.1.1 0-1|0.1.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:39.467
+# ::node	0	and	14-15
+# ::node	0.0	tin	13-14
+# ::node	0.1	throw-01	17-18
+# ::node	0.1.0	we	15-16
+# ::node	0.1.0.0	kill-01	24-25
+# ::node	0.1.1	we	0-1
+# ::node	0.1.1.0	wrap-01	5-6
+# ::node	0.1.1.0.0	man	4-5
+# ::node	0.1.1.0.1	and	8-9
+# ::node	0.1.1.1	each	1-2
+# ::node	0.1.2	air	22-23
+# ::root	0	and
+# ::edge	and	op1	tin	0	0.0	
+# ::edge	and	op2	throw-01	0	0.1	
+# ::edge	kill-01	ARG0	we	0.1.0.0	0.1.0	
+# ::edge	throw-01	ARG0	we	0.1	0.1.0	
+# ::edge	throw-01	ARG1	we	0.1	0.1.1	
+# ::edge	throw-01	ARG2	air	0.1	0.1.2	
+# ::edge	we	mod	each	0.1.1	0.1.1.1	
+# ::edge	wrap-01	ARG0	we	0.1.1.0	0.1.1	
+# ::edge	wrap-01	ARG1	man	0.1.1.0	0.1.1.0.0	
+# ::edge	wrap-01	ARG2	and	0.1.1.0	0.1.1.0.1	
+(a2 / and 
+      :op1 (t2 / tin) 
+      :op2 (t / throw-01 
+            :ARG0 (w / we 
+                  :ARG0-of (k / kill-01)) 
+            :ARG1 (w3 / we 
+                  :ARG0-of (w2 / wrap-01 
+                        :ARG1 (m / man) 
+                        :ARG2 (a3 / and)) 
+                  :mod (e / each)) 
+            :ARG2 (a / air)))
+
+# ::snt the communist leader karel urbanek was yesterday reported to be consulting with colleagues on the possible sacking of a group of hardline communist deputies who are thought to be determined to scupper the election of a non communist president
+# ::tok the communist leader karel urbanek was yesterday reported to be consulting with colleagues on the possible sacking of a group of hardline communist deputies who are thought to be determined to scupper the election of a non communist president
+# ::alignments 38-39|0.1.0.1+0.1.0 37-38|0.1.0.0 33-34|0.1 29-30|0 26-27|0.2 23-24|0.2.1.1+0.2.1 22-23|0.2.1.1.0.0 21-22|0.2.1.1.0 19-20|0.2.0.1.0 15-16|0.0 10-11|0.2.0 7-8|0.2.0.1 6-7|0.2.0.0 2-3|0.2.1.0.0+0.2.1.0 1-2|0.2.1.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:40.296
+# ::node	0	determine-01	29-30
+# ::node	0.0	possible	15-16
+# ::node	0.1	elect-01	33-34
+# ::node	0.1.0	have-org-role-91	38-39
+# ::node	0.1.0.0	communism	37-38
+# ::node	0.1.0.1	president	38-39
+# ::node	0.2	think-01	26-27
+# ::node	0.2.0	consult-01	10-11
+# ::node	0.2.0.0	yesterday	6-7
+# ::node	0.2.0.1	report-01	7-8
+# ::node	0.2.0.1.0	group	19-20
+# ::node	0.2.1	have-org-role-91	23-24
+# ::node	0.2.1.0	person	2-3
+# ::node	0.2.1.0.0	lead-02	2-3
+# ::node	0.2.1.0.1	communism	1-2
+# ::node	0.2.1.1	deputy	23-24
+# ::node	0.2.1.1.0	hardline	21-22
+# ::node	0.2.1.1.0.0	communism	22-23
+# ::root	0	determine-01
+# ::edge	communism	mod	hardline	0.2.1.1.0.0	0.2.1.1.0	
+# ::edge	consult-01	ARG1	yesterday	0.2.0	0.2.0.0	
+# ::edge	deputy	mod	hardline	0.2.1.1	0.2.1.1.0	
+# ::edge	determine-01	ARG0	possible	0	0.0	
+# ::edge	determine-01	ARG1	elect-01	0	0.1	
+# ::edge	have-org-role-91	ARG0	elect-01	0.1.0	0.1	
+# ::edge	have-org-role-91	ARG0	person	0.2.1	0.2.1.0	
+# ::edge	have-org-role-91	ARG1	communism	0.1.0	0.1.0.0	
+# ::edge	have-org-role-91	ARG2	deputy	0.2.1	0.2.1.1	
+# ::edge	have-org-role-91	ARG2	president	0.1.0	0.1.0.1	
+# ::edge	lead-02	ARG0	person	0.2.1.0.0	0.2.1.0	
+# ::edge	person	mod	communism	0.2.1.0	0.2.1.0.1	
+# ::edge	report-01	ARG0	group	0.2.0.1	0.2.0.1.0	
+# ::edge	report-01	ARG1	consult-01	0.2.0.1	0.2.0	
+# ::edge	think-01	ARG0	consult-01	0.2	0.2.0	
+# ::edge	think-01	ARG1	determine-01	0.2	0	
+# ::edge	think-01	mod	have-org-role-91	0.2	0.2.1	
+(d / determine-01 
+      :ARG0 (p2 / possible) 
+      :ARG1 (e / elect-01 
+            :ARG0-of (h / have-org-role-91 
+                  :ARG1 (c / communism) 
+                  :ARG2 (p / president))) 
+      :ARG1-of (t / think-01 
+            :ARG0 (c3 / consult-01 
+                  :ARG1 (y / yesterday) 
+                  :ARG1-of (r / report-01 
+                        :ARG0 (g / group))) 
+            :mod (h2 / have-org-role-91 
+                  :ARG0 (p3 / person 
+                        :ARG0-of (l / lead-02) 
+                        :mod (c4 / communism)) 
+                  :ARG2 (d2 / deputy 
+                        :mod (h3 / hardline 
+                              :mod-of (c2 / communism))))))
+
+# ::snt already his mouth was watering at the prospect of sinking his teeth into a thick slice of bread liberally spread with best butter and sprinkled with sugar from one of the big sacks standing in the corner
+# ::tok already his mouth was watering at the prospect of sinking his teeth into a thick slice of bread liberally spread with best butter and sprinkled with sugar from one of the big sacks standing in the corner
+# ::alignments 36-37|0.1 31-32|0.0.0.0.1.0.0.0.2 26-27|0 23-24|0.0 22-23|0.0.0 19-20|0.0.0.0 17-18|0.0.0.0.1 15-16|0.0.0.0.1.0 14-15|0.0.0.0.1.0.1 11-12|0.0.0.0.1.0.0 9-10|0.0.0.0.1.0.0.0 7-8|0.0.0.0.1.0.0.0.0 2-3|0.0.0.0.1.0.0.0.1 0-1|0.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:40.913
+# ::node	0	sugar-cane	26-27
+# ::node	0.0	and	23-24
+# ::node	0.0.0	butter	22-23
+# ::node	0.0.0.0	spread-02	19-20
+# ::node	0.0.0.0.0	already	0-1
+# ::node	0.0.0.0.1	bread	17-18
+# ::node	0.0.0.0.1.0	slice	15-16
+# ::node	0.0.0.0.1.0.0	tooth	11-12
+# ::node	0.0.0.0.1.0.0.0	sink-01	9-10
+# ::node	0.0.0.0.1.0.0.0.0	prospect	7-8
+# ::node	0.0.0.0.1.0.0.0.1	mouth	2-3
+# ::node	0.0.0.0.1.0.0.0.2	big	31-32
+# ::node	0.0.0.0.1.0.1	thick	14-15
+# ::node	0.1	corner	36-37
+# ::root	0	sugar-cane
+# ::edge	and	op1	butter	0.0	0.0.0	
+# ::edge	and	op2	sugar-cane	0.0	0	
+# ::edge	big	op1	sink-01	0.0.0.0.1.0.0.0.2	0.0.0.0.1.0.0.0	
+# ::edge	sink-01	ARG0	prospect	0.0.0.0.1.0.0.0	0.0.0.0.1.0.0.0.0	
+# ::edge	sink-01	ARG1	tooth	0.0.0.0.1.0.0.0	0.0.0.0.1.0.0	
+# ::edge	sink-01	location	mouth	0.0.0.0.1.0.0.0	0.0.0.0.1.0.0.0.1	
+# ::edge	slice	mod	bread	0.0.0.0.1.0	0.0.0.0.1	
+# ::edge	slice	mod	thick	0.0.0.0.1.0	0.0.0.0.1.0.1	
+# ::edge	spread-02	ARG0	already	0.0.0.0	0.0.0.0.0	
+# ::edge	spread-02	ARG1	bread	0.0.0.0	0.0.0.0.1	
+# ::edge	spread-02	source	butter	0.0.0.0	0.0.0	
+# ::edge	sugar-cane	poss	corner	0	0.1	
+# ::edge	tooth	location	slice	0.0.0.0.1.0.0	0.0.0.0.1.0	
+(s / sugar-cane 
+      :op-of (a / and 
+            :op1 (b2 / butter 
+                  :source-of (s2 / spread-02 
+                        :ARG0 (a2 / already) 
+                        :ARG1 (b3 / bread 
+                              :mod-of (s3 / slice 
+                                    :location-of (t2 / tooth 
+                                          :ARG1-of (s4 / sink-01 
+                                                :ARG0 (p / prospect) 
+                                                :location (m / mouth) 
+                                                :op-of (b / big))) 
+                                    :mod (t / thick)))))) 
+      :poss (c / corner))
+
+# ::snt sacks of intercepted letters had been found in its leipzig regional headquarters the paper said
+# ::tok sacks of intercepted letters had been found in its leipzig regional headquarters the paper said
+# ::alignments 14-15|0 13-14|0.0 11-12|0.1 10-11|0.1.1 6-7|0.1.0 3-4|0.1.2 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:40.954
+# ::node	0	say-01	14-15
+# ::node	0.0	paper	13-14
+# ::node	0.1	headquarters	11-12
+# ::node	0.1.0	find-01	6-7
+# ::node	0.1.1	region	10-11
+# ::node	0.1.2	letter	3-4
+# ::root	0	say-01
+# ::edge	find-01	ARG1	headquarters	0.1.0	0.1	
+# ::edge	headquarters	mod	region	0.1	0.1.1	
+# ::edge	headquarters	poss	letter	0.1	0.1.2	
+# ::edge	say-01	ARG0	paper	0	0.0	
+# ::edge	say-01	ARG1	headquarters	0	0.1	
+(s / say-01 
+      :ARG0 (p / paper) 
+      :ARG1 (h / headquarters 
+            :ARG1-of (f / find-01) 
+            :mod (r / region) 
+            :poss (l / letter)))
+
+# ::snt on that occasion police watched as a fishing boat tied up at a remote bay and sacks of semtex bombing paraphernalia and firearms were unloaded
+# ::tok on that occasion police watched as a fishing boat tied up at a remote bay and sacks of semtex bombing paraphernalia and firearms were unloaded
+# ::alignments 22-23|0.2 21-22|0 20-21|0.1 19-20|0.1.0 15-16|0.0 13-14|0.0.0.0 9-10|0.0.0 8-9|0.0.0.1 7-8|0.0.0.1.1 4-5|0.0.0.1.0 3-4|0.0.0.1.0.0 2-3|0.0.0.1.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:41.128
+# ::node	0	and	21-22
+# ::node	0.0	and	15-16
+# ::node	0.0.0	tie-01	9-10
+# ::node	0.0.0.0	remote	13-14
+# ::node	0.0.0.1	boat	8-9
+# ::node	0.0.0.1.0	watch-01	4-5
+# ::node	0.0.0.1.0.0	police	3-4
+# ::node	0.0.0.1.0.0.0	occasion	2-3
+# ::node	0.0.0.1.1	fish-01	7-8
+# ::node	0.1	paraphernalia	20-21
+# ::node	0.1.0	bomb-01	19-20
+# ::node	0.2	firearm	22-23
+# ::root	0	and
+# ::edge	and	op1	and	0.0	0	
+# ::edge	and	op1	paraphernalia	0	0.1	
+# ::edge	and	op2	firearm	0	0.2	
+# ::edge	boat	mod	fish-01	0.0.0.1	0.0.0.1.1	
+# ::edge	bomb-01	ARG1	paraphernalia	0.1.0	0.1	
+# ::edge	police	mod	occasion	0.0.0.1.0.0	0.0.0.1.0.0.0	
+# ::edge	tie-01	ARG0	remote	0.0.0	0.0.0.0	
+# ::edge	tie-01	ARG1	boat	0.0.0	0.0.0.1	
+# ::edge	tie-01	ARG2	and	0.0.0	0.0	
+# ::edge	watch-01	ARG0	police	0.0.0.1.0	0.0.0.1.0.0	
+# ::edge	watch-01	condition	boat	0.0.0.1.0	0.0.0.1	
+(a / and 
+      :op-of (a2 / and 
+            :ARG2-of (t / tie-01 
+                  :ARG0 (r / remote) 
+                  :ARG1 (b2 / boat 
+                        :condition-of (w / watch-01 
+                              :ARG0 (p2 / police 
+                                    :mod (o / occasion))) 
+                        :mod (f2 / fish-01)))) 
+      :op1 (p / paraphernalia 
+            :ARG1-of (b / bomb-01)) 
+      :op2 (f / firearm))
+
+# ::snt last month the standard low quality jute used for sacking reached 460 a tonne an increase of about 25 per cent since september last year
+# ::tok last month the standard low quality jute used for sacking reached 460 a tonne an increase of about 25 per cent since september last year
+# ::alignments 24-25|0.2.0 23-24|0.2.0.0 22-23|0.2.1.1+0.2.1 21-22|0.2 20-21|0.1.0+0.1 18-19|0.3 15-16|0 10-11|0.2.1.0 7-8|0.2.1.0.0 5-6|0.0.0 4-5|0.0 3-4|0.0.1 1-2|0.2.1.0.0.0.0.0+0.2.1.0.0.0.0 0-1|0.2.1.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:41.625
+# ::node	0	increase-01	15-16
+# ::node	0.0	low	4-5
+# ::node	0.0.0	quality	5-6
+# ::node	0.0.1	standard	3-4
+# ::node	0.1	monetary-quantity	20-21
+# ::node	0.1.0	cent	20-21
+# ::node	0.2	since	21-22
+# ::node	0.2.0	year	24-25
+# ::node	0.2.0.0	last	23-24
+# ::node	0.2.1	date-entity	22-23
+# ::node	0.2.1.0	reach-01	10-11
+# ::node	0.2.1.0.0	use-01	7-8
+# ::node	0.2.1.0.0.0	last	0-1
+# ::node	0.2.1.0.0.0.0	temporal-quantity	1-2
+# ::node	0.2.1.0.0.0.0.0	month	1-2
+# ::node	0.2.1.1	9	22-23
+# ::node	0.3	25	18-19
+# ::root	0	increase-01
+# ::edge	date-entity	month	9	0.2.1	0.2.1.1	
+# ::edge	increase-01	ARG0	low	0	0.0	
+# ::edge	increase-01	ARG1	monetary-quantity	0	0.1	
+# ::edge	increase-01	time	25	0	0.3	
+# ::edge	increase-01	time	since	0	0.2	
+# ::edge	last	op1	use-01	0.2.1.0.0.0	0.2.1.0.0	
+# ::edge	low	mod	standard	0.0	0.0.1	
+# ::edge	monetary-quantity	unit	cent	0.1	0.1.0	
+# ::edge	quality	degree	low	0.0.0	0.0	
+# ::edge	reach-01	ARG1	date-entity	0.2.1.0	0.2.1	
+# ::edge	since	op1	date-entity	0.2	0.2.1	
+# ::edge	temporal-quantity	mod	last	0.2.1.0.0.0.0	0.2.1.0.0.0	
+# ::edge	temporal-quantity	unit	month	0.2.1.0.0.0.0	0.2.1.0.0.0.0.0	
+# ::edge	use-01	ARG2	reach-01	0.2.1.0.0	0.2.1.0	
+# ::edge	year	manner	since	0.2.0	0.2	
+# ::edge	year	mod	last	0.2.0	0.2.0.0	
+(i / increase-01 
+      :ARG0 (l2 / low 
+            :degree-of (q / quality) 
+            :mod (s2 / standard)) 
+      :ARG1 (m / monetary-quantity 
+            :unit (c / cent)) 
+      :time (s / since 
+            :manner-of (y / year 
+                  :mod (l / last)) 
+            :op1 (d / date-entity 
+                  :ARG1-of (r / reach-01 
+                        :ARG2-of (u / use-01 
+                              :op-of (l3 / last 
+                                    :mod-of (t / temporal-quantity 
+                                          :unit (m2 / month))))) 
+                  :month 9)) 
+      :time 25)
+
+# ::snt he said ah si il cane and heaved across the counter a bloody sack, in the kitchen i hunted down a saucepan of pantomime proportions upended the sack and spilled out dash
+# ::tok he said ah si il cane and heaved across the counter a bloody sack , in the kitchen i hunted down a saucepan of pantomime proportions upended the sack and spilled out dash
+# ::alignments 29-30|0.3.1 25-26|0.3.0.0.0 20-21|0.0.0.0 18-19|0.0.0 12-13|0.1.0 10-11|0.3.0.0 8-9|0.3.0 6-7|0.3 5-6|0.1 2-3|0.2 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:41.975
+# ::node	0	say-01	1-2
+# ::node	0.0	he	0-1
+# ::node	0.0.0	i	18-19
+# ::node	0.0.0.0	down	20-21
+# ::node	0.1	cane	5-6
+# ::node	0.1.0	bloody	12-13
+# ::node	0.2	ah	2-3
+# ::node	0.3	and	6-7
+# ::node	0.3.0	across	8-9
+# ::node	0.3.0.0	counter-01	10-11
+# ::node	0.3.0.0.0	proportion	25-26
+# ::node	0.3.1	and	29-30
+# ::root	0	say-01
+# ::edge	across	op1	counter-01	0.3.0	0.3.0.0	
+# ::edge	and	location	across	0.3	0.3.0	
+# ::edge	and	op1	say-01	0.3	0	
+# ::edge	and	op2	and	0.3	0.3.1	
+# ::edge	cane	mod	bloody	0.1	0.1.0	
+# ::edge	counter-01	ARG1	proportion	0.3.0.0	0.3.0.0.0	
+# ::edge	down	domain	i	0.0.0.0	0.0.0	
+# ::edge	he	part	i	0.0	0.0.0	
+# ::edge	say-01	ARG0	he	0	0.0	
+# ::edge	say-01	ARG1	cane	0	0.1	
+# ::edge	say-01	ARG2	ah	0	0.2	
+(s / say-01 
+      :ARG0 (h / he 
+            :part (i / i 
+                  :domain-of (d / down))) 
+      :ARG1 (c2 / cane 
+            :mod (b / bloody)) 
+      :ARG2 (a4 / ah) 
+      :op-of (a3 / and 
+            :location (a2 / across 
+                  :op1 (c / counter-01 
+                        :ARG1 (p / proportion))) 
+            :op1 (a / and)))
+
+# ::snt   the first bettinson an education officer knew of his sacking was a telephone call at home from bob ashby the boards chairman
+# ::tok the first bettinson an education officer knew of his sacking was a telephone call at home from bob ashby the boards chairman
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:41.976
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.lang.AssertionError: assertion failed
+# 	at scala.Predef$.assert(Predef.scala:165)
+# 	at edu.cmu.lti.nlp.amr.Annotation$$anonfun$makeLeftRight$1.apply$mcVI$sp(Annotation.scala:70)
+# 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+# 	at edu.cmu.lti.nlp.amr.Annotation.makeLeftRight(Annotation.scala:51)
+# 	at edu.cmu.lti.nlp.amr.Annotation.<init>(Annotation.scala:89)
+# 	at edu.cmu.lti.nlp.amr.Input.<init>(Input.scala:19)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply$mcV$sp(AMRParser.scala:200)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.time(AMRParser.scala:78)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:192)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:192)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# ::snt in one of the small hill stations on this remote massif sacks full of  small lumps of pumice are sold in the village market
+# ::tok in one of the small hill stations on this remote massif sacks full of small lumps of pumice are sold in the village market
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:41.981
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.lang.AssertionError: assertion failed
+# 	at scala.Predef$.assert(Predef.scala:165)
+# 	at edu.cmu.lti.nlp.amr.Annotation$$anonfun$makeLeftRight$1.apply$mcVI$sp(Annotation.scala:70)
+# 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+# 	at edu.cmu.lti.nlp.amr.Annotation.makeLeftRight(Annotation.scala:51)
+# 	at edu.cmu.lti.nlp.amr.Annotation.<init>(Annotation.scala:89)
+# 	at edu.cmu.lti.nlp.amr.Input.<init>(Input.scala:19)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply$mcV$sp(AMRParser.scala:200)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.time(AMRParser.scala:78)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:192)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:192)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# ::snt the money was packed in nine shoeboxsize containers each in a grey canvas sack
+# ::tok the money was packed in nine shoeboxsize containers each in a grey canvas sack
+# ::alignments 12-13|0.0.0.0 11-12|0.0.0.0.0 8-9|0.1 7-8|0 5-6|0.1.0 3-4|0.0 1-2|0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:42.064
+# ::node	0	container	7-8
+# ::node	0.0	pack-01	3-4
+# ::node	0.0.0	money	1-2
+# ::node	0.0.0.0	canvas	12-13
+# ::node	0.0.0.0.0	grey	11-12
+# ::node	0.1	each	8-9
+# ::node	0.1.0	9	5-6
+# ::root	0	container
+# ::edge	9	example	each	0.1.0	0.1	
+# ::edge	canvas	mod	grey	0.0.0.0	0.0.0.0.0	
+# ::edge	canvas	poss	money	0.0.0.0	0.0.0	
+# ::edge	container	op1	each	0	0.1	
+# ::edge	pack-01	ARG1	money	0.0	0.0.0	
+# ::edge	pack-01	location	container	0.0	0	
+(c2 / container 
+      :location-of (p / pack-01 
+            :ARG1 (m / money 
+                  :poss-of (c / canvas 
+                        :mod (g / grey)))) 
+      :op1 (e / each 
+            :example-of 9))
+
+# ::snt whenever the government attempts to placate the population with sackings or promises of political liberalism the numbers of demonstrators increase and the slogans become yet more radical
+# ::tok whenever the government attempts to placate the population with sackings or promises of political liberalism the numbers of demonstrators increase and the slogans become yet more radical
+# ::alignments 26-27|0.0.0.0.0.0.0 24-25|0.0.0.0.0.1.1.0.0.1 23-24|0.0.0.0.0.0 20-21|0.0.0.0.0 19-20|0.0.0 18-19|0+0.0 16-17|0.0.0.0 14-15|0.0.0.0.0.1.0 13-14|0.0.0.0.0.1.0.0 11-12|0.0.0.0.0.1 10-11|0.0.0.0.0.1.1 7-8|0.0.0.0.0.1.1.0 3-4|0.0.0.0.0.1.1.0.0 0-1|0.0.0.0.0.1.1.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:42.562
+# ::node	0	demonstrate-01	18-19
+# ::node	0.0	person	18-19
+# ::node	0.0.0	increase-01	19-20
+# ::node	0.0.0.0	number	16-17
+# ::node	0.0.0.0.0	and	20-21
+# ::node	0.0.0.0.0.0	become-01	23-24
+# ::node	0.0.0.0.0.0.0	radical	26-27
+# ::node	0.0.0.0.0.1	promise-01	11-12
+# ::node	0.0.0.0.0.1.0	liberalism	14-15
+# ::node	0.0.0.0.0.1.0.0	politics	13-14
+# ::node	0.0.0.0.0.1.1	or	10-11
+# ::node	0.0.0.0.0.1.1.0	population	7-8
+# ::node	0.0.0.0.0.1.1.0.0	attempt-01	3-4
+# ::node	0.0.0.0.0.1.1.0.0.0	whenever	0-1
+# ::node	0.0.0.0.0.1.1.0.0.1	yet	24-25
+# ::root	0	demonstrate-01
+# ::edge	and	op1	promise-01	0.0.0.0.0	0.0.0.0.0.1	
+# ::edge	and	op2	number	0.0.0.0.0	0.0.0.0	
+# ::edge	attempt-01	ARG0	whenever	0.0.0.0.0.1.1.0.0	0.0.0.0.0.1.1.0.0.0	
+# ::edge	attempt-01	ARG1	population	0.0.0.0.0.1.1.0.0	0.0.0.0.0.1.1.0	
+# ::edge	become-01	ARG1	radical	0.0.0.0.0.0	0.0.0.0.0.0.0	
+# ::edge	become-01	ARG2	and	0.0.0.0.0.0	0.0.0.0.0	
+# ::edge	demonstrate-01	ARG0	person	0	0.0	
+# ::edge	increase-01	ARG1	person	0.0.0	0.0	
+# ::edge	increase-01	quant	number	0.0.0	0.0.0.0	
+# ::edge	liberalism	mod	politics	0.0.0.0.0.1.0	0.0.0.0.0.1.0.0	
+# ::edge	or	op1	promise-01	0.0.0.0.0.1.1	0.0.0.0.0.1	
+# ::edge	population	location	or	0.0.0.0.0.1.1.0	0.0.0.0.0.1.1	
+# ::edge	promise-01	ARG1	liberalism	0.0.0.0.0.1	0.0.0.0.0.1.0	
+# ::edge	yet	op1	attempt-01	0.0.0.0.0.1.1.0.0.1	0.0.0.0.0.1.1.0.0	
+(d / demonstrate-01 
+      :ARG0 (p / person 
+            :ARG1-of (i / increase-01 
+                  :quant (n / number 
+                        :op-of (a / and 
+                              :ARG2-of (b / become-01 
+                                    :ARG1 (r / radical)) 
+                              :op1 (p3 / promise-01 
+                                    :ARG1 (l / liberalism 
+                                          :mod (p2 / politics)) 
+                                    :op-of (o / or 
+                                          :location-of (p4 / population 
+                                                :ARG1-of (a2 / attempt-01 
+                                                      :ARG0 (w / whenever) 
+                                                      :op-of (y / yet))))))))))
+
+# ::snt 99 and a teddy cumsantas sack in jaunty red cap  9
+# ::tok 99 and a teddy cumsantas sack in jaunty red cap 9
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:42.563
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.lang.AssertionError: assertion failed
+# 	at scala.Predef$.assert(Predef.scala:165)
+# 	at edu.cmu.lti.nlp.amr.Annotation$$anonfun$makeLeftRight$1.apply$mcVI$sp(Annotation.scala:70)
+# 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+# 	at edu.cmu.lti.nlp.amr.Annotation.makeLeftRight(Annotation.scala:51)
+# 	at edu.cmu.lti.nlp.amr.Annotation.<init>(Annotation.scala:89)
+# 	at edu.cmu.lti.nlp.amr.Input.<init>(Input.scala:19)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply$mcV$sp(AMRParser.scala:200)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.time(AMRParser.scala:78)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:192)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:192)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# ::snt he saw rosie stretch up catch the damp pants between her teeth and slowly draw them down to her grimy sacking intent on ripping them to shreds
+# ::tok he saw rosie stretch up catch the damp pants between her teeth and slowly draw them down to her grimy sacking intent on ripping them to shreds
+# ::alignments 26-27|0.0.0.2.0.0.0 21-22|0 16-17|0.0 14-15|0.0.0 13-14|0.0.0.1 12-13|0.0.0.2 11-12|0.0.0.0 9-10|0.0.0.0.0 3-4|0.0.0.2.0.1.0+0.0.0.2.0.1 1-2|0.0.0.2.0 0-1|0.0.0.2.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:42.660
+# ::node	0	intend-01	21-22
+# ::node	0.0	down	16-17
+# ::node	0.0.0	draw-02	14-15
+# ::node	0.0.0.0	tooth	11-12
+# ::node	0.0.0.0.0	between	9-10
+# ::node	0.0.0.1	slow	13-14
+# ::node	0.0.0.2	and	12-13
+# ::node	0.0.0.2.0	see-01	1-2
+# ::node	0.0.0.2.0.0	he	0-1
+# ::node	0.0.0.2.0.0.0	shred-01	26-27
+# ::node	0.0.0.2.0.1	thing	3-4
+# ::node	0.0.0.2.0.1.0	stretch-01	3-4
+# ::root	0	intend-01
+(i / intend-01 
+      :op-of (d / down 
+            :ARG2-of (d2 / draw-02 
+                  :ARG1 (t / tooth 
+                        :op-of (b / between)) 
+                  :manner (s2 / slow) 
+                  :op-of (a / and 
+                        :op1 (s4 / see-01 
+                              :ARG0 (h / he 
+                                    :ARG1-of (s / shred-01)) 
+                              :ARG1 (t2 / thing 
+                                    :ARG1-of (s3 / stretch-01)))))))
+
+# ::snt a scene from warner bros film delinquents is casual sex the norm  senior appeal judge lord justice watkins forced to suspend court sitting when five women against rape protestors staged noisy demonstration demanding judges sacking over his decision last week to clear pc peter anderson of raping teenage girl in panda car
+# ::tok a scene from warner bros film delinquents is casual sex the norm senior appeal judge lord justice watkins forced to suspend court sitting when five women against rape protestors staged noisy demonstration demanding judges sacking over his decision last week to clear pc peter anderson of raping teenage girl in panda car
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:42.662
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.lang.AssertionError: assertion failed
+# 	at scala.Predef$.assert(Predef.scala:165)
+# 	at edu.cmu.lti.nlp.amr.Annotation$$anonfun$makeLeftRight$1.apply$mcVI$sp(Annotation.scala:70)
+# 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+# 	at edu.cmu.lti.nlp.amr.Annotation.makeLeftRight(Annotation.scala:51)
+# 	at edu.cmu.lti.nlp.amr.Annotation.<init>(Annotation.scala:89)
+# 	at edu.cmu.lti.nlp.amr.Input.<init>(Input.scala:19)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply$mcV$sp(AMRParser.scala:200)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.time(AMRParser.scala:78)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:192)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:192)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# ::snt sacking takes about 75 per cent of the crop, 5m bales from which they cannot drop much as there is still no substitute for jute sacking as a crop carrier
+# ::tok sacking takes about 75 per cent of the crop , 5m bales from which they cannot drop much as there is still no substitute for jute sacking as a crop carrier
+# ::alignments 30-31|0.3.0 29-30|0.3 23-24|0.1 22-23|0.1.3 21-22|0.1.2 17-18|0.2 16-17|0 14-15|0.0 8-9|0.1.1 5-6|0.1.1.0+0.1.1.0.0 3-4|0.1.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:43.115
+# ::node	0	drop-01	16-17
+# ::node	0.0	they	14-15
+# ::node	0.1	substitute-01	23-24
+# ::node	0.1.0	75	3-4
+# ::node	0.1.1	crop	8-9
+# ::node	0.1.1.0	cent	5-6
+# ::node	0.1.1.0.0	monetary-quantity	5-6
+# ::node	0.1.2	still	21-22
+# ::node	0.1.3	-	22-23
+# ::node	0.2	much	17-18
+# ::node	0.3	crop	29-30
+# ::node	0.3.0	carrier	30-31
+# ::root	0	drop-01
+# ::edge	carrier	mod	crop	0.3.0	0.3	
+# ::edge	cent	location	crop	0.1.1.0	0.1.1	
+# ::edge	crop	op1	drop-01	0.3	0	
+# ::edge	drop-01	ARG0	they	0	0.0	
+# ::edge	drop-01	ARG1	substitute-01	0	0.1	
+# ::edge	drop-01	concession	much	0	0.2	
+# ::edge	monetary-quantity	unit	cent	0.1.1.0.0	0.1.1.0	
+# ::edge	substitute-01	ARG0	75	0.1	0.1.0	
+# ::edge	substitute-01	ARG1	crop	0.1	0.1.1	
+# ::edge	substitute-01	manner	still	0.1	0.1.2	
+# ::edge	substitute-01	polarity	-	0.1	0.1.3	
+(d / drop-01 
+      :ARG0 (t / they) 
+      :ARG1 (s / substitute-01 
+            :ARG0 75 
+            :ARG1 (c3 / crop 
+                  :location-of (c4 / cent 
+                        :unit-of (m2 / monetary-quantity))) 
+            :manner (s2 / still) 
+            :polarity (- / -)) 
+      :concession (m / much) 
+      :op-of (c2 / crop 
+            :mod-of (c / carrier)))
+
+# ::snt wednesday  barnsleys allan clarke follows mills and scarboroughs colin morris becoming the third managerial sacking in as many days
+# ::tok wednesday barnsleys allan clarke follows mills and scarboroughs colin morris becoming the third managerial sacking in as many days
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:43.116
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.lang.AssertionError: assertion failed
+# 	at scala.Predef$.assert(Predef.scala:165)
+# 	at edu.cmu.lti.nlp.amr.Annotation$$anonfun$makeLeftRight$1.apply$mcVI$sp(Annotation.scala:70)
+# 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+# 	at edu.cmu.lti.nlp.amr.Annotation.makeLeftRight(Annotation.scala:51)
+# 	at edu.cmu.lti.nlp.amr.Annotation.<init>(Annotation.scala:89)
+# 	at edu.cmu.lti.nlp.amr.Input.<init>(Input.scala:19)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply$mcV$sp(AMRParser.scala:200)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.time(AMRParser.scala:78)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:192)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:192)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# ::snt with some pros you could have got the sack on the spot
+# ::tok with some pros you could have got the sack on the spot
+# ::alignments 11-12|0.0.0 4-5|0 3-4|0.0 1-2|0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:43.135
+# ::node	0	possible	4-5
+# ::node	0.0	you	3-4
+# ::node	0.0.0	spot	11-12
+# ::node	0.0.0.0	some	1-2
+# ::root	0	possible
+# ::edge	possible	degree	you	0	0.0	
+# ::edge	spot	poss	some	0.0.0	0.0.0.0	
+# ::edge	spot	poss	you	0.0.0	0.0	
+(p / possible 
+      :degree (y / you 
+            :poss-of (s / spot 
+                  :poss (s2 / some))))
+
+# ::snt conscious of the old boy watching her with hands on hips fiona dragged the sacks down the short concrete stairway and with many a clink and clack from them and grunt and wheeze from herself heaved them into one of the bins in the sort of communal bunker at the edge of the pavement
+# ::tok conscious of the old boy watching her with hands on hips fiona dragged the sacks down the short concrete stairway and with many a clink and clack from them and grunt and wheeze from herself heaved them into one of the bins in the sort of communal bunker at the edge of the pavement
+# ::alignments 47-48|0.1.1.0.4.0.0 46-47|0.1.1.0.4.0 44-45|0.1.1.0.4.0.0.0 31-32|0.1.0 29-30|0.1 25-26|0.1.1.0.4 22-23|0.1.1.0.2 20-21|0.0 18-19|0.1.1.0.3 17-18|0.1.1.0.1 15-16|0.2 12-13|0 8-9|0.1.1 5-6|0.1.1.0 4-5|0.1.1.0.0 3-4|0.1.1.0.0.0 0-1|0.1.1.0.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:43.601
+# ::node	0	drag-01	12-13
+# ::node	0.0	and	20-21
+# ::node	0.1	and	29-30
+# ::node	0.1.0	and	31-32
+# ::node	0.1.1	hand	8-9
+# ::node	0.1.1.0	watch-01	5-6
+# ::node	0.1.1.0.0	boy	4-5
+# ::node	0.1.1.0.0.0	old	3-4
+# ::node	0.1.1.0.0.1	conscious	0-1
+# ::node	0.1.1.0.1	short	17-18
+# ::node	0.1.1.0.2	many	22-23
+# ::node	0.1.1.0.3	concrete	18-19
+# ::node	0.1.1.0.4	and	25-26
+# ::node	0.1.1.0.4.0	commune	46-47
+# ::node	0.1.1.0.4.0.0	bunker	47-48
+# ::node	0.1.1.0.4.0.0.0	sort	44-45
+# ::node	0.2	down	15-16
+# ::root	0	drag-01
+# ::edge	and	op1	drag-01	0.1	0	
+# ::edge	and	op1	watch-01	0.1.1.0.4	0.1.1.0	
+# ::edge	and	op2	and	0.1	0.1.0	
+# ::edge	and	poss	commune	0.1.1.0.4	0.1.1.0.4.0	
+# ::edge	boy	mod	old	0.1.1.0.0	0.1.1.0.0.0	
+# ::edge	bunker	mod	commune	0.1.1.0.4.0.0	0.1.1.0.4.0	
+# ::edge	bunker	mod	sort	0.1.1.0.4.0.0	0.1.1.0.4.0.0.0	
+# ::edge	concrete	op1	watch-01	0.1.1.0.3	0.1.1.0	
+# ::edge	conscious	topic	boy	0.1.1.0.0.1	0.1.1.0.0	
+# ::edge	drag-01	ARG1	and	0	0.0	
+# ::edge	drag-01	time	down	0	0.2	
+# ::edge	hand	topic	and	0.1.1	0.1	
+# ::edge	many	op1	watch-01	0.1.1.0.2	0.1.1.0	
+# ::edge	short	op1	watch-01	0.1.1.0.1	0.1.1.0	
+# ::edge	watch-01	ARG1	boy	0.1.1.0	0.1.1.0.0	
+# ::edge	watch-01	ARG2	hand	0.1.1.0	0.1.1	
+(d2 / drag-01 
+      :ARG1 (a4 / and) 
+      :op-of (a2 / and 
+            :op1 (a / and) 
+            :topic-of (h / hand 
+                  :ARG2-of (w / watch-01 
+                        :ARG1 (b2 / boy 
+                              :mod (o / old) 
+                              :topic-of (c3 / conscious)) 
+                        :op-of (s2 / short) 
+                        :op-of (m / many) 
+                        :op-of (c2 / concrete) 
+                        :op-of (a3 / and 
+                              :poss (c / commune 
+                                    :mod-of (b / bunker 
+                                          :mod (s / sort))))))) 
+      :time (d / down))
+
+# ::snt what more can we do apart from dressing in old sacks
+# ::tok what more can we do apart from dressing in old sacks
+# ::alignments 9-10|0.0.1 7-8|0.0 5-6|0.0.2 3-4|0.0.0 2-3|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:43.798
+# ::node	0	possible	2-3
+# ::node	0.0	dress-01	7-8
+# ::node	0.0.0	we	3-4
+# ::node	0.0.1	old	9-10
+# ::node	0.0.2	apart	5-6
+# ::root	0	possible
+# ::edge	apart	op1	dress-01	0.0.2	0.0	
+# ::edge	dress-01	ARG0	we	0.0	0.0.0	
+# ::edge	dress-01	ARG1	old	0.0	0.0.1	
+# ::edge	possible	manner	dress-01	0	0.0	
+(p / possible 
+      :manner (d / dress-01 
+            :ARG0 (w / we) 
+            :ARG1 (o / old) 
+            :op-of (a / apart)))
+
+# ::snt few of them have the skills to carry out the often painful task of giving someone the sack
+# ::tok few of them have the skills to carry out the often painful task of giving someone the sack
+# ::alignments 15-16|0 12-13|0.0 11-12|0.0.0 10-11|0.0.0.1 5-6|0.0.1 0-1|0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:43.854
+# ::node	0	someone	15-16
+# ::node	0.0	task	12-13
+# ::node	0.0.0	pain-01	11-12
+# ::node	0.0.0.0	few	0-1
+# ::node	0.0.0.1	often	10-11
+# ::node	0.0.1	skill	5-6
+# ::root	0	someone
+(s / someone 
+      :prep-with-of (t / task 
+            :ARG0-of (p / pain-01 
+                  :ARG1 (f / few) 
+                  :manner (o / often)) 
+            :poss (s2 / skill)))
+
+# ::snt what sort of toys are suitable for a horse  for a horse in a yard hessian sacks large balls a soft football a length of hose and plastic buckets and plastic garbage bins and lids can all provide entertainment
+# ::tok what sort of toys are suitable for a horse for a horse in a yard hessian sacks large balls a soft football a length of hose and plastic buckets and plastic garbage bins and lids can all provide entertainment
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:43.855
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.lang.AssertionError: assertion failed
+# 	at scala.Predef$.assert(Predef.scala:165)
+# 	at edu.cmu.lti.nlp.amr.Annotation$$anonfun$makeLeftRight$1.apply$mcVI$sp(Annotation.scala:70)
+# 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+# 	at edu.cmu.lti.nlp.amr.Annotation.makeLeftRight(Annotation.scala:51)
+# 	at edu.cmu.lti.nlp.amr.Annotation.<init>(Annotation.scala:89)
+# 	at edu.cmu.lti.nlp.amr.Input.<init>(Input.scala:19)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply$mcV$sp(AMRParser.scala:200)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.time(AMRParser.scala:78)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:192)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:192)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# ::snt the coach has restored some of the old order after the squabbling that surrounded the sacking of his predecessor thys libregts and has brought rinus michels in charge when holland won the european title two years ago into the squad as technical adviser
+# ::tok the coach has restored some of the old order after the squabbling that surrounded the sacking of his predecessor thys libregts and has brought rinus michels in charge when holland won the european title two years ago into the squad as technical adviser
+# ::alignments 42-43|0.0+0.0.0 41-42|0.0.0.0 39-40|0 35-36|0.0.0.1.0.2.0.0.0+0.0.0.1.0.2.0.0 34-35|0.0.0.1.0.2.0 33-34|0.0.0.1.1.0 32-33|0.0.0.1.1.0.0.0.0+0.0.0.1.1.0.0.0+0.0.0.1.1.0.0 30-31|0.0.0.1.1 21-22|0.0.0.1 13-14|0.0.0.1.0.2 9-10|0.0.0.1.0.3 7-8|0.0.0.1.1.1 4-5|0.0.0.1.0.1 3-4|0.0.0.1.0 1-2|0.0.0.1.0.0.0+0.0.0.1.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:44.573
+# ::node	0	squad	39-40
+# ::node	0.0	advise-01	42-43
+# ::node	0.0.0	person	42-43
+# ::node	0.0.0.0	technical	41-42
+# ::node	0.0.0.1	and	21-22
+# ::node	0.0.0.1.0	restore-01	3-4
+# ::node	0.0.0.1.0.0	person	1-2
+# ::node	0.0.0.1.0.0.0	coach-01	1-2
+# ::node	0.0.0.1.0.1	some	4-5
+# ::node	0.0.0.1.0.2	surround-01	13-14
+# ::node	0.0.0.1.0.2.0	2	34-35
+# ::node	0.0.0.1.0.2.0.0	temporal-quantity	35-36
+# ::node	0.0.0.1.0.2.0.0.0	year	35-36
+# ::node	0.0.0.1.0.3	after	9-10
+# ::node	0.0.0.1.1	win-01	30-31
+# ::node	0.0.0.1.1.0	title	33-34
+# ::node	0.0.0.1.1.0.0	continent	32-33
+# ::node	0.0.0.1.1.0.0.0	name	32-33
+# ::node	0.0.0.1.1.0.0.0.0	"Europe"	32-33
+# ::node	0.0.0.1.1.1	old	7-8
+# ::root	0	squad
+(s / squad 
+      :ARG1-of (a / advise-01 
+            :ARG0 (p / person 
+                  :mod (t / technical) 
+                  :op-of (a2 / and 
+                        :condition-of (r / restore-01 
+                              :ARG0 (p2 / person 
+                                    :ARG0-of (c2 / coach-01)) 
+                              :ARG1 (s3 / some) 
+                              :ARG1-of (s2 / surround-01 
+                                    :ARG0 (2 / 2 
+                                          :quant-of (t2 / temporal-quantity 
+                                                :unit (y / year)))) 
+                              :time (a3 / after)) 
+                        :op1 (w / win-01 
+                              :ARG1 (t3 / title 
+                                    :mod (c / continent 
+                                          :name (n / name 
+                                                :op1 "Europe"))) 
+                              :op-of (o / old))))))
+
+# ::snt 0 chris nicholl started the season as favourite for what one newspaper called the sack race but an unbeaten sequence stretching back 10 games has familiarised southamptons manager and his team with a more rewarding winning post
+# ::tok 0 chris nicholl started the season as favourite for what one newspaper called the sack race but an unbeaten sequence stretching back 10 games has familiarised southamptons manager and his team with a more rewarding winning post
+# ::alignments 36-37|0.1.0.0.0.1.0 35-36|0.1.0.0.0.1 30-31|0.1.0.0.0.3 28-29|0.1.0.0.0 27-28|0.1.0.0 23-24|0.1.0 22-23|0.1.0.1 21-22|0.1.2 20-21|0.1 19-20|0.1.1 16-17|0 15-16|0.0 11-12|0.1.1.0 7-8|0.1.0.0.0.0 5-6|0.1.0.0.0.2.0 3-4|0.1.0.0.0.2 1-2|0.1.0.0.0.0.0.0.0+0.1.0.0.0.0.0.0+0.1.0.0.0.0.0 0-1|0.1.0.0.0.0.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:45.400
+# ::node	0	contrast-01	16-17
+# ::node	0.0	race	15-16
+# ::node	0.1	stretch-01	20-21
+# ::node	0.1.0	game	23-24
+# ::node	0.1.0.0	manage-01	27-28
+# ::node	0.1.0.0.0	and	28-29
+# ::node	0.1.0.0.0.0	favor-01	7-8
+# ::node	0.1.0.0.0.0.0	person	1-2
+# ::node	0.1.0.0.0.0.0.0	name	1-2
+# ::node	0.1.0.0.0.0.0.0.0	"chris"	1-2
+# ::node	0.1.0.0.0.0.0.1	0	0-1
+# ::node	0.1.0.0.0.1	win-01	35-36
+# ::node	0.1.0.0.0.1.0	post	36-37
+# ::node	0.1.0.0.0.2	start-01	3-4
+# ::node	0.1.0.0.0.2.0	season	5-6
+# ::node	0.1.0.0.0.3	team	30-31
+# ::node	0.1.0.1	10	22-23
+# ::node	0.1.1	sequence-00	19-20
+# ::node	0.1.1.0	newspaper	11-12
+# ::node	0.1.2	back	21-22
+# ::root	0	contrast-01
+# ::edge	and	op1	manage-01	0.1.0.0.0	0.1.0.0	
+# ::edge	and	op2	team	0.1.0.0.0	0.1.0.0.0.3	
+# ::edge	contrast-01	ARG1	race	0	0.0	
+# ::edge	contrast-01	ARG2	stretch-01	0	0.1	
+# ::edge	favor-01	ARG0	and	0.1.0.0.0.0	0.1.0.0.0	
+# ::edge	favor-01	ARG1	person	0.1.0.0.0.0	0.1.0.0.0.0.0	
+# ::edge	game	quant	10	0.1.0	0.1.0.1	
+# ::edge	manage-01	ARG1	game	0.1.0.0	0.1.0	
+# ::edge	name	op1	"chris"	0.1.0.0.0.0.0.0	0.1.0.0.0.0.0.0.0	
+# ::edge	person	name	name	0.1.0.0.0.0.0	0.1.0.0.0.0.0.0	
+# ::edge	person	quant	0	0.1.0.0.0.0.0	0.1.0.0.0.0.0.1	
+# ::edge	sequence-00	ARG1	newspaper	0.1.1	0.1.1.0	
+# ::edge	start-01	ARG0	and	0.1.0.0.0.2	0.1.0.0.0	
+# ::edge	start-01	ARG1	season	0.1.0.0.0.2	0.1.0.0.0.2.0	
+# ::edge	stretch-01	ARG0	game	0.1	0.1.0	
+# ::edge	stretch-01	ARG1	sequence-00	0.1	0.1.1	
+# ::edge	stretch-01	direction	back	0.1	0.1.2	
+# ::edge	win-01	ARG0	and	0.1.0.0.0.1	0.1.0.0.0	
+# ::edge	win-01	ARG1	post	0.1.0.0.0.1	0.1.0.0.0.1.0	
+(c / contrast-01 
+      :ARG1 (r / race) 
+      :ARG2 (s / stretch-01 
+            :ARG0 (g / game 
+                  :ARG1-of (m / manage-01 
+                        :op-of (a / and 
+                              :ARG0-of (f / favor-01 
+                                    :ARG1 (p2 / person 
+                                          :name (n2 / name 
+                                                :op1 "chris") 
+                                          :quant 0)) 
+                              :ARG0-of (w / win-01 
+                                    :ARG1 (p / post)) 
+                              :ARG0-of (s4 / start-01 
+                                    :ARG1 (s3 / season)) 
+                              :op1 (t / team))) 
+                  :quant 10) 
+            :ARG1 (s2 / sequence-00 
+                  :ARG1 (n / newspaper)) 
+            :direction (b / back)))
+
+# ::snt other householders must put refuse for collection into tied plastic sacks which must be strong enough and large enough for the purpose
+# ::tok other householders must put refuse for collection into tied plastic sacks which must be strong enough and large enough for the purpose
+# ::alignments 21-22|0.3.1 18-19|0.3.0 17-18|0.3 16-17|0 15-16|0.2 14-15|0.1 9-10|0.0.0.0 8-9|0.2.0 6-7|0.0.0 4-5|0.0 0-1|0.0.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:45.478
+# ::node	0	and	16-17
+# ::node	0.0	refuse-01	4-5
+# ::node	0.0.0	collect-01	6-7
+# ::node	0.0.0.0	plastic	9-10
+# ::node	0.0.0.1	other	0-1
+# ::node	0.1	strong	14-15
+# ::node	0.2	enough	15-16
+# ::node	0.2.0	tie-01	8-9
+# ::node	0.3	large	17-18
+# ::node	0.3.0	enough	18-19
+# ::node	0.3.1	purpose	21-22
+# ::root	0	and
+# ::edge	and	op1	strong	0	0.1	
+# ::edge	and	op2	enough	0	0.2	
+# ::edge	and	op3	large	0	0.3	
+# ::edge	collect-01	ARG0	plastic	0.0.0	0.0.0.0	
+# ::edge	collect-01	ARG1	other	0.0.0	0.0.0.1	
+# ::edge	large	mod	enough	0.3	0.3.0	
+# ::edge	large	mod	purpose	0.3	0.3.1	
+# ::edge	refuse-01	ARG0	and	0.0	0	
+# ::edge	refuse-01	ARG1	collect-01	0.0	0.0.0	
+# ::edge	tie-01	ARG1	enough	0.2.0	0.2	
+(a / and 
+      :ARG0-of (r / refuse-01 
+            :ARG1 (c / collect-01 
+                  :ARG0 (p2 / plastic) 
+                  :ARG1 (o / other))) 
+      :op1 (s / strong) 
+      :op2 (e2 / enough 
+            :ARG1-of (t / tie-01)) 
+      :op3 (l / large 
+            :mod (e / enough) 
+            :mod (p / purpose)))
+
+# ::snt her lawyer advised that because of the manner of her sacking she had strong grounds for bringing an unfair dismissal case in an industrial tribunal
+# ::tok her lawyer advised that because of the manner of her sacking she had strong grounds for bringing an unfair dismissal case in an industrial tribunal
+# ::alignments 24-25|0.2 23-24|0.2.0 20-21|0.1 18-19|0.1.0.0+0.1.0 16-17|0 14-15|0.0 13-14|0.0.1 11-12|0.0.0.0.1 7-8|0.0.0.0.2 4-5|0.0.0 2-3|0.0.0.0 1-2|0.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:45.598
+# ::node	0	bring-01	16-17
+# ::node	0.0	ground	14-15
+# ::node	0.0.0	cause-01	4-5
+# ::node	0.0.0.0	advise-01	2-3
+# ::node	0.0.0.0.0	lawyer	1-2
+# ::node	0.0.0.0.1	she	11-12
+# ::node	0.0.0.0.2	manner	7-8
+# ::node	0.0.1	strong	13-14
+# ::node	0.1	case	20-21
+# ::node	0.1.0	fair	18-19
+# ::node	0.1.0.0	-	18-19
+# ::node	0.2	tribunal	24-25
+# ::node	0.2.0	industry	23-24
+# ::root	0	bring-01
+# ::edge	advise-01	ARG0	lawyer	0.0.0.0	0.0.0.0.0	
+# ::edge	advise-01	ARG1	she	0.0.0.0	0.0.0.0.1	
+# ::edge	advise-01	manner	manner	0.0.0.0	0.0.0.0.2	
+# ::edge	bring-01	ARG0	ground	0	0.0	
+# ::edge	bring-01	ARG1	case	0	0.1	
+# ::edge	bring-01	ARG2	tribunal	0	0.2	
+# ::edge	case	mod	fair	0.1	0.1.0	
+# ::edge	cause-01	ARG0	ground	0.0.0	0.0	
+# ::edge	cause-01	ARG1	advise-01	0.0.0	0.0.0.0	
+# ::edge	fair	polarity	-	0.1.0	0.1.0.0	
+# ::edge	ground	mod	strong	0.0	0.0.1	
+# ::edge	tribunal	mod	industry	0.2	0.2.0	
+(b / bring-01 
+      :ARG0 (g / ground 
+            :ARG0-of (c2 / cause-01 
+                  :ARG1 (a / advise-01 
+                        :ARG0 (l / lawyer) 
+                        :ARG1 (s2 / she) 
+                        :manner (m / manner))) 
+            :mod (s / strong)) 
+      :ARG1 (c / case 
+            :mod (f / fair 
+                  :polarity -)) 
+      :ARG2 (t / tribunal 
+            :mod (i / industry)))
+
+# ::snt the sackings claimed 10 senior communist party officials including three full politburo members grisha filipov milko balev and the former interior minister dimitar stoyanov all of them supporters of todor zhivkov who stood down as the countrys leader last week after 34 years
+# ::tok the sackings claimed 10 senior communist party officials including three full politburo members grisha filipov milko balev and the former interior minister dimitar stoyanov all of them supporters of todor zhivkov who stood down as the countrys leader last week after 34 years
+# ::alignments 42-43|0.1.0.0.0.1.0.2.0.1+0.1.0.0.0.1.0.2.0 41-42|0.1.0.0.0.1.0.2.0.0 40-41|0.1.0.0.0.1.0.2 39-40|0.1.0.0.0.0 38-39|0.1.0.0.0.0.0 37-38|0.1.0.0.0+0.1.0.0 33-34|0.1.0.0.0.1 32-33|0.1.0.0.0.1.0 27-28|0.1.0.0.0.1.0.1.0+0.1.0.0.0.1.0.1 24-25|0.1.0.0.0.1.0.1.0.0 20-22|0.1.1.0+0.1.1.1+0.1.1+0.1 19-20|0.1.2 17-18|0 12-13|0.1.0.1+0.1.0 10-11|0.0.0 9-10|0.1.0.0.0.1.0.0 7-8|0.1.0.0.0.1.0.1.1.1+0.1.0.0.0.1.0.1.1 5-7|0.1.0.0.0.1.0.1.1.0.0.0+0.1.0.0.0.1.0.1.1.0.0.1+0.1.0.0.0.1.0.1.1.0.0+0.1.0.0.0.1.0.1.1.0 4-5|0.1.0.0.0.1.0.1.1.1.0 3-4|0.1.0.0.0.1.0.1.0.0.0 2-3|0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:46.742
+# ::node	0	and	17-18
+# ::node	0.0	claim-01	2-3
+# ::node	0.0.0	full	10-11
+# ::node	0.1	organization	20-22
+# ::node	0.1.0	have-org-role-91	12-13
+# ::node	0.1.0.0	person	37-38
+# ::node	0.1.0.0.0	lead-02	37-38
+# ::node	0.1.0.0.0.0	week	39-40
+# ::node	0.1.0.0.0.0.0	last	38-39
+# ::node	0.1.0.0.0.1	down	33-34
+# ::node	0.1.0.0.0.1.0	stand-01	32-33
+# ::node	0.1.0.0.0.1.0.0	3	9-10
+# ::node	0.1.0.0.0.1.0.1	person	27-28
+# ::node	0.1.0.0.0.1.0.1.0	support-01	27-28
+# ::node	0.1.0.0.0.1.0.1.0.0	all	24-25
+# ::node	0.1.0.0.0.1.0.1.0.0.0	10	3-4
+# ::node	0.1.0.0.0.1.0.1.1	have-org-role-91	7-8
+# ::node	0.1.0.0.0.1.0.1.1.0	political-party	5-7
+# ::node	0.1.0.0.0.1.0.1.1.0.0	name	5-7
+# ::node	0.1.0.0.0.1.0.1.1.0.0.0	"Communist"	5-7
+# ::node	0.1.0.0.0.1.0.1.1.0.0.1	"Party"	5-7
+# ::node	0.1.0.0.0.1.0.1.1.1	official	7-8
+# ::node	0.1.0.0.0.1.0.1.1.1.0	senior	4-5
+# ::node	0.1.0.0.0.1.0.2	after	40-41
+# ::node	0.1.0.0.0.1.0.2.0	temporal-quantity	42-43
+# ::node	0.1.0.0.0.1.0.2.0.0	34	41-42
+# ::node	0.1.0.0.0.1.0.2.0.1	year	42-43
+# ::node	0.1.0.1	member	12-13
+# ::node	0.1.1	name	20-22
+# ::node	0.1.1.0	"minister"	20-22
+# ::node	0.1.1.1	"interior"	20-22
+# ::node	0.1.2	former	19-20
+# ::root	0	and
+# ::edge	10	poss	all	0.1.0.0.0.1.0.1.0.0.0	0.1.0.0.0.1.0.1.0.0	
+# ::edge	after	op1	temporal-quantity	0.1.0.0.0.1.0.2	0.1.0.0.0.1.0.2.0	
+# ::edge	and	op1	claim-01	0	0.0	
+# ::edge	and	op2	organization	0	0.1	
+# ::edge	claim-01	ARG0	full	0.0	0.0.0	
+# ::edge	have-org-role-91	ARG0	person	0.1.0	0.1.0.0	
+# ::edge	have-org-role-91	ARG0	person	0.1.0.0.0.1.0.1.1	0.1.0.0.0.1.0.1	
+# ::edge	have-org-role-91	ARG1	organization	0.1.0	0.1	
+# ::edge	have-org-role-91	ARG1	political-party	0.1.0.0.0.1.0.1.1	0.1.0.0.0.1.0.1.1.0	
+# ::edge	have-org-role-91	ARG2	member	0.1.0	0.1.0.1	
+# ::edge	have-org-role-91	ARG2	official	0.1.0.0.0.1.0.1.1	0.1.0.0.0.1.0.1.1.1	
+# ::edge	lead-02	ARG0	person	0.1.0.0.0	0.1.0.0	
+# ::edge	lead-02	ARG1	week	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	lead-02	direction	down	0.1.0.0.0	0.1.0.0.0.1	
+# ::edge	name	op1	"Communist"	0.1.0.0.0.1.0.1.1.0.0	0.1.0.0.0.1.0.1.1.0.0.0	
+# ::edge	name	op1	"minister"	0.1.1	0.1.1.0	
+# ::edge	name	op2	"Party"	0.1.0.0.0.1.0.1.1.0.0	0.1.0.0.0.1.0.1.1.0.0.1	
+# ::edge	name	op2	"interior"	0.1.1	0.1.1.1	
+# ::edge	official	mod	senior	0.1.0.0.0.1.0.1.1.1	0.1.0.0.0.1.0.1.1.1.0	
+# ::edge	organization	name	name	0.1	0.1.1	
+# ::edge	organization	time	former	0.1	0.1.2	
+# ::edge	political-party	name	name	0.1.0.0.0.1.0.1.1.0	0.1.0.0.0.1.0.1.1.0.0	
+# ::edge	stand-01	ARG0	3	0.1.0.0.0.1.0	0.1.0.0.0.1.0.0	
+# ::edge	stand-01	ARG1	person	0.1.0.0.0.1.0	0.1.0.0.0.1.0.1	
+# ::edge	stand-01	ARG2	down	0.1.0.0.0.1.0	0.1.0.0.0.1	
+# ::edge	stand-01	time	after	0.1.0.0.0.1.0	0.1.0.0.0.1.0.2	
+# ::edge	support-01	ARG0	person	0.1.0.0.0.1.0.1.0	0.1.0.0.0.1.0.1	
+# ::edge	support-01	ARG1	all	0.1.0.0.0.1.0.1.0	0.1.0.0.0.1.0.1.0.0	
+# ::edge	temporal-quantity	quant	34	0.1.0.0.0.1.0.2.0	0.1.0.0.0.1.0.2.0.0	
+# ::edge	temporal-quantity	unit	year	0.1.0.0.0.1.0.2.0	0.1.0.0.0.1.0.2.0.1	
+# ::edge	week	mod	last	0.1.0.0.0.0	0.1.0.0.0.0.0	
+(a3 / and 
+      :op1 (c / claim-01 
+            :ARG0 (f2 / full)) 
+      :op2 (o / organization 
+            :ARG1-of (h / have-org-role-91 
+                  :ARG0 (p / person 
+                        :ARG0-of (l2 / lead-02 
+                              :ARG1 (w / week 
+                                    :mod (l / last)) 
+                              :direction (d / down 
+                                    :ARG2-of (s / stand-01 
+                                          :ARG0 3 
+                                          :ARG1 (p2 / person 
+                                                :ARG0-of (s2 / support-01 
+                                                      :ARG1 (a2 / all 
+                                                            :poss-of 10)) 
+                                                :ARG0-of (h2 / have-org-role-91 
+                                                      :ARG1 (p3 / political-party 
+                                                            :name (n2 / name 
+                                                                  :op1 "Communist" 
+                                                                  :op2 "Party")) 
+                                                      :ARG2 (o2 / official 
+                                                            :mod (s3 / senior)))) 
+                                          :time (a / after 
+                                                :op1 (t / temporal-quantity 
+                                                      :quant 34 
+                                                      :unit (y / year))))))) 
+                  :ARG2 (m / member)) 
+            :name (n / name 
+                  :op1 "minister" 
+                  :op2 "interior") 
+            :time (f / former)))
+
+# ::snt sacking is perhaps too blunt a word to describe the departure of an editor of pravda
+# ::tok sacking is perhaps too blunt a word to describe the departure of an editor of pravda
+# ::alignments 13-14|0 10-11|0.0 8-9|0.0.0 6-7|0.0.0.0 4-5|0.0.0.0.0 3-4|0.0.0.0.0.0 2-3|0.0.0.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:46.819
+# ::node	0	editor	13-14
+# ::node	0.0	depart-01	10-11
+# ::node	0.0.0	describe-01	8-9
+# ::node	0.0.0.0	word	6-7
+# ::node	0.0.0.0.0	blunt	4-5
+# ::node	0.0.0.0.0.0	too	3-4
+# ::node	0.0.0.0.0.0.0	perhaps	2-3
+# ::root	0	editor
+(e / editor 
+      :ARG1-of (d / depart-01 
+            :ARG1-of (d2 / describe-01 
+                  :ARG0 (w / word 
+                        :time-of (b / blunt 
+                              :degree (t / too 
+                                    :op1 (p / perhaps)))))))
+
+# ::snt pupils from the towns community college armed themselves with green sacks on a scavenging party yesterday friday
+# ::tok pupils from the towns community college armed themselves with green sacks on a scavenging party yesterday friday
+# ::alignments 16-17|0.0.0.0.0.0.0 15-16|0.0.0.0.0.0 14-15|0.0.0.0.0 9-10|0 6-7|0.0.0.0 5-6|0.0.0 4-5|0.0.0.1 3-4|0.0.0.1.0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:46.993
+# ::node	0	green	9-10
+# ::node	0.0	pupil	0-1
+# ::node	0.0.0	college	5-6
+# ::node	0.0.0.0	arm-01	6-7
+# ::node	0.0.0.0.0	party	14-15
+# ::node	0.0.0.0.0.0	yesterday	15-16
+# ::node	0.0.0.0.0.0.0	friday	16-17
+# ::node	0.0.0.1	community	4-5
+# ::node	0.0.0.1.0	town	3-4
+# ::root	0	green
+# ::edge	arm-01	ARG1	college	0.0.0.0	0.0.0	
+# ::edge	college	mod	community	0.0.0	0.0.0.1	
+# ::edge	community	mod	town	0.0.0.1	0.0.0.1.0	
+# ::edge	friday	mod	yesterday	0.0.0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	green	poss	pupil	0	0.0	
+# ::edge	party	op1	arm-01	0.0.0.0.0	0.0.0.0	
+# ::edge	party	part	yesterday	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	pupil	location	college	0.0	0.0.0	
+(g / green 
+      :poss (p2 / pupil 
+            :location (c / college 
+                  :ARG1-of (a / arm-01 
+                        :op-of (p / party 
+                              :part (y / yesterday 
+                                    :mod-of (f / friday)))) 
+                  :mod (c2 / community 
+                        :mod (t / town)))))
+
+# ::snt rather than proving that justice is blind however his sacking this summer probably stems more from his close political ties to the ousted party secretary zhao ziyang than any of the offences he no doubt committed
+# ::tok rather than proving that justice is blind however his sacking this summer probably stems more from his close political ties to the ousted party secretary zhao ziyang than any of the offences he no doubt committed
+# ::alignments 35-36|0.0.0.0.0 34-35|0.0.0.0 33-34|0.0.0.0.1 32-33|0.0.0.0.0.0 31-32|0.0.0.0.0.1 28-29|0.0.0.0.0.1.0 25-27|0.0.1.0.0+0.0.1.0.1+0.0.1.0+0.0.1 24-25|0.0.1.1 23-24|0.0.1.1.0 22-23|0.0 19-20|0 18-19|0.1 12-13|0.0.0 11-12|0.2 10-11|0.2.1 6-7|0.2.0 4-5|0.2.0.0 2-3|0.2.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:47.633
+# ::node	0	tie-01	19-20
+# ::node	0.0	oust-01	22-23
+# ::node	0.0.0	probable	12-13
+# ::node	0.0.0.0	doubt-01	34-35
+# ::node	0.0.0.0.0	commit-01	35-36
+# ::node	0.0.0.0.0.0	he	32-33
+# ::node	0.0.0.0.0.1	offence	31-32
+# ::node	0.0.0.0.0.1.0	any	28-29
+# ::node	0.0.0.0.1	-	33-34
+# ::node	0.0.1	person	25-27
+# ::node	0.0.1.0	name	25-27
+# ::node	0.0.1.0.0	"ziyang"	25-27
+# ::node	0.0.1.0.1	"zhao"	25-27
+# ::node	0.0.1.1	secretary	24-25
+# ::node	0.0.1.1.0	party	23-24
+# ::node	0.1	politics	18-19
+# ::node	0.2	summer	11-12
+# ::node	0.2.0	blind-01	6-7
+# ::node	0.2.0.0	justice	4-5
+# ::node	0.2.0.1	prove-01	2-3
+# ::node	0.2.1	this	10-11
+# ::root	0	tie-01
+# ::edge	blind-01	ARG0	summer	0.2.0	0.2	
+# ::edge	blind-01	ARG1	justice	0.2.0	0.2.0.0	
+# ::edge	commit-01	ARG0	he	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	commit-01	ARG1	offence	0.0.0.0.0	0.0.0.0.0.1	
+# ::edge	doubt-01	ARG0	probable	0.0.0.0	0.0.0	
+# ::edge	doubt-01	ARG1	commit-01	0.0.0.0	0.0.0.0.0	
+# ::edge	doubt-01	polarity	-	0.0.0.0	0.0.0.0.1	
+# ::edge	name	op1	"ziyang"	0.0.1.0	0.0.1.0.0	
+# ::edge	name	op2	"zhao"	0.0.1.0	0.0.1.0.1	
+# ::edge	offence	mod	any	0.0.0.0.0.1	0.0.0.0.0.1.0	
+# ::edge	oust-01	ARG0	probable	0.0	0.0.0	
+# ::edge	oust-01	ARG1	person	0.0	0.0.1	
+# ::edge	party	part	secretary	0.0.1.1.0	0.0.1.1	
+# ::edge	person	name	name	0.0.1	0.0.1.0	
+# ::edge	person	poss	secretary	0.0.1	0.0.1.1	
+# ::edge	prove-01	ARG1	blind-01	0.2.0.1	0.2.0	
+# ::edge	summer	mod	this	0.2	0.2.1	
+# ::edge	tie-01	ARG1	oust-01	0	0.0	
+# ::edge	tie-01	mod	politics	0	0.1	
+# ::edge	tie-01	time	summer	0	0.2	
+(t / tie-01 
+      :ARG1 (o2 / oust-01 
+            :ARG0 (p4 / probable 
+                  :ARG0-of (d / doubt-01 
+                        :ARG1 (c / commit-01 
+                              :ARG0 (h / he) 
+                              :ARG1 (o / offence 
+                                    :mod (a / any))) 
+                        :polarity (- / -))) 
+            :ARG1 (p / person 
+                  :name (n / name 
+                        :op1 "ziyang" 
+                        :op2 "zhao") 
+                  :poss (s / secretary 
+                        :part-of (p2 / party)))) 
+      :mod (p3 / politics) 
+      :time (s2 / summer 
+            :ARG0-of (b / blind-01 
+                  :ARG1 (j / justice) 
+                  :ARG1-of (p5 / prove-01)) 
+            :mod (t2 / this)))
+
+# ::snt teenagers testified that they had been covered with sacks and beaten sometimes by several people
+# ::tok teenagers testified that they had been covered with sacks and beaten sometimes by several people
+# ::alignments 13-14|0.0.2 11-12|0.1 9-10|0 6-7|0.0 3-4|0.0.1 0-1|0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:47.684
+# ::node	0	and	9-10
+# ::node	0.0	cover-01	6-7
+# ::node	0.0.0	teenager	0-1
+# ::node	0.0.1	they	3-4
+# ::node	0.0.2	several	13-14
+# ::node	0.1	sometimes	11-12
+# ::root	0	and
+# ::edge	and	op1	cover-01	0	0.0	
+# ::edge	cover-01	ARG0	teenager	0.0	0.0.0	
+# ::edge	cover-01	ARG1	they	0.0	0.0.1	
+# ::edge	cover-01	manner	several	0.0	0.0.2	
+# ::edge	sometimes	poss	and	0.1	0	
+(a / and 
+      :op1 (c / cover-01 
+            :ARG0 (t2 / teenager) 
+            :ARG1 (t / they) 
+            :manner (s / several)) 
+      :poss-of (s2 / sometimes))
+
+# ::snt the sacking of konstantin kharchev last summer as minister of religion was never announced still less explained
+# ::tok the sacking of konstantin kharchev last summer as minister of religion was never announced still less explained
+# ::alignments 16-17|0.1 15-16|0 14-15|0.2 13-14|0.0 10-11|0.0.0 8-9|0.1.0.1+0.1.0 6-7|0.1.0.0 5-6|0.1.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:47.836
+# ::node	0	less	15-16
+# ::node	0.0	announce-01	13-14
+# ::node	0.0.0	religion	10-11
+# ::node	0.1	explain-01	16-17
+# ::node	0.1.0	have-org-role-91	8-9
+# ::node	0.1.0.0	summer	6-7
+# ::node	0.1.0.0.0	last	5-6
+# ::node	0.1.0.1	minister	8-9
+# ::node	0.2	still	14-15
+# ::root	0	less
+# ::edge	announce-01	ARG0	less	0.0	0	
+# ::edge	announce-01	ARG1	religion	0.0	0.0.0	
+# ::edge	explain-01	ARG1	have-org-role-91	0.1	0.1.0	
+# ::edge	explain-01	degree	less	0.1	0	
+# ::edge	have-org-role-91	ARG0	summer	0.1.0	0.1.0.0	
+# ::edge	have-org-role-91	ARG2	minister	0.1.0	0.1.0.1	
+# ::edge	less	quant	still	0	0.2	
+# ::edge	summer	mod	last	0.1.0.0	0.1.0.0.0	
+(l / less 
+      :ARG0-of (a / announce-01 
+            :ARG1 (r / religion)) 
+      :degree-of (e / explain-01 
+            :ARG1 (h / have-org-role-91 
+                  :ARG0 (s2 / summer 
+                        :mod (l2 / last)) 
+                  :ARG2 (m / minister))) 
+      :quant (s / still))
+
+# ::snt to simplify the handling of sacks of corn facilities such as loading ramps waggon bays and internal or external hoists that could lift sacks to the top of the mill for storage were installed
+# ::tok to simplify the handling of sacks of corn facilities such as loading ramps waggon bays and internal or external hoists that could lift sacks to the top of the mill for storage were installed
+# ::alignments 33-34|0.0 31-32|0 26-27|0.0.1.0.0.0.0 22-23|0.0.1.0.0.0 21-22|0.0.1.0.0.0.1 18-19|0.0.0.1 17-18|0.0.0 16-17|0.0.0.0 15-16|0.0.1 11-12|0.0.1.1 9-10|0.0.1.1.0 8-9|0.0.1.1.1 7-8|0.0.1.1.1.0 3-4|0.0.1.0.0 1-2|0.0.1.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:48.548
+# ::node	0	store-01	31-32
+# ::node	0.0	install-01	33-34
+# ::node	0.0.0	or	17-18
+# ::node	0.0.0.0	internal	16-17
+# ::node	0.0.0.1	external	18-19
+# ::node	0.0.1	and	15-16
+# ::node	0.0.1.0	simplify-01	1-2
+# ::node	0.0.1.0.0	handle-01	3-4
+# ::node	0.0.1.0.0.0	lift-01	22-23
+# ::node	0.0.1.0.0.0.0	top	26-27
+# ::node	0.0.1.0.0.0.1	possible	21-22
+# ::node	0.0.1.1	load-01	11-12
+# ::node	0.0.1.1.0	such	9-10
+# ::node	0.0.1.1.1	facility	8-9
+# ::node	0.0.1.1.1.0	corn	7-8
+# ::root	0	store-01
+(s / store-01 
+      :ARG1-of (i / install-01 
+            :ARG0 (o / or 
+                  :op1 (i2 / internal) 
+                  :op2 (e / external)) 
+            :op-of (a / and 
+                  :op1 (s3 / simplify-01 
+                        :ARG1 (h / handle-01 
+                              :ARG1 (l / lift-01 
+                                    :ARG1 (t / top) 
+                                    :domain-of (p / possible)))) 
+                  :op2 (l2 / load-01 
+                        :ARG1 (s2 / such) 
+                        :example-of (f / facility 
+                              :mod (c / corn))))))
+
+# ::snt the fears of bureaucrats and industrial workers are simpler still harddriving new bosses at best at worst the sack
+# ::tok the fears of bureaucrats and industrial workers are simpler still harddriving new bosses at best at worst the sack
+# ::alignments 16-17|0.0.2 12-13|0.0.0 11-12|0.0.0.0 9-10|0.0.1.0 8-9|0.0.1 6-7|0.2.0+0.2 5-6|0.2.1 4-5|0 3-4|0.1 1-2|0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:48.652
+# ::node	0	and	4-5
+# ::node	0.0	fear-01	1-2
+# ::node	0.0.0	boss	12-13
+# ::node	0.0.0.0	new	11-12
+# ::node	0.0.1	simple	8-9
+# ::node	0.0.1.0	still	9-10
+# ::node	0.0.2	bad	16-17
+# ::node	0.1	bureaucrat	3-4
+# ::node	0.2	person	6-7
+# ::node	0.2.0	work-01	6-7
+# ::node	0.2.1	industry	5-6
+# ::root	0	and
+# ::edge	and	op1	bureaucrat	0	0.1	
+# ::edge	and	op2	person	0	0.2	
+# ::edge	bad	op1	fear-01	0.0.2	0.0	
+# ::edge	boss	mod	new	0.0.0	0.0.0.0	
+# ::edge	fear-01	ARG0	boss	0.0	0.0.0	
+# ::edge	fear-01	ARG1	and	0.0	0	
+# ::edge	person	mod	industry	0.2	0.2.1	
+# ::edge	simple	domain	fear-01	0.0.1	0.0	
+# ::edge	simple	location	still	0.0.1	0.0.1.0	
+# ::edge	work-01	ARG0	person	0.2.0	0.2	
+(a / and 
+      :ARG1-of (f / fear-01 
+            :ARG0 (b2 / boss 
+                  :mod (n / new)) 
+            :domain-of (s2 / simple 
+                  :location (s / still)) 
+            :op-of (b / bad)) 
+      :op1 (b3 / bureaucrat) 
+      :op2 (p / person 
+            :ARG0-of (w / work-01) 
+            :mod (i / industry)))
+
+# ::snt these were long sacks which were suspended through a circular hole in the floor called the trading hole until presses were introduced the hops were compressed by a man treading them in
+# ::tok these were long sacks which were suspended through a circular hole in the floor called the trading hole until presses were introduced the hops were compressed by a man treading them in
+# ::alignments 28-29|0.0.0 25-26|0.0 21-22|0 19-20|0.1 18-19|0.2 17-18|0.0.1.0 16-17|0.0.1 13-14|0.0.1.0.0.1 10-11|0.0.1.0.0 6-7|0.0.1.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:48.992
+# ::node	0	introduce-02	21-22
+# ::node	0.0	compress-01	25-26
+# ::node	0.0.0	man	28-29
+# ::node	0.0.1	trade-01	16-17
+# ::node	0.0.1.0	hole	17-18
+# ::node	0.0.1.0.0	hole	10-11
+# ::node	0.0.1.0.0.0	suspend-01	6-7
+# ::node	0.0.1.0.0.1	floor	13-14
+# ::node	0.1	press	19-20
+# ::node	0.2	until	18-19
+# ::root	0	introduce-02
+# ::edge	compress-01	ARG0	man	0.0	0.0.0	
+# ::edge	compress-01	ARG1	trade-01	0.0	0.0.1	
+# ::edge	hole	location	floor	0.0.1.0.0	0.0.1.0.0.1	
+# ::edge	hole	mod	trade-01	0.0.1.0	0.0.1	
+# ::edge	hole	topic	hole	0.0.1.0.0	0.0.1.0	
+# ::edge	introduce-02	ARG1	compress-01	0	0.0	
+# ::edge	introduce-02	ARG2	press	0	0.1	
+# ::edge	suspend-01	ARG2	hole	0.0.1.0.0.0	0.0.1.0.0	
+# ::edge	until	op1	introduce-02	0.2	0	
+(i / introduce-02 
+      :ARG1 (c / compress-01 
+            :ARG0 (m / man) 
+            :ARG1 (t / trade-01 
+                  :mod-of (h / hole 
+                        :topic-of (h2 / hole 
+                              :ARG2-of (s / suspend-01) 
+                              :location (f / floor))))) 
+      :ARG2 (p / press) 
+      :op-of (u / until))
+
+# ::snt anyway it was in silence and perhaps a couple of millimetres further apart than usual that they made their way past the classy handpainted bettingshop something called just a healing centre the pullover shop where you were not allowed to try on the pullovers a very great number of bulging and bursting black sacks and a firm of estate agents apparently aiming for the oilsheikh section of the market
+# ::tok anyway it was in silence and perhaps a couple of millimetres further apart than usual that they made their way past the classy handpainted bettingshop something called just a healing centre the pullover shop where you were not allowed to try on the pullovers a very great number of bulging and bursting black sacks and a firm of estate agents apparently aiming for the oilsheikh section of the market
+# ::alignments 68-69|0.1.0 65-66|0.1 61-62|0 60-61|0.2 59-60|0.0 58-59|0.0.0 56-57|0.3.3.0 54-55|0.3.3 52-53|0.3.2 50-51|0.3 47-48|0.3.1 46-47|0.3.1.0 45-46|0.3.1.0.0 40-41|0.3.0 38-39|0.3.0.1 35-36|0.3.0.0 33-34|0.3.0.1.0 27-28|0.3.0.2.2.0.2 25-26|0.3.0.2.2 22-23|0.3.0.2.2.1 20-21|0.3.0.2.0 19-20|0.3.0.2 16-17|0.3.0.2.1 14-15|0.3.0.1.1 12-13|0.3.0.1.1.0 11-12|0.3.0.1.1.0.0 8-9|0.3.0.2.2.0.1.0.0 6-7|0.3.0.2.2.0.1.0 5-6|0.3.0.2.2.0.1 4-5|0.3.0.2.2.0 1-2|0.3.0.2.2.0.0 0-1|0.3.0.2.2.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:50.964
+# ::node	0	aim-01	61-62
+# ::node	0.0	agent	59-60
+# ::node	0.0.0	estate	58-59
+# ::node	0.1	section	65-66
+# ::node	0.1.0	market	68-69
+# ::node	0.2	apparent	60-61
+# ::node	0.3	and	50-51
+# ::node	0.3.0	try-01	40-41
+# ::node	0.3.0.0	you	35-36
+# ::node	0.3.0.1	allow-01	38-39
+# ::node	0.3.0.1.0	shop	33-34
+# ::node	0.3.0.1.1	usual	14-15
+# ::node	0.3.0.1.1.0	apart	12-13
+# ::node	0.3.0.1.1.0.0	further	11-12
+# ::node	0.3.0.2	way	19-20
+# ::node	0.3.0.2.0	past	20-21
+# ::node	0.3.0.2.1	they	16-17
+# ::node	0.3.0.2.2	something	25-26
+# ::node	0.3.0.2.2.0	silence-01	4-5
+# ::node	0.3.0.2.2.0.0	it	1-2
+# ::node	0.3.0.2.2.0.0.0	anyway	0-1
+# ::node	0.3.0.2.2.0.1	and	5-6
+# ::node	0.3.0.2.2.0.1.0	perhaps	6-7
+# ::node	0.3.0.2.2.0.1.0.0	couple	8-9
+# ::node	0.3.0.2.2.0.2	just	27-28
+# ::node	0.3.0.2.2.1	classy	22-23
+# ::node	0.3.1	number	47-48
+# ::node	0.3.1.0	great	46-47
+# ::node	0.3.1.0.0	very	45-46
+# ::node	0.3.2	black	52-53
+# ::node	0.3.3	and	54-55
+# ::node	0.3.3.0	firm	56-57
+# ::root	0	aim-01
+# ::edge	agent	mod	estate	0.0	0.0.0	
+# ::edge	aim-01	ARG0	agent	0	0.0	
+# ::edge	aim-01	ARG2	section	0	0.1	
+# ::edge	aim-01	manner	apparent	0	0.2	
+# ::edge	allow-01	ARG0	shop	0.3.0.1	0.3.0.1.0	
+# ::edge	allow-01	ARG1	try-01	0.3.0.1	0.3.0	
+# ::edge	and	op1	black	0.3	0.3.2	
+# ::edge	and	op1	firm	0.3.3	0.3.3.0	
+# ::edge	and	op1	silence-01	0.3.0.2.2.0.1	0.3.0.2.2.0	
+# ::edge	and	op2	and	0.3	0.3.3	
+# ::edge	and	op2	perhaps	0.3.0.2.2.0.1	0.3.0.2.2.0.1.0	
+# ::edge	and	op3	aim-01	0.3	0	
+# ::edge	anyway	degree	it	0.3.0.2.2.0.0.0	0.3.0.2.2.0.0	
+# ::edge	apart	degree	usual	0.3.0.1.1.0	0.3.0.1.1	
+# ::edge	apart	mod	further	0.3.0.1.1.0	0.3.0.1.1.0.0	
+# ::edge	couple	mod	perhaps	0.3.0.2.2.0.1.0.0	0.3.0.2.2.0.1.0	
+# ::edge	great	degree	very	0.3.1.0	0.3.1.0.0	
+# ::edge	just	op1	silence-01	0.3.0.2.2.0.2	0.3.0.2.2.0	
+# ::edge	number	domain	and	0.3.1	0.3	
+# ::edge	number	mod	great	0.3.1	0.3.1.0	
+# ::edge	section	location	market	0.1	0.1.0	
+# ::edge	silence-01	ARG0	it	0.3.0.2.2.0	0.3.0.2.2.0.0	
+# ::edge	silence-01	ARG1	something	0.3.0.2.2.0	0.3.0.2.2	
+# ::edge	something	mod	classy	0.3.0.2.2	0.3.0.2.2.1	
+# ::edge	try-01	ARG0	you	0.3.0	0.3.0.0	
+# ::edge	try-01	ARG1	and	0.3.0	0.3	
+# ::edge	usual	op1	allow-01	0.3.0.1.1	0.3.0.1	
+# ::edge	way	destination	past	0.3.0.2	0.3.0.2.0	
+# ::edge	way	op1	try-01	0.3.0.2	0.3.0	
+# ::edge	way	poss	they	0.3.0.2	0.3.0.2.1	
+# ::edge	way	prep-with	something	0.3.0.2	0.3.0.2.2	
+(a / aim-01 
+      :ARG0 (a3 / agent 
+            :mod (e / estate)) 
+      :ARG2 (s / section 
+            :location (m / market)) 
+      :manner (a2 / apparent) 
+      :op-of (a5 / and 
+            :ARG1-of (t / try-01 
+                  :ARG0 (y / you) 
+                  :ARG1-of (a6 / allow-01 
+                        :ARG0 (s2 / shop) 
+                        :op-of (u / usual 
+                              :degree-of (a7 / apart 
+                                    :mod (f2 / further)))) 
+                  :op-of (w / way 
+                        :destination (p / past) 
+                        :poss (t2 / they) 
+                        :prep-with (s3 / something 
+                              :ARG1-of (s4 / silence-01 
+                                    :ARG0 (i / it 
+                                          :degree-of (a9 / anyway)) 
+                                    :op-of (a8 / and 
+                                          :op1 (p2 / perhaps 
+                                                :mod-of (c2 / couple))) 
+                                    :op-of (j / just)) 
+                              :mod (c / classy)))) 
+            :domain-of (n / number 
+                  :mod (g / great 
+                        :degree (v / very))) 
+            :op1 (b / black) 
+            :op2 (a4 / and 
+                  :op1 (f / firm))))
+
+# ::snt the sacking in the early hours yesterday of more party hardliners appeared not to have affected the determination to press for more change
+# ::tok the sacking in the early hours yesterday of more party hardliners appeared not to have affected the determination to press for more change
+# ::alignments 22-23|0.1.0.0.0 19-20|0.1.0.0 17-18|0.1.0 15-16|0.1 11-12|0 9-10|0.1.0.0.0.0 6-7|0.0 5-6|0.0.0.0+0.0.0 4-5|0.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:51.060
+# ::node	0	appear-01	11-12
+# ::node	0.0	yesterday	6-7
+# ::node	0.0.0	temporal-quantity	5-6
+# ::node	0.0.0.0	hour	5-6
+# ::node	0.0.0.0.0	early	4-5
+# ::node	0.1	affect-01	15-16
+# ::node	0.1.0	determine-01	17-18
+# ::node	0.1.0.0	press	19-20
+# ::node	0.1.0.0.0	change-01	22-23
+# ::node	0.1.0.0.0.0	party	9-10
+# ::root	0	appear-01
+# ::edge	affect-01	ARG1	determine-01	0.1	0.1.0	
+# ::edge	appear-01	ARG1	yesterday	0	0.0	
+# ::edge	appear-01	ARG2	affect-01	0	0.1	
+# ::edge	change-01	ARG0	party	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	determine-01	ARG1	press	0.1.0	0.1.0.0	
+# ::edge	hour	mod	early	0.0.0.0	0.0.0.0.0	
+# ::edge	press	purpose	change-01	0.1.0.0	0.1.0.0.0	
+# ::edge	temporal-quantity	unit	hour	0.0.0	0.0.0.0	
+# ::edge	yesterday	duration	temporal-quantity	0.0	0.0.0	
+(a2 / appear-01 
+      :ARG1 (y / yesterday 
+            :duration (t / temporal-quantity 
+                  :unit (h / hour 
+                        :mod (e / early)))) 
+      :ARG2 (a / affect-01 
+            :ARG1 (d / determine-01 
+                  :ARG1 (p / press 
+                        :purpose (c / change-01 
+                              :ARG0 (p2 / party))))))
+
+# ::snt some of the sacks were known to contain registered post
+# ::tok some of the sacks were known to contain registered post
+# ::alignments 9-10|0.1.0 8-9|0.1.0.0 7-8|0.1 5-6|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:51.103
+# ::node	0	know-01	5-6
+# ::node	0.0	some	0-1
+# ::node	0.1	contain-01	7-8
+# ::node	0.1.0	post	9-10
+# ::node	0.1.0.0	register-02	8-9
+# ::root	0	know-01
+# ::edge	contain-01	ARG1	post	0.1	0.1.0	
+# ::edge	know-01	ARG0	some	0	0.0	
+# ::edge	know-01	ARG1	contain-01	0	0.1	
+# ::edge	register-02	ARG1	post	0.1.0.0	0.1.0	
+(k / know-01 
+      :ARG0 (s / some) 
+      :ARG1 (c / contain-01 
+            :ARG1 (p / post 
+                  :ARG1-of (r / register-02))))
+
+# ::snt mr worsley alleged that mr mackay told miss saunders that he would dump her corpse in a sack on hampstead heath and no one would ever suspect him
+# ::tok mr worsley alleged that mr mackay told miss saunders that he would dump her corpse in a sack on hampstead heath and no one would ever suspect him
+# ::alignments 26-27|0.2 25-26|0.2.1 22-23|0.0.0.0 21-22|0 19-21|0.1.0.0+0.1.0.1+0.1.0+0.1 10-11|0.2.0 6-7|0.0 2-3|0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:51.161
+# ::node	0	and	21-22
+# ::node	0.0	tell-01	6-7
+# ::node	0.0.0	allege-01	2-3
+# ::node	0.0.0.0	-	22-23
+# ::node	0.1	country	19-21
+# ::node	0.1.0	name	19-21
+# ::node	0.1.0.0	"heath"	19-21
+# ::node	0.1.0.1	"hampstead"	19-21
+# ::node	0.2	suspect-01	26-27
+# ::node	0.2.0	he	10-11
+# ::node	0.2.1	ever	25-26
+# ::root	0	and
+# ::edge	allege-01	ARG1	-	0.0.0	0.0.0.0	
+# ::edge	and	op1	country	0	0.1	
+# ::edge	and	op2	suspect-01	0	0.2	
+# ::edge	country	name	name	0.1	0.1.0	
+# ::edge	name	op1	"heath"	0.1.0	0.1.0.0	
+# ::edge	name	op2	"hampstead"	0.1.0	0.1.0.1	
+# ::edge	suspect-01	ARG0	he	0.2	0.2.0	
+# ::edge	suspect-01	time	ever	0.2	0.2.1	
+# ::edge	tell-01	ARG0	allege-01	0.0	0.0.0	
+# ::edge	tell-01	ARG1	and	0.0	0	
+(a / and 
+      :ARG1-of (t / tell-01 
+            :ARG0 (a2 / allege-01 
+                  :ARG1 (- / -))) 
+      :op1 (c / country 
+            :name (n / name 
+                  :op1 "heath" 
+                  :op2 "hampstead")) 
+      :op2 (s / suspect-01 
+            :ARG0 (h / he) 
+            :time (e / ever)))
+
+# ::snt sackings may proliferate elsewhere
+# ::tok sackings may proliferate elsewhere
+# ::alignments 3-4|0 1-2|0.0.0+0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:51.168
+# ::node	0	elsewhere	3-4
+# ::node	0.0	date-entity	1-2
+# ::node	0.0.0	5	1-2
+# ::root	0	elsewhere
+(e / elsewhere 
+      :time-of (d / date-entity 
+            :month 5))
+
+# ::snt it was as though the clouds were not themselves mere vapour but impermeable sagging sacks purposely constructed and hung to contain water
+# ::tok it was as though the clouds were not themselves mere vapour but impermeable sagging sacks purposely constructed and hung to contain water
+# ::alignments 21-22|0.0.2.0.0.0 20-21|0.0.2.0.0 18-19|0.0.2.0 17-18|0.0.2 16-17|0.0 15-16|0.0.2.0.1 11-12|0 9-10|0.0.0 0-1|0.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:51.252
+# ::node	0	contrast-01	11-12
+# ::node	0.0	construct-01	16-17
+# ::node	0.0.0	mere	9-10
+# ::node	0.0.1	it	0-1
+# ::node	0.0.2	and	17-18
+# ::node	0.0.2.0	hang-04	18-19
+# ::node	0.0.2.0.0	contain-01	20-21
+# ::node	0.0.2.0.0.0	water	21-22
+# ::node	0.0.2.0.1	purpose	15-16
+# ::root	0	contrast-01
+# ::edge	and	op1	construct-01	0.0.2	0.0	
+# ::edge	and	op2	hang-04	0.0.2	0.0.2.0	
+# ::edge	construct-01	ARG0	mere	0.0	0.0.0	
+# ::edge	construct-01	ARG1	it	0.0	0.0.1	
+# ::edge	contain-01	ARG1	water	0.0.2.0.0	0.0.2.0.0.0	
+# ::edge	contrast-01	ARG1	construct-01	0	0.0	
+# ::edge	hang-04	ARG1	contain-01	0.0.2.0	0.0.2.0.0	
+# ::edge	hang-04	degree	purpose	0.0.2.0	0.0.2.0.1	
+(c3 / contrast-01 
+      :ARG1 (c2 / construct-01 
+            :ARG0 (m / mere) 
+            :ARG1 (i / it) 
+            :op-of (a / and 
+                  :op1 (h / hang-04 
+                        :ARG1 (c / contain-01 
+                              :ARG1 (w / water)) 
+                        :degree (p / purpose)))))
+
+# ::snt why didnt they wait for the passengers to get off first instead of squeezing themselves their sacks of wheat and bicycles on at the same time that others were dragging their possessions off
+# ::tok why didnt they wait for the passengers to get off first instead of squeezing themselves their sacks of wheat and bicycles on at the same time that others were dragging their possessions off
+# ::alignments 32-33|0.2 31-32|0.1 29-30|0 27-28|0.0 25-26|0.1.0 24-25|0.1.0.0 19-20|0.1.0.0.2 18-19|0.1.0.0.2.0 11-12|0.1.0.0.1.0 9-10|0.1.0.0.0 6-7|0.1.0.0.1.2 3-4|0.1.0.0.1 2-3|0.1.0.0.1.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:51.433
+# ::node	0	drag-01	29-30
+# ::node	0.0	other	27-28
+# ::node	0.1	possession	31-32
+# ::node	0.1.0	time	25-26
+# ::node	0.1.0.0	same-41	24-25
+# ::node	0.1.0.0.0	off	9-10
+# ::node	0.1.0.0.1	wait-01	3-4
+# ::node	0.1.0.0.1.0	instead	11-12
+# ::node	0.1.0.0.1.1	they	2-3
+# ::node	0.1.0.0.1.2	passenger	6-7
+# ::node	0.1.0.0.2	and	19-20
+# ::node	0.1.0.0.2.0	wheat	18-19
+# ::node	0.2	off	32-33
+# ::root	0	drag-01
+# ::edge	and	op1	wheat	0.1.0.0.2	0.1.0.0.2.0	
+# ::edge	and	op2	same-41	0.1.0.0.2	0.1.0.0	
+# ::edge	drag-01	ARG0	other	0	0.0	
+# ::edge	drag-01	ARG1	possession	0	0.1	
+# ::edge	drag-01	ARG2	off	0	0.2	
+# ::edge	possession	poss	time	0.1	0.1.0	
+# ::edge	same-41	ARG0	off	0.1.0.0	0.1.0.0.0	
+# ::edge	same-41	ARG1	time	0.1.0.0	0.1.0	
+# ::edge	same-41	ARG2	wait-01	0.1.0.0	0.1.0.0.1	
+# ::edge	wait-01	ARG0	instead	0.1.0.0.1	0.1.0.0.1.0	
+# ::edge	wait-01	ARG1	they	0.1.0.0.1	0.1.0.0.1.1	
+# ::edge	wait-01	ARG2	passenger	0.1.0.0.1	0.1.0.0.1.2	
+(d / drag-01 
+      :ARG0 (o2 / other) 
+      :ARG1 (p / possession 
+            :poss (t / time 
+                  :ARG1-of (s / same-41 
+                        :ARG0 (o3 / off) 
+                        :ARG2 (w2 / wait-01 
+                              :ARG0 (i / instead) 
+                              :ARG1 (t2 / they) 
+                              :ARG2 (p2 / passenger)) 
+                        :op-of (a / and 
+                              :op1 (w / wheat))))) 
+      :ARG2 (o / off))
+
+# ::snt cavill heugh the australian forward disillusioned at barrow following the sacking of rod reddy has agreed to join leeds when his contract expires next month
+# ::tok cavill heugh the australian forward disillusioned at barrow following the sacking of rod reddy has agreed to join leeds when his contract expires next month
+# ::alignments 24-25|0.0.0.0+0.0.0 23-24|0.0.0.0.0 21-22|0.1 17-18|0.0 15-16|0 5-6|0.0.1 4-5|0.0.1.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:51.485
+# ::node	0	agree-01	15-16
+# ::node	0.0	join-01	17-18
+# ::node	0.0.0	temporal-quantity	24-25
+# ::node	0.0.0.0	month	24-25
+# ::node	0.0.0.0.0	next	23-24
+# ::node	0.0.1	disillusion-01	5-6
+# ::node	0.0.1.0	forward	4-5
+# ::node	0.1	contract-02	21-22
+# ::root	0	agree-01
+# ::edge	agree-01	ARG1	join-01	0	0.0	
+# ::edge	contract-02	ARG1	agree-01	0.1	0	
+# ::edge	disillusion-01	ARG1	join-01	0.0.1	0.0	
+# ::edge	disillusion-01	mod	forward	0.0.1	0.0.1.0	
+# ::edge	join-01	ARG1	temporal-quantity	0.0	0.0.0	
+# ::edge	month	mod	next	0.0.0.0	0.0.0.0.0	
+# ::edge	temporal-quantity	unit	month	0.0.0	0.0.0.0	
+(a / agree-01 
+      :ARG1 (j / join-01 
+            :ARG1 (t / temporal-quantity 
+                  :unit (m / month 
+                        :mod (n / next))) 
+            :ARG1-of (d / disillusion-01 
+                  :mod (f / forward))) 
+      :ARG1-of (c / contract-02))
+
+# ::snt angry crowds were invited to question politicians at open meetings further sackings and resignations were announced even more astonishingly the countrys new leader egon krenz flew to moscow where he embraced both mikhail gorbachev and the policies for which he stands
+# ::tok angry crowds were invited to question politicians at open meetings further sackings and resignations were announced even more astonishingly the countrys new leader egon krenz flew to moscow where he embraced both mikhail gorbachev and the policies for which he stands
+# ::alignments 39-40|0.1.0 36-37|0.1 34-35|0 31-32|0.0.0.0.0.0.0.0.0.0 29-30|0.0 25-26|0.0.0 23-25|0.0.0.0.3.0+0.0.0.0.3.1+0.0.0.0.3+0.0.0.0 22-23|0.0.0.0.1+0.0.0.0.1.0 21-22|0.0.0.0.2 15-16|0.0.0.0.0 12-13|0.0.0.0.0.0 10-11|0.0.0.0.0.0.1 9-10|0.0.0.0.0.0.0.0.0 6-7|0.0.0.0.0.0.0.1 5-6|0.0.0.0.0.0.2 3-4|0.0.0.0.0.0.0 1-2|0.0.0.0.0.0.0.0 0-1|0.0.0.0.0.0.0.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:52.568
+# ::node	0	and	34-35
+# ::node	0.0	he	29-30
+# ::node	0.0.0	fly-01	25-26
+# ::node	0.0.0.0	person	23-25
+# ::node	0.0.0.0.0	announce-01	15-16
+# ::node	0.0.0.0.0.0	and	12-13
+# ::node	0.0.0.0.0.0.0	invite-01	3-4
+# ::node	0.0.0.0.0.0.0.0	crowd	1-2
+# ::node	0.0.0.0.0.0.0.0.0	meet-03	9-10
+# ::node	0.0.0.0.0.0.0.0.0.0	both	31-32
+# ::node	0.0.0.0.0.0.0.0.1	angry	0-1
+# ::node	0.0.0.0.0.0.0.1	politician	6-7
+# ::node	0.0.0.0.0.0.1	further	10-11
+# ::node	0.0.0.0.0.0.2	question-01	5-6
+# ::node	0.0.0.0.1	lead-02	22-23
+# ::node	0.0.0.0.1.0	person	22-23
+# ::node	0.0.0.0.2	new	21-22
+# ::node	0.0.0.0.3	name	23-25
+# ::node	0.0.0.0.3.0	"krenz"	23-25
+# ::node	0.0.0.0.3.1	"egon"	23-25
+# ::node	0.1	policy	36-37
+# ::node	0.1.0	he	39-40
+# ::root	0	and
+# ::edge	and	degree	further	0.0.0.0.0.0	0.0.0.0.0.0.1	
+# ::edge	and	op1	he	0	0.0	
+# ::edge	and	op1	question-01	0.0.0.0.0.0	0.0.0.0.0.0.2	
+# ::edge	and	op2	policy	0	0.1	
+# ::edge	announce-01	ARG0	person	0.0.0.0.0	0.0.0.0	
+# ::edge	announce-01	ARG1	and	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	crowd	mod	angry	0.0.0.0.0.0.0.0	0.0.0.0.0.0.0.0.1	
+# ::edge	fly-01	ARG0	he	0.0.0	0.0	
+# ::edge	fly-01	ARG1	person	0.0.0	0.0.0.0	
+# ::edge	invite-01	ARG0	and	0.0.0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	invite-01	ARG1	crowd	0.0.0.0.0.0.0	0.0.0.0.0.0.0.0	
+# ::edge	invite-01	ARG2	politician	0.0.0.0.0.0.0	0.0.0.0.0.0.0.1	
+# ::edge	lead-02	ARG0	person	0.0.0.0.1	0.0.0.0.1.0	
+# ::edge	lead-02	ARG1	person	0.0.0.0.1	0.0.0.0	
+# ::edge	meet-03	ARG0	crowd	0.0.0.0.0.0.0.0.0	0.0.0.0.0.0.0.0	
+# ::edge	meet-03	ARG1	both	0.0.0.0.0.0.0.0.0	0.0.0.0.0.0.0.0.0.0	
+# ::edge	name	op1	"krenz"	0.0.0.0.3	0.0.0.0.3.0	
+# ::edge	name	op2	"egon"	0.0.0.0.3	0.0.0.0.3.1	
+# ::edge	person	mod	new	0.0.0.0	0.0.0.0.2	
+# ::edge	person	name	name	0.0.0.0	0.0.0.0.3	
+# ::edge	policy	poss	he	0.1	0.1.0	
+(a / and 
+      :op1 (h2 / he 
+            :ARG0-of (f / fly-01 
+                  :ARG1 (p2 / person 
+                        :ARG0-of (a2 / announce-01 
+                              :ARG1 (a3 / and 
+                                    :ARG0-of (i / invite-01 
+                                          :ARG1 (c / crowd 
+                                                :ARG0-of (m / meet-03 
+                                                      :ARG1 (b / both)) 
+                                                :mod (a4 / angry)) 
+                                          :ARG2 (p4 / politician)) 
+                                    :degree (f2 / further) 
+                                    :op1 (q / question-01))) 
+                        :ARG1-of (l / lead-02 
+                              :ARG0 (p3 / person)) 
+                        :mod (n2 / new) 
+                        :name (n / name 
+                              :op1 "krenz" 
+                              :op2 "egon")))) 
+      :op2 (p / policy 
+            :poss (h / he)))
+
+# ::snt they lived in and around the outer fringes of the town near the brothels in huts of tin fruit boxes sacking or stone
+# ::tok they lived in and around the outer fringes of the town near the brothels in huts of tin fruit boxes sacking or stone
+# ::alignments 22-23|0.0.2.1 21-22|0.0.2 19-20|0.0.2.0.1 18-19|0.0.2.0 17-18|0.0.2.0.0 13-14|0.0.2.2.0.0 11-12|0.0.2.2.0 10-11|0.0.2.2 6-7|0.0.1 4-5|0.1 3-4|0 1-2|0.0 0-1|0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:52.687
+# ::node	0	and	3-4
+# ::node	0.0	live-01	1-2
+# ::node	0.0.0	they	0-1
+# ::node	0.0.1	outer	6-7
+# ::node	0.0.2	or	21-22
+# ::node	0.0.2.0	fruit	18-19
+# ::node	0.0.2.0.0	tin	17-18
+# ::node	0.0.2.0.1	box	19-20
+# ::node	0.0.2.1	stone	22-23
+# ::node	0.0.2.2	town	10-11
+# ::node	0.0.2.2.0	near	11-12
+# ::node	0.0.2.2.0.0	brothel	13-14
+# ::node	0.1	around	4-5
+# ::root	0	and
+# ::edge	and	op1	live-01	0	0.0	
+# ::edge	and	op2	around	0	0.1	
+# ::edge	fruit	mod	tin	0.0.2.0	0.0.2.0.0	
+# ::edge	fruit	source	box	0.0.2.0	0.0.2.0.1	
+# ::edge	live-01	ARG0	they	0.0	0.0.0	
+# ::edge	live-01	ARG1	outer	0.0	0.0.1	
+# ::edge	near	op1	brothel	0.0.2.2.0	0.0.2.2.0.0	
+# ::edge	or	op1	live-01	0.0.2	0.0	
+# ::edge	or	op2	fruit	0.0.2	0.0.2.0	
+# ::edge	or	op3	stone	0.0.2	0.0.2.1	
+# ::edge	town	location	near	0.0.2.2	0.0.2.2.0	
+# ::edge	town	topic	or	0.0.2.2	0.0.2	
+(a2 / and 
+      :op1 (l / live-01 
+            :ARG0 (t3 / they) 
+            :ARG1 (o2 / outer) 
+            :op-of (o / or 
+                  :op1 (f / fruit 
+                        :mod (t / tin) 
+                        :source (b / box)) 
+                  :op2 (s / stone) 
+                  :topic-of (t2 / town 
+                        :location (n / near 
+                              :op1 (b2 / brothel))))) 
+      :op2 (a / around))
+
+# ::snt   the return had also been influenced strongly by letters threatening dockers with the sack if they did not go back
+# ::tok the return had also been influenced strongly by letters threatening dockers with the sack if they did not go back
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:52.688
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.lang.AssertionError: assertion failed
+# 	at scala.Predef$.assert(Predef.scala:165)
+# 	at edu.cmu.lti.nlp.amr.Annotation$$anonfun$makeLeftRight$1.apply$mcVI$sp(Annotation.scala:70)
+# 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+# 	at edu.cmu.lti.nlp.amr.Annotation.makeLeftRight(Annotation.scala:51)
+# 	at edu.cmu.lti.nlp.amr.Annotation.<init>(Annotation.scala:89)
+# 	at edu.cmu.lti.nlp.amr.Input.<init>(Input.scala:19)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply$mcV$sp(AMRParser.scala:200)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.time(AMRParser.scala:78)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:192)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:192)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# ::snt other clauses demand freedom for political prisoners and medical treatment for wounded guerrillas as well as the sacking of seven top military officers including the chief of staff colonel rene ponce and the airforce chief general rafael bustillo
+# ::tok other clauses demand freedom for political prisoners and medical treatment for wounded guerrillas as well as the sacking of seven top military officers including the chief of staff colonel rene ponce and the airforce chief general rafael bustillo
+# ::alignments 35-36|0.0.0.0.1.2 34-35|0.0.0.0.1.1+0.0.0.0.1 31-32|0 28-29|0.0.0.0.0.1+0.0.0.0.0 27-28|0.0.0.0.3+0.0.0.0 25-26|0.0+0.0.0 22-23|0.0.0.0.1.0.0.0+0.0.0.0.1.0.0 21-22|0.0.0.0.1.0 20-21|0.0.0.0.1.0.1 19-20|0.0.0.0.2.0.0.2.0.0 14-15|0.0.0.0.2.0.0.0 12-13|0.0.0.0.2.0 11-12|0.0.0.0.2 9-10|0.0.0.0.2.0.0 8-9|0.0.0.0.2.0.0.1 7-8|0.0.0.0.2.0.0.2 5-6|0.0.0.0.0.0 3-4|0.0.0.0.2.0.0.2.0 2-3|0.0.0.0.2.0.0.2.0.1 1-2|0.0.0.0.2.0.0.2.0.1.0 0-1|0.0.0.0.2.0.0.2.0.1.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:53.361
+# ::node	0	and	31-32
+# ::node	0.0	chief	25-26
+# ::node	0.0.0	have-org-role-91	25-26
+# ::node	0.0.0.0	person	27-28
+# ::node	0.0.0.0.0	have-org-role-91	28-29
+# ::node	0.0.0.0.0.0	politics	5-6
+# ::node	0.0.0.0.0.1	colonel	28-29
+# ::node	0.0.0.0.1	have-org-role-91	34-35
+# ::node	0.0.0.0.1.0	military	21-22
+# ::node	0.0.0.0.1.0.0	have-org-role-91	22-23
+# ::node	0.0.0.0.1.0.0.0	officer	22-23
+# ::node	0.0.0.0.1.0.1	top	20-21
+# ::node	0.0.0.0.1.1	chief	34-35
+# ::node	0.0.0.0.1.2	general	35-36
+# ::node	0.0.0.0.2	wound-01	11-12
+# ::node	0.0.0.0.2.0	guerrilla	12-13
+# ::node	0.0.0.0.2.0.0	treat-03	9-10
+# ::node	0.0.0.0.2.0.0.0	well	14-15
+# ::node	0.0.0.0.2.0.0.1	medicine	8-9
+# ::node	0.0.0.0.2.0.0.2	and	7-8
+# ::node	0.0.0.0.2.0.0.2.0	free-41	3-4
+# ::node	0.0.0.0.2.0.0.2.0.0	7	19-20
+# ::node	0.0.0.0.2.0.0.2.0.1	demand-01	2-3
+# ::node	0.0.0.0.2.0.0.2.0.1.0	clause	1-2
+# ::node	0.0.0.0.2.0.0.2.0.1.0.0	other	0-1
+# ::node	0.0.0.0.3	staff-01	27-28
+# ::root	0	and
+(a / and 
+      :poss-of (c3 / chief 
+            :ARG2-of (h3 / have-org-role-91 
+                  :ARG0 (p / person 
+                        :ARG0-of (h2 / have-org-role-91 
+                              :ARG1 (p2 / politics) 
+                              :ARG2 (c2 / colonel)) 
+                        :ARG0-of (h / have-org-role-91 
+                              :ARG1 (m / military 
+                                    :ARG1-of (h4 / have-org-role-91 
+                                          :ARG2 (o / officer)) 
+                                    :mod (t / top)) 
+                              :ARG2 (c / chief) 
+                              :time (g / general)) 
+                        :ARG1-of (w2 / wound-01 
+                              :mod-of (g2 / guerrilla 
+                                    :ARG0-of (t2 / treat-03 
+                                          :ARG1 (w / well) 
+                                          :ARG3 (m2 / medicine) 
+                                          :op-of (a2 / and 
+                                                :op1 (f / free-41 
+                                                      :ARG0 7 
+                                                      :ARG1-of (d / demand-01 
+                                                            :ARG0 (c4 / clause 
+                                                                  :mod (o2 / other)))))))) 
+                        :ARG2-of (s / staff-01)))))
+
+# ::snt there are things biodegrading up there in black sacks whose labels if they ever had them have disintegrated
+# ::tok there are things biodegrading up there in black sacks whose labels if they ever had them have disintegrated
+# ::alignments 17-18|0 13-14|0.1.2 12-13|0.0 10-11|0.1 7-8|0.1.1 2-3|0.1.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:53.415
+# ::node	0	disintegrate-01	17-18
+# ::node	0.0	they	12-13
+# ::node	0.1	label-01	10-11
+# ::node	0.1.0	thing	2-3
+# ::node	0.1.1	black	7-8
+# ::node	0.1.2	ever	13-14
+# ::root	0	disintegrate-01
+# ::edge	disintegrate-01	ARG0	they	0	0.0	
+# ::edge	disintegrate-01	ARG1	label-01	0	0.1	
+# ::edge	label-01	ARG0	thing	0.1	0.1.0	
+# ::edge	label-01	ARG1	black	0.1	0.1.1	
+# ::edge	label-01	location	ever	0.1	0.1.2	
+(d / disintegrate-01 
+      :ARG0 (t / they) 
+      :ARG1 (l / label-01 
+            :ARG0 (t2 / thing) 
+            :ARG1 (b / black) 
+            :location (e / ever)))
+
+# ::snt the newspaper gave no reason for the sacking and a union official said it was a normal personnel change
+# ::tok the newspaper gave no reason for the sacking and a union official said it was a normal personnel change
+# ::alignments 18-19|0.1 17-18|0.1.0 16-17|0.1.2 13-14|0.1.1 12-13|0 11-12|0.2.1+0.2 10-11|0.2.0 8-9|0.0.0 4-5|0.0 3-4|0.0.1 1-2|0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:53.663
+# ::node	0	say-01	12-13
+# ::node	0.0	reason	4-5
+# ::node	0.0.0	and	8-9
+# ::node	0.0.0.0	newspaper	1-2
+# ::node	0.0.1	-	3-4
+# ::node	0.1	change-01	18-19
+# ::node	0.1.0	personnel	17-18
+# ::node	0.1.1	it	13-14
+# ::node	0.1.2	normal	16-17
+# ::node	0.2	have-org-role-91	11-12
+# ::node	0.2.0	union	10-11
+# ::node	0.2.1	official	11-12
+# ::root	0	say-01
+# ::edge	and	op1	newspaper	0.0.0	0.0.0.0	
+# ::edge	and	op2	reason	0.0.0	0.0	
+# ::edge	change-01	ARG1	personnel	0.1	0.1.0	
+# ::edge	change-01	domain	it	0.1	0.1.1	
+# ::edge	change-01	mod	normal	0.1	0.1.2	
+# ::edge	have-org-role-91	ARG1	union	0.2	0.2.0	
+# ::edge	have-org-role-91	ARG2	official	0.2	0.2.1	
+# ::edge	reason	polarity	-	0.0	0.0.1	
+# ::edge	say-01	ARG0	reason	0	0.0	
+# ::edge	say-01	ARG1	change-01	0	0.1	
+# ::edge	say-01	time	have-org-role-91	0	0.2	
+(s / say-01 
+      :ARG0 (r / reason 
+            :op-of (a / and 
+                  :op1 (n2 / newspaper)) 
+            :polarity (- / -)) 
+      :ARG1 (c / change-01 
+            :ARG1 (p / personnel) 
+            :domain (i / it) 
+            :mod (n / normal)) 
+      :time (h / have-org-role-91 
+            :ARG1 (u / union) 
+            :ARG2 (o / official)))
+
+# ::snt the meal queue winds its way around the upper deck between trunks sacks of salt and dozing traders
+# ::tok the meal queue winds its way around the upper deck between trunks sacks of salt and dozing traders
+# ::alignments 15-16|0 14-15|0.1 10-11|0.0.1 8-9|0.0.2.0.0 6-7|0.0.0 5-6|0.0 3-4|0.0.2 1-2|0.0.2.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:53.705
+# ::node	0	and	15-16
+# ::node	0.0	way	5-6
+# ::node	0.0.0	around	6-7
+# ::node	0.0.1	between	10-11
+# ::node	0.0.2	wind	3-4
+# ::node	0.0.2.0	meal	1-2
+# ::node	0.0.2.0.0	upper	8-9
+# ::node	0.1	salt	14-15
+# ::root	0	and
+# ::edge	and	op1	salt	0	0.1	
+# ::edge	meal	mod	upper	0.0.2.0	0.0.2.0.0	
+# ::edge	way	domain	and	0.0	0	
+# ::edge	way	location	around	0.0	0.0.0	
+# ::edge	way	location	between	0.0	0.0.1	
+# ::edge	wind	mod	meal	0.0.2	0.0.2.0	
+# ::edge	wind	name	way	0.0.2	0.0	
+(a / and 
+      :domain-of (w / way 
+            :location (a2 / around) 
+            :location (b / between) 
+            :name-of (w2 / wind 
+                  :mod (m / meal 
+                        :mod (u / upper)))) 
+      :op1 (s / salt))
+
+# ::snt woodstock brownies and under fives association joined dr roberts and ten town councillors to fill a plentiful supplu of green sacks
+# ::tok woodstock brownies and under fives association joined dr roberts and ten town councillors to fill a plentiful supplu of green sacks
+# ::alignments 19-20|0 14-15|0.0.0.2 11-12|0.0.0.2.0 9-10|0.0.0.0 6-7|0.0.0 5-6|0.0 2-3|0.0.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:53.771
+# ::node	0	green	19-20
+# ::node	0.0	associate-01	5-6
+# ::node	0.0.0	join-01	6-7
+# ::node	0.0.0.0	and	9-10
+# ::node	0.0.0.1	and	2-3
+# ::node	0.0.0.2	fill-02	14-15
+# ::node	0.0.0.2.0	town	11-12
+# ::root	0	green
+(g / green 
+      :ARG1-of (a2 / associate-01 
+            :ARG0-of (j / join-01 
+                  :ARG1 (a / and) 
+                  :op-of (a3 / and) 
+                  :purpose (f / fill-02 
+                        :ARG0 (t / town)))))
+
+# ::snt she was struggling up bent under a heavy sack
+# ::tok she was struggling up bent under a heavy sack
+# ::alignments 7-8|0.0.0 2-3|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:53.780
+# ::node	0	struggle-02	2-3
+# ::node	0.0	she	0-1
+# ::node	0.0.0	heavy	7-8
+# ::root	0	struggle-02
+# ::edge	heavy	domain	she	0.0.0	0.0	
+# ::edge	struggle-02	ARG0	she	0	0.0	
+(s / struggle-02 
+      :ARG0 (s2 / she 
+            :domain-of (h / heavy)))
+
+# ::snt   and in the meadow a team of boy scouts walked in line up and down picking up the last of the litter and dropping it straight into paper sacks
+# ::tok and in the meadow a team of boy scouts walked in line up and down picking up the last of the litter and dropping it straight into paper sacks
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:53.780
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.lang.AssertionError: assertion failed
+# 	at scala.Predef$.assert(Predef.scala:165)
+# 	at edu.cmu.lti.nlp.amr.Annotation$$anonfun$makeLeftRight$1.apply$mcVI$sp(Annotation.scala:70)
+# 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+# 	at edu.cmu.lti.nlp.amr.Annotation.makeLeftRight(Annotation.scala:51)
+# 	at edu.cmu.lti.nlp.amr.Annotation.<init>(Annotation.scala:89)
+# 	at edu.cmu.lti.nlp.amr.Input.<init>(Input.scala:19)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply$mcV$sp(AMRParser.scala:200)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.time(AMRParser.scala:78)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:192)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:192)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# ::snt journalists at argumenty i fakty said yesterday they would go on strike if their editor vladislav starkov under renewed threat of the sack was not reinstated by next week writes mary ellen barton
+# ::tok journalists at argumenty i fakty said yesterday they would go on strike if their editor vladislav starkov under renewed threat of the sack was not reinstated by next week writes mary ellen barton
+# ::alignments 29-30|0.0.0.1 28-29|0.0.0.1.0 27-28|0.0.0.1.0.0 19-20|0.0.0.0.0 18-19|0.0.0.0 14-15|0.0.0.2 11-12|0.0.0 7-8|0.0 6-7|0.3 5-6|0 2-5|0.2.0.0+0.2.0.1+0.2.0.2+0.2.0+0.2 0-1|0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:54.150
+# ::node	0	say-01	5-6
+# ::node	0.0	they	7-8
+# ::node	0.0.0	strike-01	11-12
+# ::node	0.0.0.0	renew-01	18-19
+# ::node	0.0.0.0.0	threaten-01	19-20
+# ::node	0.0.0.1	write-01	29-30
+# ::node	0.0.0.1.0	week	28-29
+# ::node	0.0.0.1.0.0	next	27-28
+# ::node	0.0.0.2	editor	14-15
+# ::node	0.1	journalist	0-1
+# ::node	0.2	organization	2-5
+# ::node	0.2.0	name	2-5
+# ::node	0.2.0.0	"fakty"	2-5
+# ::node	0.2.0.1	"i"	2-5
+# ::node	0.2.0.2	"argumenty"	2-5
+# ::node	0.3	yesterday	6-7
+# ::root	0	say-01
+# ::edge	name	op1	"fakty"	0.2.0	0.2.0.0	
+# ::edge	name	op2	"i"	0.2.0	0.2.0.1	
+# ::edge	name	op3	"argumenty"	0.2.0	0.2.0.2	
+# ::edge	organization	name	name	0.2	0.2.0	
+# ::edge	renew-01	ARG1	threaten-01	0.0.0.0	0.0.0.0.0	
+# ::edge	say-01	ARG0	they	0	0.0	
+# ::edge	say-01	ARG1	journalist	0	0.1	
+# ::edge	say-01	manner	organization	0	0.2	
+# ::edge	say-01	time	yesterday	0	0.3	
+# ::edge	strike-01	ARG0	they	0.0.0	0.0	
+# ::edge	strike-01	ARG1	renew-01	0.0.0	0.0.0.0	
+# ::edge	strike-01	ARG2	editor	0.0.0	0.0.0.2	
+# ::edge	week	mod	next	0.0.0.1.0	0.0.0.1.0.0	
+# ::edge	write-01	ARG0	week	0.0.0.1	0.0.0.1.0	
+# ::edge	write-01	ARG1	strike-01	0.0.0.1	0.0.0	
+(s2 / say-01 
+      :ARG0 (t2 / they 
+            :ARG0-of (s / strike-01 
+                  :ARG1 (r / renew-01 
+                        :ARG1 (t / threaten-01)) 
+                  :ARG1-of (w / write-01 
+                        :ARG0 (w2 / week 
+                              :mod (n / next))) 
+                  :ARG2 (e / editor))) 
+      :ARG1 (j / journalist) 
+      :manner (o / organization 
+            :name (n2 / name 
+                  :op1 "fakty" 
+                  :op2 "i" 
+                  :op3 "argumenty")) 
+      :time (y / yesterday))
+
+# ::snt   actually it turned out to be disappointingly little a burst sack or so and one of the steps of the ladder broken away at one side
+# ::tok actually it turned out to be disappointingly little a burst sack or so and one of the steps of the ladder broken away at one side
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:54.150
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.lang.AssertionError: assertion failed
+# 	at scala.Predef$.assert(Predef.scala:165)
+# 	at edu.cmu.lti.nlp.amr.Annotation$$anonfun$makeLeftRight$1.apply$mcVI$sp(Annotation.scala:70)
+# 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+# 	at edu.cmu.lti.nlp.amr.Annotation.makeLeftRight(Annotation.scala:51)
+# 	at edu.cmu.lti.nlp.amr.Annotation.<init>(Annotation.scala:89)
+# 	at edu.cmu.lti.nlp.amr.Input.<init>(Input.scala:19)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply$mcV$sp(AMRParser.scala:200)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.time(AMRParser.scala:78)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:192)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:192)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# ::snt john deehan who lost his coaching job at manchester city after the sacking of mel machin will be his assistant
+# ::tok john deehan who lost his coaching job at manchester city after the sacking of mel machin will be his assistant
+# ::alignments 19-20|0.1.0 10-11|0.2 9-10|0.1 8-9|0.1.1.0.0+0.1.1.0+0.1.1 6-7|0.0 3-4|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:54.183
+# ::node	0	lose-02	3-4
+# ::node	0.0	job	6-7
+# ::node	0.1	city	9-10
+# ::node	0.1.0	assist-01	19-20
+# ::node	0.1.1	city	8-9
+# ::node	0.1.1.0	name	8-9
+# ::node	0.1.1.0.0	"Manchester"	8-9
+# ::node	0.2	after	10-11
+# ::root	0	lose-02
+# ::edge	assist-01	ARG1	city	0.1.0	0.1	
+# ::edge	city	location	city	0.1	0.1.1	
+# ::edge	city	name	name	0.1.1	0.1.1.0	
+# ::edge	lose-02	ARG1	job	0	0.0	
+# ::edge	lose-02	location	city	0	0.1	
+# ::edge	lose-02	time	after	0	0.2	
+# ::edge	name	op1	"Manchester"	0.1.1.0	0.1.1.0.0	
+(l / lose-02 
+      :ARG1 (j / job) 
+      :location (c / city 
+            :ARG1-of (a / assist-01) 
+            :location (c2 / city 
+                  :name (n / name 
+                        :op1 "Manchester"))) 
+      :time (a2 / after))
+
+# ::snt lorry drivers have been threatened with instant sacking if they dont go through
+# ::tok lorry drivers have been threatened with instant sacking if they dont go through
+# ::alignments 9-10|0.2 6-7|0.0 4-5|0 1-2|0.1.0+0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:54.238
+# ::node	0	threaten-01	4-5
+# ::node	0.0	instant	6-7
+# ::node	0.1	person	1-2
+# ::node	0.1.0	drive-01	1-2
+# ::node	0.2	they	9-10
+# ::root	0	threaten-01
+# ::edge	drive-01	ARG0	person	0.1.0	0.1	
+# ::edge	threaten-01	ARG0	instant	0	0.0	
+# ::edge	threaten-01	ARG1	person	0	0.1	
+# ::edge	threaten-01	ARG2	they	0	0.2	
+(t2 / threaten-01 
+      :ARG0 (i / instant) 
+      :ARG1 (p / person 
+            :ARG0-of (d / drive-01)) 
+      :ARG2 (t / they))
+
+# ::snt a judge has drawn parallels with nazi germany in considering an appeal against the sacking of university lecturers against the background of tory education policy
+# ::tok a judge has drawn parallels with nazi germany in considering an appeal against the sacking of university lecturers against the background of tory education policy
+# ::alignments 24-25|0.0.0.1 23-24|0.0.0 22-23|0.0.0.1.0.0.0+0.0.0.1.0.0+0.0.0.1.0 20-21|0.0.0.1.1 16-17|0.1.0.0 11-12|0.1.0 9-10|0.1 6-7|0.0.0.0 4-5|0 1-2|0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:54.345
+# ::node	0	parallel-01	4-5
+# ::node	0.0	judge-01	1-2
+# ::node	0.0.0	educate-01	23-24
+# ::node	0.0.0.0	nazi	6-7
+# ::node	0.0.0.1	policy	24-25
+# ::node	0.0.0.1.0	political-party	22-23
+# ::node	0.0.0.1.0.0	name	22-23
+# ::node	0.0.0.1.0.0.0	"Tory"	22-23
+# ::node	0.0.0.1.1	background	20-21
+# ::node	0.1	consider-02	9-10
+# ::node	0.1.0	appeal-02	11-12
+# ::node	0.1.0.0	university	16-17
+# ::root	0	parallel-01
+# ::edge	appeal-02	ARG1	university	0.1.0	0.1.0.0	
+# ::edge	background	poss	policy	0.0.0.1.1	0.0.0.1	
+# ::edge	consider-02	ARG1	appeal-02	0.1	0.1.0	
+# ::edge	educate-01	ARG0	nazi	0.0.0	0.0.0.0	
+# ::edge	educate-01	ARG2	judge-01	0.0.0	0.0	
+# ::edge	name	op1	"Tory"	0.0.0.1.0.0	0.0.0.1.0.0.0	
+# ::edge	parallel-01	ARG1	judge-01	0	0.0	
+# ::edge	parallel-01	ARG3	consider-02	0	0.1	
+# ::edge	policy	mod	political-party	0.0.0.1	0.0.0.1.0	
+# ::edge	policy	topic	educate-01	0.0.0.1	0.0.0	
+# ::edge	political-party	name	name	0.0.0.1.0	0.0.0.1.0.0	
+(p3 / parallel-01 
+      :ARG1 (j / judge-01 
+            :ARG2-of (e / educate-01 
+                  :ARG0 (n2 / nazi) 
+                  :topic-of (p / policy 
+                        :mod (p2 / political-party 
+                              :name (n / name 
+                                    :op1 "Tory")) 
+                        :poss-of (b / background)))) 
+      :ARG3 (c / consider-02 
+            :ARG1 (a / appeal-02 
+                  :ARG1 (u / university))))
+
+# ::snt mel machin on his sacking by manchester city
+# ::tok mel machin on his sacking by manchester city
+# ::alignments 7-8|0 6-7|0.0.0.0+0.0.0+0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:54.354
+# ::node	0	city	7-8
+# ::node	0.0	city	6-7
+# ::node	0.0.0	name	6-7
+# ::node	0.0.0.0	"Manchester"	6-7
+# ::root	0	city
+# ::edge	city	location	city	0	0.0	
+# ::edge	city	name	name	0.0	0.0.0	
+# ::edge	name	op1	"Manchester"	0.0.0	0.0.0.0	
+(c / city 
+      :location (c2 / city 
+            :name (n / name 
+                  :op1 "Manchester")))
+
+# ::snt when mr smith arrived he told demonstrators that he condemned the sacking of the nuj members and called for their reinstatement
+# ::tok when mr smith arrived he told demonstrators that he condemned the sacking of the nuj members and called for their reinstatement
+# ::alignments 20-21|0 16-17|0.0.1 15-16|0.0.0.0.0+0.0.0.0 9-10|0.0 8-9|0.0.0 6-7|0.0.1.0.2.0+0.0.1.0.2 5-6|0.0.1.0 4-5|0.0.1.0.0 3-4|0.0.1.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:54.599
+# ::node	0	reinstate-01	20-21
+# ::node	0.0	condemn-01	9-10
+# ::node	0.0.0	he	8-9
+# ::node	0.0.0.0	have-org-role-91	15-16
+# ::node	0.0.0.0.0	member	15-16
+# ::node	0.0.1	and	16-17
+# ::node	0.0.1.0	tell-01	5-6
+# ::node	0.0.1.0.0	he	4-5
+# ::node	0.0.1.0.1	arrive-01	3-4
+# ::node	0.0.1.0.2	person	6-7
+# ::node	0.0.1.0.2.0	demonstrate-01	6-7
+# ::root	0	reinstate-01
+(r / reinstate-01 
+      :ARG1-of (c / condemn-01 
+            :ARG0 (h2 / he 
+                  :ARG0-of (h / have-org-role-91 
+                        :ARG2 (m / member))) 
+            :op-of (a / and 
+                  :ARG1-of (t / tell-01 
+                        :ARG0 (h3 / he) 
+                        :ARG1-of (a2 / arrive-01) 
+                        :ARG2 (p / person 
+                              :ARG0-of (d / demonstrate-01))))))
+
+# ::snt from somewhere out of sight there now sounded an incident or accident involving a stepladder a large dustbin and a pile of sacks of oatmeal
+# ::tok from somewhere out of sight there now sounded an incident or accident involving a stepladder a large dustbin and a pile of sacks of oatmeal
+# ::alignments 20-21|0.0.1 18-19|0.0 16-17|0.1.0.0 12-13|0.1.0 11-12|0.1.2 10-11|0.1 9-10|0.1.1 7-8|0 6-7|0.3 4-5|0.0.0 1-2|0.2 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:54.848
+# ::node	0	sound-01	7-8
+# ::node	0.0	and	18-19
+# ::node	0.0.0	sight-01	4-5
+# ::node	0.0.1	pile	20-21
+# ::node	0.1	or	10-11
+# ::node	0.1.0	involve-01	12-13
+# ::node	0.1.0.0	large	16-17
+# ::node	0.1.1	incident	9-10
+# ::node	0.1.2	accident	11-12
+# ::node	0.2	somewhere	1-2
+# ::node	0.3	now	6-7
+# ::root	0	sound-01
+# ::edge	and	op1	pile	0.0	0.0.1	
+# ::edge	involve-01	ARG0	or	0.1.0	0.1	
+# ::edge	involve-01	ARG1	large	0.1.0	0.1.0.0	
+# ::edge	or	op1	incident	0.1	0.1.1	
+# ::edge	or	op2	accident	0.1	0.1.2	
+# ::edge	sight-01	ARG0	and	0.0.0	0.0	
+# ::edge	sound-01	ARG0	and	0	0.0	
+# ::edge	sound-01	ARG1	or	0	0.1	
+# ::edge	sound-01	location	somewhere	0	0.2	
+# ::edge	sound-01	time	now	0	0.3	
+(s / sound-01 
+      :ARG0 (a / and 
+            :ARG0-of (s2 / sight-01) 
+            :op1 (p / pile)) 
+      :ARG1 (o / or 
+            :ARG0-of (i / involve-01 
+                  :ARG1 (l / large)) 
+            :op1 (i2 / incident) 
+            :op2 (a2 / accident)) 
+      :location (s3 / somewhere) 
+      :time (n / now))
+
+# ::snt what have you got in your sack jeffrey called agatha
+# ::tok what have you got in your sack jeffrey called agatha
+# ::alignments 2-3|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:54.854
+# ::node	0	you	2-3
+# ::root	0	you
+(y / you)
+
+# ::snt reading the third division side offering 60000 a year to fill the seat vacated by ian branfoots sacking yesterday announced that they were sifting through 40 serious applications from the 200 received
+# ::tok reading the third division side offering 60000 a year to fill the seat vacated by ian branfoots sacking yesterday announced that they were sifting through 40 serious applications from the 200 received
+# ::alignments 31-32|0.1.0.0.0 30-31|0.0 27-28|0.1.0.0 26-27|0.1.0.0.2 25-26|0.1.0.1.0.0.0 21-22|0.1.0.0.1.0 19-20|0.1.0.0.1 18-19|0.1.0.0.1.1 13-14|0 12-13|0.1 10-11|0.1.0 8-9|0.1.0.1.1 6-7|0.1.0.0.0.0 5-6|0.1.0.1 4-5|0.1.0.1.0 3-4|0.1.0.1.0.1 0-1|0.1.0.1.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:55.315
+# ::node	0	vacate-01	13-14
+# ::node	0.0	200	30-31
+# ::node	0.1	seat	12-13
+# ::node	0.1.0	fill-02	10-11
+# ::node	0.1.0.0	application	27-28
+# ::node	0.1.0.0.0	receive-01	31-32
+# ::node	0.1.0.0.0.0	60000	6-7
+# ::node	0.1.0.0.1	announce-01	19-20
+# ::node	0.1.0.0.1.0	they	21-22
+# ::node	0.1.0.0.1.1	yesterday	18-19
+# ::node	0.1.0.0.2	serious	26-27
+# ::node	0.1.0.1	offer-01	5-6
+# ::node	0.1.0.1.0	side	4-5
+# ::node	0.1.0.1.0.0	read-01	0-1
+# ::node	0.1.0.1.0.0.0	40	25-26
+# ::node	0.1.0.1.0.1	division	3-4
+# ::node	0.1.0.1.1	year	8-9
+# ::root	0	vacate-01
+# ::edge	announce-01	ARG0	they	0.1.0.0.1	0.1.0.0.1.0	
+# ::edge	announce-01	ARG1	application	0.1.0.0.1	0.1.0.0	
+# ::edge	announce-01	time	yesterday	0.1.0.0.1	0.1.0.0.1.1	
+# ::edge	application	mod	serious	0.1.0.0	0.1.0.0.2	
+# ::edge	fill-02	ARG0	application	0.1.0	0.1.0.0	
+# ::edge	fill-02	ARG1	seat	0.1.0	0.1	
+# ::edge	offer-01	ARG0	side	0.1.0.1	0.1.0.1.0	
+# ::edge	offer-01	ARG1	fill-02	0.1.0.1	0.1.0	
+# ::edge	offer-01	time	year	0.1.0.1	0.1.0.1.1	
+# ::edge	read-01	ARG0	40	0.1.0.1.0.0	0.1.0.1.0.0.0	
+# ::edge	read-01	ARG1	side	0.1.0.1.0.0	0.1.0.1.0	
+# ::edge	receive-01	ARG0	60000	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	receive-01	ARG1	application	0.1.0.0.0	0.1.0.0	
+# ::edge	side	mod	division	0.1.0.1.0	0.1.0.1.0.1	
+# ::edge	vacate-01	ARG0	200	0	0.0	
+# ::edge	vacate-01	ARG1	seat	0	0.1	
+(v / vacate-01 
+      :ARG0 200 
+      :ARG1 (s2 / seat 
+            :ARG1-of (f / fill-02 
+                  :ARG0 (a / application 
+                        :ARG1-of (r / receive-01 
+                              :ARG0 60000) 
+                        :ARG1-of (a2 / announce-01 
+                              :ARG0 (t / they) 
+                              :time (y / yesterday)) 
+                        :mod (s / serious)) 
+                  :ARG1-of (o / offer-01 
+                        :ARG0 (s3 / side 
+                              :ARG1-of (r2 / read-01 
+                                    :ARG0 40) 
+                              :mod (d / division)) 
+                        :time (y2 / year)))))
+
+# ::snt i hope somewhere down the line ill have the opportunity of carrying the sack again for him
+# ::tok i hope somewhere down the line ill have the opportunity of carrying the sack again for him
+# ::alignments 14-15|0.1 11-12|0 9-10|0.2 6-7|0.0.0 5-6|0.0 3-4|0.0.0.0 2-3|0.0.0.0.1 1-2|0.0.0.0.0 0-1|0.0.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:55.387
+# ::node	0	carry-01	11-12
+# ::node	0.0	line	5-6
+# ::node	0.0.0	ill-41	6-7
+# ::node	0.0.0.0	down	3-4
+# ::node	0.0.0.0.0	hope-01	1-2
+# ::node	0.0.0.0.0.0	i	0-1
+# ::node	0.0.0.0.1	somewhere	2-3
+# ::node	0.1	again	14-15
+# ::node	0.2	opportunity	9-10
+# ::root	0	carry-01
+# ::edge	carry-01	ARG0	line	0	0.0	
+# ::edge	carry-01	mod	again	0	0.1	
+# ::edge	down	degree	somewhere	0.0.0.0	0.0.0.0.1	
+# ::edge	hope-01	ARG0	i	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	hope-01	ARG2	down	0.0.0.0.0	0.0.0.0	
+# ::edge	ill-41	ARG0	down	0.0.0	0.0.0.0	
+# ::edge	ill-41	ARG1	line	0.0.0	0.0	
+# ::edge	opportunity	purpose	carry-01	0.2	0	
+(c / carry-01 
+      :ARG0 (l / line 
+            :ARG1-of (i / ill-41 
+                  :ARG0 (d / down 
+                        :ARG2-of (h / hope-01 
+                              :ARG0 (i2 / i)) 
+                        :degree (s / somewhere)))) 
+      :mod (a / again) 
+      :purpose-of (o / opportunity))
+
+# ::snt as a commonwealth prime minister bavadra quite reasonably thought he could discuss his sacking with queen elizabeth i of fiji
+# ::tok as a commonwealth prime minister bavadra quite reasonably thought he could discuss his sacking with queen elizabeth i of fiji
+# ::alignments 17-18|0.0 11-12|0.1 10-11|0.1.1 9-10|0.1.0 8-9|0 7-8|0.1.0.0.0 6-7|0.1.0.0.0.0 4-5|0.1.0.0.1+0.1.0.0 3-4|0.1.0.0.1.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:55.785
+# ::node	0	think-01	8-9
+# ::node	0.0	i	17-18
+# ::node	0.1	discuss-01	11-12
+# ::node	0.1.0	he	9-10
+# ::node	0.1.0.0	have-org-role-91	4-5
+# ::node	0.1.0.0.0	reasonable	7-8
+# ::node	0.1.0.0.0.0	quite	6-7
+# ::node	0.1.0.0.1	minister	4-5
+# ::node	0.1.0.0.1.0	prime	3-4
+# ::node	0.1.1	possible	10-11
+# ::root	0	think-01
+# ::edge	discuss-01	ARG0	he	0.1	0.1.0	
+# ::edge	have-org-role-91	ARG0	he	0.1.0.0	0.1.0	
+# ::edge	have-org-role-91	ARG1	reasonable	0.1.0.0	0.1.0.0.0	
+# ::edge	have-org-role-91	ARG2	minister	0.1.0.0	0.1.0.0.1	
+# ::edge	minister	mod	prime	0.1.0.0.1	0.1.0.0.1.0	
+# ::edge	possible	domain	discuss-01	0.1.1	0.1	
+# ::edge	reasonable	degree	quite	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	think-01	ARG0	i	0	0.0	
+# ::edge	think-01	ARG1	discuss-01	0	0.1	
+(t / think-01 
+      :ARG0 (i / i) 
+      :ARG1 (d / discuss-01 
+            :ARG0 (h / he 
+                  :ARG0-of (h2 / have-org-role-91 
+                        :ARG1 (r / reasonable 
+                              :degree (q / quite)) 
+                        :ARG2 (m / minister 
+                              :mod (p2 / prime)))) 
+            :domain-of (p / possible)))
+
+# ::snt for an autobiography which purports to tell us the real story behind the sacking of george davies from the next empire which he founded what next is on the naive side
+# ::tok for an autobiography which purports to tell us the real story behind the sacking of george davies from the next empire which he founded what next is on the naive side
+# ::alignments 30-31|0.2.0.0 29-30|0.2.0 25-26|0.0.0.1 23-24|0.0.0 22-23|0.0 20-21|0.0.0.0 19-20|0.0.0.0.0 11-12|0.1.0 10-11|0.1 9-10|0.1.1 6-7|0 4-5|0.2 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:56.039
+# ::node	0	tell-01	6-7
+# ::node	0.0	he	22-23
+# ::node	0.0.0	found-01	23-24
+# ::node	0.0.0.0	empire	20-21
+# ::node	0.0.0.0.0	next	19-20
+# ::node	0.0.0.1	next	25-26
+# ::node	0.1	story	10-11
+# ::node	0.1.0	behind	11-12
+# ::node	0.1.1	real	9-10
+# ::node	0.2	purport-01	4-5
+# ::node	0.2.0	naive	29-30
+# ::node	0.2.0.0	side	30-31
+# ::root	0	tell-01
+# ::edge	empire	mod	next	0.0.0.0	0.0.0.0.0	
+# ::edge	found-01	ARG0	he	0.0.0	0.0	
+# ::edge	found-01	ARG1	empire	0.0.0	0.0.0.0	
+# ::edge	found-01	ARG2	next	0.0.0	0.0.0.1	
+# ::edge	purport-01	ARG0	naive	0.2	0.2.0	
+# ::edge	purport-01	ARG1	tell-01	0.2	0	
+# ::edge	side	mod	naive	0.2.0.0	0.2.0	
+# ::edge	story	location	behind	0.1	0.1.0	
+# ::edge	story	mod	real	0.1	0.1.1	
+# ::edge	tell-01	ARG0	he	0	0.0	
+# ::edge	tell-01	ARG1	story	0	0.1	
+(t / tell-01 
+      :ARG0 (h / he 
+            :ARG0-of (f / found-01 
+                  :ARG1 (e / empire 
+                        :mod (n3 / next)) 
+                  :ARG2 (n2 / next))) 
+      :ARG1 (s2 / story 
+            :location (b / behind) 
+            :mod (r / real)) 
+      :ARG1-of (p / purport-01 
+            :ARG0 (n / naive 
+                  :mod-of (s / side))))
+
+# ::snt when she drives me so fucking crazy id like to tie her up in a sack and drop her over hammersmith bridge
+# ::tok when she drives me so fucking crazy id like to tie her up in a sack and drop her over hammersmith bridge
+# ::alignments 21-22|0.0 17-18|0 16-17|0.1 10-11|0.1.1 7-8|0.1.1.0.1 6-7|0.1.0 5-6|0.1.1.0 4-5|0.1.1.0.0 2-3|0.1.0.0 1-2|0.1.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:56.178
+# ::node	0	drop-01	17-18
+# ::node	0.0	bridge	21-22
+# ::node	0.1	and	16-17
+# ::node	0.1.0	crazy	6-7
+# ::node	0.1.0.0	drive-02	2-3
+# ::node	0.1.0.0.0	she	1-2
+# ::node	0.1.1	tie	10-11
+# ::node	0.1.1.0	fucking	5-6
+# ::node	0.1.1.0.0	so	4-5
+# ::node	0.1.1.0.1	id	7-8
+# ::root	0	drop-01
+# ::edge	and	op1	tie	0.1	0.1.1	
+# ::edge	and	op2	drop-01	0.1	0	
+# ::edge	crazy	domain	and	0.1.0	0.1	
+# ::edge	drive-02	ARG0	she	0.1.0.0	0.1.0.0.0	
+# ::edge	drive-02	ARG1	crazy	0.1.0.0	0.1.0	
+# ::edge	drop-01	ARG1	bridge	0	0.0	
+# ::edge	fucking	degree	so	0.1.1.0	0.1.1.0.0	
+# ::edge	fucking	purpose	tie	0.1.1.0	0.1.1	
+# ::edge	id	mod	fucking	0.1.1.0.1	0.1.1.0	
+(d / drop-01 
+      :ARG1 (b / bridge) 
+      :op-of (a / and 
+            :domain-of (c / crazy 
+                  :ARG1-of (d2 / drive-02 
+                        :ARG0 (s2 / she))) 
+            :op1 (t / tie 
+                  :purpose-of (f / fucking 
+                        :degree (s / so) 
+                        :mod-of (i / id)))))
+
+# ::snt despite our light packs the porters who are carrying at least 15kg and inevitably on their heads whether carefullypacked rucksacks wooden boxes or sacks of bedding have soon overtaken us and disappeared from view
+# ::tok despite our light packs the porters who are carrying at least 15kg and inevitably on their heads whether carefullypacked rucksacks wooden boxes or sacks of bedding have soon overtaken us and disappeared from view
+# ::alignments 31-32|0.0.0.0.1 30-31|0.0.0.0 27-28|0.0.0.0.0 25-26|0.0.0.0.1.1.0 22-23|0.0.0.0.1.1 21-22|0.0.0.0.1.0 20-21|0.0.0.0.1.0.0 13-14|0 12-13|0.0 8-9|0.0.0 2-3|0.0.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:56.431
+# ::node	0	inevitable	13-14
+# ::node	0.0	and	12-13
+# ::node	0.0.0	carry-01	8-9
+# ::node	0.0.0.0	and	30-31
+# ::node	0.0.0.0.0	soon	27-28
+# ::node	0.0.0.0.1	disappear-01	31-32
+# ::node	0.0.0.0.1.0	box	21-22
+# ::node	0.0.0.0.1.0.0	wood	20-21
+# ::node	0.0.0.0.1.1	or	22-23
+# ::node	0.0.0.0.1.1.0	bedding	25-26
+# ::node	0.0.0.1	light	2-3
+# ::root	0	inevitable
+(i / inevitable 
+      :op-of (a2 / and 
+            :ARG0-of (c / carry-01 
+                  :ARG1 (a / and 
+                        :mod (s / soon) 
+                        :op1 (d / disappear-01 
+                              :ARG0 (b2 / box 
+                                    :mod (w / wood)) 
+                              :op-of (o / or 
+                                    :purpose (b / bedding)))) 
+                  :ARG2 (l / light))))
+
+# ::snt orderly demonstration was legitimate protest against disgraceful sacking of 23 nuj members at pergamon press
+# ::tok orderly demonstration was legitimate protest against disgraceful sacking of 23 nuj members at pergamon press
+# ::alignments 14-15|0.0.0 11-12|0.0.0.0.0+0.0.0.0 9-10|0.0.2 6-7|0.1 4-5|0.0 3-4|0.0.1 1-2|0 0-1|0.2 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:56.494
+# ::node	0	demonstrate-01	1-2
+# ::node	0.0	protest-01	4-5
+# ::node	0.0.0	press	14-15
+# ::node	0.0.0.0	have-org-role-91	11-12
+# ::node	0.0.0.0.0	member	11-12
+# ::node	0.0.1	legitimate	3-4
+# ::node	0.0.2	23	9-10
+# ::node	0.1	disgrace-01	6-7
+# ::node	0.2	order	0-1
+# ::root	0	demonstrate-01
+# ::edge	demonstrate-01	manner	order	0	0.2	
+# ::edge	disgrace-01	ARG1	demonstrate-01	0.1	0	
+# ::edge	have-org-role-91	ARG1	press	0.0.0.0	0.0.0	
+# ::edge	have-org-role-91	ARG2	member	0.0.0.0	0.0.0.0.0	
+# ::edge	protest-01	ARG0	demonstrate-01	0.0	0	
+# ::edge	protest-01	ARG1	press	0.0	0.0.0	
+# ::edge	protest-01	mod	legitimate	0.0	0.0.1	
+# ::edge	protest-01	time	23	0.0	0.0.2	
+(d2 / demonstrate-01 
+      :ARG0-of (p2 / protest-01 
+            :ARG1 (p / press 
+                  :ARG1-of (h / have-org-role-91 
+                        :ARG2 (m / member))) 
+            :mod (l / legitimate) 
+            :time 23) 
+      :ARG1-of (d / disgrace-01) 
+      :manner (o / order))
+
+# ::snt relegation and the sacking of ball dash
+# ::tok relegation and the sacking of ball dash
+# ::alignments 5-6|0.0 1-2|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:56.500
+# ::node	0	and	1-2
+# ::node	0.0	ball	5-6
+# ::root	0	and
+# ::edge	and	poss	ball	0	0.0	
+(a / and 
+      :poss (b / ball))
+
+# ::snt because there was neither carriage nor honeymoon harry was saved the pother of providing sacks of rosepetal confetti
+# ::tok because there was neither carriage nor honeymoon harry was saved the pother of providing sacks of rosepetal confetti
+# ::alignments 13-14|0.0.0 9-10|0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:56.517
+# ::node	0	cause-01	0-1
+# ::node	0.0	save-02	9-10
+# ::node	0.0.0	provide-01	13-14
+# ::root	0	cause-01
+# ::edge	cause-01	ARG1	save-02	0	0.0	
+# ::edge	save-02	ARG1	provide-01	0.0	0.0.0	
+(c / cause-01 
+      :ARG1 (s / save-02 
+            :ARG1 (p / provide-01)))
+
+# ::snt had forty quid to throw away on a bit of sacking
+# ::tok had forty quid to throw away on a bit of sacking
+# ::alignments 8-9|0.0.0 5-6|0.0.1 4-5|0.0 2-3|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:56.533
+# ::node	0	quid	2-3
+# ::node	0.0	throw-01	4-5
+# ::node	0.0.0	bit	8-9
+# ::node	0.0.1	away	5-6
+# ::root	0	quid
+(q / quid 
+      :ARG1-of (t / throw-01 
+            :ARG2 (b / bit) 
+            :direction (a / away)))
+
+# ::snt  where i had been lithe and supple with a dancers legs and quick movements i became slow and plodding as a sack of potatoes being dragged along the street
+# ::tok where i had been lithe and supple with a dancers legs and quick movements i became slow and plodding as a sack of potatoes being dragged along the street
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:56.534
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.lang.AssertionError: assertion failed
+# 	at scala.Predef$.assert(Predef.scala:165)
+# 	at edu.cmu.lti.nlp.amr.Annotation$$anonfun$makeLeftRight$1.apply$mcVI$sp(Annotation.scala:70)
+# 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+# 	at edu.cmu.lti.nlp.amr.Annotation.makeLeftRight(Annotation.scala:51)
+# 	at edu.cmu.lti.nlp.amr.Annotation.<init>(Annotation.scala:89)
+# 	at edu.cmu.lti.nlp.amr.Input.<init>(Input.scala:19)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply$mcV$sp(AMRParser.scala:200)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.time(AMRParser.scala:78)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:192)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:192)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# ::snt a few doors away i watched for half an hour through a film of sunlit flour motes as a small soft mass of dough was miraculously spun and flung out to cover sixfoot squares of sacking by two whirling wizened old men
+# ::tok a few doors away i watched for half an hour through a film of sunlit flour motes as a small soft mass of dough was miraculously spun and flung out to cover sixfoot squares of sacking by two whirling wizened old men
+# ::alignments 41-42|0.3 40-41|0.3.0 37-38|0.3.1 27-28|0 25-26|0.1 21-22|0.0 20-21|0.0.0 19-20|0.0.1 15-16|0.2.1.1 12-13|0.2.2 9-10|0.2.1.2+0.2.1 7-8|0.2.1.0 5-6|0.2 4-5|0.2.0 3-4|0.2.0.0 2-3|0.2.0.0.0 1-2|0.2.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:56.883
+# ::node	0	and	27-28
+# ::node	0.0	mass	21-22
+# ::node	0.0.0	soft	20-21
+# ::node	0.0.1	small	19-20
+# ::node	0.1	miraculous	25-26
+# ::node	0.2	watch-01	5-6
+# ::node	0.2.0	i	4-5
+# ::node	0.2.0.0	away	3-4
+# ::node	0.2.0.0.0	door	2-3
+# ::node	0.2.0.0.0.0	few	1-2
+# ::node	0.2.1	temporal-quantity	9-10
+# ::node	0.2.1.0	half	7-8
+# ::node	0.2.1.1	flour	15-16
+# ::node	0.2.1.2	hour	9-10
+# ::node	0.2.2	film	12-13
+# ::node	0.3	man	41-42
+# ::node	0.3.0	old	40-41
+# ::node	0.3.1	2	37-38
+# ::root	0	and
+# ::edge	and	frequency	miraculous	0	0.1	
+# ::edge	and	op1	watch-01	0	0.2	
+# ::edge	and	op2	man	0	0.3	
+# ::edge	away	op1	i	0.2.0.0	0.2.0	
+# ::edge	door	direction	away	0.2.0.0.0	0.2.0.0	
+# ::edge	door	quant	few	0.2.0.0.0	0.2.0.0.0.0	
+# ::edge	man	mod	old	0.3	0.3.0	
+# ::edge	man	quant	2	0.3	0.3.1	
+# ::edge	mass	domain	and	0.0	0	
+# ::edge	mass	mod	small	0.0	0.0.1	
+# ::edge	mass	mod	soft	0.0	0.0.0	
+# ::edge	temporal-quantity	mod	half	0.2.1	0.2.1.0	
+# ::edge	temporal-quantity	topic	flour	0.2.1	0.2.1.1	
+# ::edge	temporal-quantity	unit	hour	0.2.1	0.2.1.2	
+# ::edge	watch-01	ARG0	i	0.2	0.2.0	
+# ::edge	watch-01	ARG3	temporal-quantity	0.2	0.2.1	
+# ::edge	watch-01	prep-in	film	0.2	0.2.2	
+(a / and 
+      :domain-of (m3 / mass 
+            :mod (s / soft) 
+            :mod (s2 / small)) 
+      :frequency (m2 / miraculous) 
+      :op1 (w / watch-01 
+            :ARG0 (i / i 
+                  :op-of (a2 / away 
+                        :direction-of (d / door 
+                              :quant (f3 / few)))) 
+            :ARG3 (t / temporal-quantity 
+                  :mod (h2 / half) 
+                  :topic (f / flour) 
+                  :unit (h / hour)) 
+            :prep-in (f2 / film)) 
+      :op2 (m / man 
+            :mod (o / old) 
+            :quant 2))
+
+# ::snt the district council are also appealing to residents to make sure that refuse for collection is placed in dustbins with well fitting lids or in properly secured sacks
+# ::tok the district council are also appealing to residents to make sure that refuse for collection is placed in dustbins with well fitting lids or in properly secured sacks
+# ::alignments 26-27|0.1.0.1.2 25-26|0.1.0.1.2.0 23-24|0.1.0.1.1 20-21|0.1.1 16-17|0.1 14-15|0.0 12-13|0 7-8|0.1.0.0+0.1.0 5-6|0.1.0.1 4-5|0.1.0.1.3 2-3|0.1.0.1.0 1-2|0.1.0.1.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:56.972
+# ::node	0	refuse-01	12-13
+# ::node	0.0	collect-01	14-15
+# ::node	0.1	place-01	16-17
+# ::node	0.1.0	person	7-8
+# ::node	0.1.0.0	reside-01	7-8
+# ::node	0.1.0.1	appeal-03	5-6
+# ::node	0.1.0.1.0	council	2-3
+# ::node	0.1.0.1.0.0	district	1-2
+# ::node	0.1.0.1.1	or	23-24
+# ::node	0.1.0.1.2	secure-01	26-27
+# ::node	0.1.0.1.2.0	proper	25-26
+# ::node	0.1.0.1.3	also	4-5
+# ::node	0.1.1	well	20-21
+# ::root	0	refuse-01
+# ::edge	appeal-03	ARG0	council	0.1.0.1	0.1.0.1.0	
+# ::edge	appeal-03	ARG1	or	0.1.0.1	0.1.0.1.1	
+# ::edge	appeal-03	ARG2	person	0.1.0.1	0.1.0	
+# ::edge	appeal-03	mod	also	0.1.0.1	0.1.0.1.3	
+# ::edge	council	mod	district	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	place-01	ARG0	person	0.1	0.1.0	
+# ::edge	place-01	ARG1	refuse-01	0.1	0	
+# ::edge	place-01	time	well	0.1	0.1.1	
+# ::edge	refuse-01	ARG1	collect-01	0	0.0	
+# ::edge	reside-01	ARG0	person	0.1.0.0	0.1.0	
+# ::edge	secure-01	ARG1	appeal-03	0.1.0.1.2	0.1.0.1	
+# ::edge	secure-01	manner	proper	0.1.0.1.2	0.1.0.1.2.0	
+(r / refuse-01 
+      :ARG1 (c / collect-01) 
+      :ARG1-of (p2 / place-01 
+            :ARG0 (p3 / person 
+                  :ARG0-of (r2 / reside-01) 
+                  :ARG2-of (a / appeal-03 
+                        :ARG0 (c2 / council 
+                              :mod (d / district)) 
+                        :ARG1 (o / or) 
+                        :ARG1-of (s / secure-01 
+                              :manner (p / proper)) 
+                        :mod (a2 / also))) 
+            :time (w / well)))
+
+# ::snt the suit she was wearing was the colour and texture of sacking a foreignlooking suit somehow with those buttoned pockets but the ticket collector was willing to bet it hadnt cost a penny less than forty guineas
+# ::tok the suit she was wearing was the colour and texture of sacking a foreignlooking suit somehow with those buttoned pockets but the ticket collector was willing to bet it hadnt cost a penny less than forty guineas
+# ::alignments 33-34|0.0.0 30-31|0.0.1.0.0 28-29|0.0.1.0 27-28|0.0.1 25-26|0.0 22-23|0.1.0.1.0 20-21|0 19-20|0.1.1.0.0 15-16|0.1.1.0.1 14-15|0.1.1.0 9-10|0.1.2 8-9|0.1 7-8|0.1.1 4-5|0.1.0 2-3|0.1.0.0 1-2|0.1.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:57.405
+# ::node	0	contrast-01	20-21
+# ::node	0.0	will-02	25-26
+# ::node	0.0.0	less	33-34
+# ::node	0.0.1	bet-01	27-28
+# ::node	0.0.1.0	it	28-29
+# ::node	0.0.1.0.0	cost-01	30-31
+# ::node	0.1	and	8-9
+# ::node	0.1.0	wear-01	4-5
+# ::node	0.1.0.0	she	2-3
+# ::node	0.1.0.1	suit-01	1-2
+# ::node	0.1.0.1.0	ticket	22-23
+# ::node	0.1.1	colour	7-8
+# ::node	0.1.1.0	suit-01	14-15
+# ::node	0.1.1.0.0	pocket	19-20
+# ::node	0.1.1.0.1	somehow	15-16
+# ::node	0.1.2	texture	9-10
+# ::root	0	contrast-01
+# ::edge	and	op1	wear-01	0.1	0.1.0	
+# ::edge	and	op2	colour	0.1	0.1.1	
+# ::edge	and	op3	texture	0.1	0.1.2	
+# ::edge	bet-01	ARG0	it	0.0.1	0.0.1.0	
+# ::edge	contrast-01	ARG1	will-02	0	0.0	
+# ::edge	contrast-01	ARG2	and	0	0.1	
+# ::edge	cost-01	ARG0	it	0.0.1.0.0	0.0.1.0	
+# ::edge	suit-01	ARG0	colour	0.1.1.0	0.1.1	
+# ::edge	suit-01	ARG1	pocket	0.1.1.0	0.1.1.0.0	
+# ::edge	suit-01	ARG1	ticket	0.1.0.1	0.1.0.1.0	
+# ::edge	suit-01	direction	somehow	0.1.1.0	0.1.1.0.1	
+# ::edge	wear-01	ARG0	she	0.1.0	0.1.0.0	
+# ::edge	wear-01	ARG1	suit-01	0.1.0	0.1.0.1	
+# ::edge	will-02	ARG0	less	0.0	0.0.0	
+# ::edge	will-02	ARG1	bet-01	0.0	0.0.1	
+(c2 / contrast-01 
+      :ARG1 (w / will-02 
+            :ARG0 (l / less) 
+            :ARG1 (b / bet-01 
+                  :ARG0 (i / it 
+                        :ARG0-of (c / cost-01)))) 
+      :ARG2 (a / and 
+            :op1 (w2 / wear-01 
+                  :ARG0 (s3 / she) 
+                  :ARG1 (s4 / suit-01 
+                        :ARG1 (t / ticket))) 
+            :op2 (c3 / colour 
+                  :ARG0-of (s2 / suit-01 
+                        :ARG1 (p / pocket) 
+                        :direction (s / somehow))) 
+            :op3 (t2 / texture)))
+
+# ::snt a small window on to the yard offered sufficient light for him to make out the cheese and butter and sacks of sugar and rice
+# ::tok a small window on to the yard offered sufficient light for him to make out the cheese and butter and sacks of sugar and rice
+# ::alignments 24-25|0.1 23-24|0 22-23|0.0 19-20|0.1.0 18-19|0.1.0.1.0 17-18|0.1.0.1 9-10|0.1.0.0.1 8-9|0.1.0.0.1.0 7-8|0.1.0.0 6-7|0.1.0.0.1.0.0 2-3|0.1.0.0.0 1-2|0.1.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:57.590
+# ::node	0	and	23-24
+# ::node	0.0	sugar-cane	22-23
+# ::node	0.1	rice	24-25
+# ::node	0.1.0	and	19-20
+# ::node	0.1.0.0	offer-01	7-8
+# ::node	0.1.0.0.0	window	2-3
+# ::node	0.1.0.0.0.0	small	1-2
+# ::node	0.1.0.0.1	light	9-10
+# ::node	0.1.0.0.1.0	suffice-01	8-9
+# ::node	0.1.0.0.1.0.0	yard	6-7
+# ::node	0.1.0.1	and	17-18
+# ::node	0.1.0.1.0	butter	18-19
+# ::root	0	and
+# ::edge	and	op1	butter	0.1.0.1	0.1.0.1.0	
+# ::edge	and	op1	rice	0.1.0	0.1	
+# ::edge	and	op1	sugar-cane	0	0.0	
+# ::edge	and	op2	and	0.1.0.1	0.1.0	
+# ::edge	and	op2	rice	0	0.1	
+# ::edge	offer-01	ARG0	window	0.1.0.0	0.1.0.0.0	
+# ::edge	offer-01	ARG1	light	0.1.0.0	0.1.0.0.1	
+# ::edge	offer-01	ARG3	and	0.1.0.0	0.1.0	
+# ::edge	suffice-01	ARG0	light	0.1.0.0.1.0	0.1.0.0.1	
+# ::edge	suffice-01	ARG1	yard	0.1.0.0.1.0	0.1.0.0.1.0.0	
+# ::edge	window	mod	small	0.1.0.0.0	0.1.0.0.0.0	
+(a / and 
+      :op1 (s / sugar-cane) 
+      :op2 (r / rice 
+            :op-of (a2 / and 
+                  :ARG3-of (o / offer-01 
+                        :ARG0 (w / window 
+                              :mod (s3 / small)) 
+                        :ARG1 (l / light 
+                              :ARG0-of (s2 / suffice-01 
+                                    :ARG1 (y / yard)))) 
+                  :op-of (a3 / and 
+                        :op1 (b / butter)))))
+
+# ::snt ju di or due the sack according to scouse critics
+# ::tok ju di or due the sack according to scouse critics
+# ::alignments 9-10|0.0 2-3|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:57.597
+# ::node	0	or	2-3
+# ::node	0.0	critic	9-10
+# ::root	0	or
+# ::edge	or	mod	critic	0	0.0	
+(o / or 
+      :mod (c / critic))
+
+# ::snt hammam wimbledons owner had assured him that reports of his imminent sacking were completely without foundation
+# ::tok hammam wimbledons owner had assured him that reports of his imminent sacking were completely without foundation
+# ::alignments 15-16|0.1.0 13-14|0.1.1 10-11|0.0.0.0 7-8|0.1 4-5|0 2-3|0.0.0+0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:57.650
+# ::node	0	assure-01	4-5
+# ::node	0.0	person	2-3
+# ::node	0.0.0	own-01	2-3
+# ::node	0.0.0.0	imminent	10-11
+# ::node	0.1	report-01	7-8
+# ::node	0.1.0	foundation	15-16
+# ::node	0.1.1	complete	13-14
+# ::root	0	assure-01
+# ::edge	assure-01	ARG0	person	0	0.0	
+# ::edge	assure-01	ARG2	report-01	0	0.1	
+# ::edge	own-01	ARG0	person	0.0.0	0.0	
+# ::edge	own-01	ARG1	imminent	0.0.0	0.0.0.0	
+# ::edge	report-01	ARG1	foundation	0.1	0.1.0	
+# ::edge	report-01	manner	complete	0.1	0.1.1	
+(a / assure-01 
+      :ARG0 (p / person 
+            :ARG0-of (o / own-01 
+                  :ARG1 (i / imminent))) 
+      :ARG2 (r / report-01 
+            :ARG1 (f / foundation) 
+            :manner (c / complete)))
+
+# ::snt as the problem will continue with the great autumnputtingtobed and the great springtidyup and all the cutting back in between a store of large sacks is essential
+# ::tok as the problem will continue with the great autumnputtingtobed and the great springtidyup and all the cutting back in between a store of large sacks is essential
+# ::alignments 26-27|0.1.0 23-24|0.1.2 21-22|0.2.1 19-20|0.2 17-18|0.2.0 14-15|0.3 13-14|0 11-12|0.1.1.0 9-10|0.0 7-8|0.0.0 4-5|0.1 2-3|0.1.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:57.764
+# ::node	0	and	13-14
+# ::node	0.0	and	9-10
+# ::node	0.0.0	great	7-8
+# ::node	0.1	continue-01	4-5
+# ::node	0.1.0	essential	26-27
+# ::node	0.1.1	problem	2-3
+# ::node	0.1.1.0	great	11-12
+# ::node	0.1.2	large	23-24
+# ::node	0.2	between	19-20
+# ::node	0.2.0	back	17-18
+# ::node	0.2.1	store	21-22
+# ::node	0.3	all	14-15
+# ::root	0	and
+# ::edge	and	location	and	0.0	0	
+# ::edge	and	mod	great	0.0	0.0.0	
+# ::edge	and	op1	continue-01	0	0.1	
+# ::edge	and	op2	between	0	0.2	
+# ::edge	and	quant	all	0	0.3	
+# ::edge	back	compared-to	between	0.2.0	0.2	
+# ::edge	between	op1	store	0.2	0.2.1	
+# ::edge	continue-01	ARG0	essential	0.1	0.1.0	
+# ::edge	continue-01	ARG1	problem	0.1	0.1.1	
+# ::edge	large	op1	continue-01	0.1.2	0.1	
+# ::edge	problem	mod	great	0.1.1	0.1.1.0	
+(a2 / and 
+      :location-of (a3 / and 
+            :mod (g2 / great)) 
+      :op1 (c / continue-01 
+            :ARG0 (e / essential) 
+            :ARG1 (p / problem 
+                  :mod (g / great)) 
+            :op-of (l / large)) 
+      :op2 (b / between 
+            :compared-to-of (b2 / back) 
+            :op1 (s / store)) 
+      :quant (a / all))
+
+# ::snt cavill heugh the australian forward disillusioned at barrow by the sacking of rod reddy will join leeds when his contract with the cumbrians runs out next month
+# ::tok cavill heugh the australian forward disillusioned at barrow by the sacking of rod reddy will join leeds when his contract with the cumbrians runs out next month
+# ::alignments 26-27|0.0.0.0.0+0.0.0.0 25-26|0.0.0.0.0.0 19-20|0.0 15-16|0 5-6|0.0.0 4-5|0.0.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:57.813
+# ::node	0	join-01	15-16
+# ::node	0.0	contract-02	19-20
+# ::node	0.0.0	disillusion-01	5-6
+# ::node	0.0.0.0	temporal-quantity	26-27
+# ::node	0.0.0.0.0	month	26-27
+# ::node	0.0.0.0.0.0	next	25-26
+# ::node	0.0.0.1	forward	4-5
+# ::root	0	join-01
+# ::edge	contract-02	ARG1	disillusion-01	0.0	0.0.0	
+# ::edge	disillusion-01	ARG0	temporal-quantity	0.0.0	0.0.0.0	
+# ::edge	disillusion-01	mod	forward	0.0.0	0.0.0.1	
+# ::edge	join-01	ARG1	contract-02	0	0.0	
+# ::edge	month	mod	next	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	temporal-quantity	unit	month	0.0.0.0	0.0.0.0.0	
+(j / join-01 
+      :ARG1 (c / contract-02 
+            :ARG1 (d / disillusion-01 
+                  :ARG0 (t / temporal-quantity 
+                        :unit (m / month 
+                              :mod (n / next))) 
+                  :mod (f / forward))))
+
+# ::snt they may be stored in bins or sacks loose on the floor or in silos
+# ::tok they may be stored in bins or sacks loose on the floor or in silos
+# ::alignments 12-13|0.0 11-12|0.0.1 8-9|0.0.0 6-7|0.2 3-4|0 1-2|0.3.0+0.3 0-1|0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:57.841
+# ::node	0	store-01	3-4
+# ::node	0.0	or	12-13
+# ::node	0.0.0	loose-01	8-9
+# ::node	0.0.1	floor	11-12
+# ::node	0.1	they	0-1
+# ::node	0.2	or	6-7
+# ::node	0.3	date-entity	1-2
+# ::node	0.3.0	5	1-2
+# ::root	0	store-01
+# ::edge	date-entity	domain	store-01	0.3	0	
+# ::edge	date-entity	month	5	0.3	0.3.0	
+# ::edge	loose-01	ARG0	or	0.0.0	0.0	
+# ::edge	or	op1	floor	0.0	0.0.1	
+# ::edge	store-01	ARG0	or	0	0.0	
+# ::edge	store-01	ARG1	they	0	0.1	
+# ::edge	store-01	ARG2	or	0	0.2	
+(s / store-01 
+      :ARG0 (o / or 
+            :ARG0-of (l / loose-01) 
+            :op1 (f / floor)) 
+      :ARG1 (t / they) 
+      :ARG2 (o2 / or) 
+      :domain-of (d / date-entity 
+            :month 5))
+
+# ::snt he said ah si il cane and heaved across the counter a bloody sack
+# ::tok he said ah si il cane and heaved across the counter a bloody sack
+# ::alignments 12-13|0.3.0.0.0 10-11|0.3.0.0 8-9|0.3.0 6-7|0.3 5-6|0.1 2-3|0.2 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:57.946
+# ::node	0	say-01	1-2
+# ::node	0.0	he	0-1
+# ::node	0.1	cane	5-6
+# ::node	0.2	ah	2-3
+# ::node	0.3	and	6-7
+# ::node	0.3.0	across	8-9
+# ::node	0.3.0.0	counter-01	10-11
+# ::node	0.3.0.0.0	bloody	12-13
+# ::root	0	say-01
+# ::edge	across	op1	counter-01	0.3.0	0.3.0.0	
+# ::edge	and	location	across	0.3	0.3.0	
+# ::edge	and	op1	say-01	0.3	0	
+# ::edge	counter-01	ARG0	bloody	0.3.0.0	0.3.0.0.0	
+# ::edge	say-01	ARG0	he	0	0.0	
+# ::edge	say-01	ARG1	cane	0	0.1	
+# ::edge	say-01	ARG2	ah	0	0.2	
+(s / say-01 
+      :ARG0 (h / he) 
+      :ARG1 (c2 / cane) 
+      :ARG2 (a3 / ah) 
+      :op-of (a2 / and 
+            :location (a / across 
+                  :op1 (c / counter-01 
+                        :ARG0 (b / bloody)))))
+
+# ::snt it was quite empty except for some old rotting sacks and boxes
+# ::tok it was quite empty except for some old rotting sacks and boxes
+# ::alignments 11-12|0.0.0.0 10-11|0.0.0 7-8|0.2 6-7|0.0 4-5|0 3-4|0.1 2-3|0.1.0 0-1|0.1.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:58.033
+# ::node	0	except-00	4-5
+# ::node	0.0	some	6-7
+# ::node	0.0.0	and	10-11
+# ::node	0.0.0.0	box	11-12
+# ::node	0.1	empty	3-4
+# ::node	0.1.0	quite	2-3
+# ::node	0.1.1	it	0-1
+# ::node	0.2	old	7-8
+# ::root	0	except-00
+# ::edge	and	op1	box	0.0.0	0.0.0.0	
+# ::edge	and	quant	some	0.0.0	0.0	
+# ::edge	empty	degree	quite	0.1	0.1.0	
+# ::edge	empty	domain	it	0.1	0.1.1	
+# ::edge	except-00	ARG0	some	0	0.0	
+# ::edge	except-00	ARG1	empty	0	0.1	
+# ::edge	except-00	ARG2	old	0	0.2	
+(e / except-00 
+      :ARG0 (s / some 
+            :quant-of (a / and 
+                  :op1 (b / box))) 
+      :ARG1 (e2 / empty 
+            :degree (q / quite) 
+            :domain (i / it)) 
+      :ARG2 (o / old))
+
+# ::snt it must be all those years of flinging sacks of potatoes about
+# ::tok it must be all those years of flinging sacks of potatoes about
+# ::alignments 10-11|0 5-6|0.0.0+0.0.0.0 3-4|0.0.0.0.0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:58.048
+# ::node	0	potatoe	10-11
+# ::node	0.0	it	0-1
+# ::node	0.0.0	year	5-6
+# ::node	0.0.0.0	temporal-quantity	5-6
+# ::node	0.0.0.0.0	all	3-4
+# ::root	0	potatoe
+(p / potatoe 
+      :poss-of (i / it 
+            :domain-of (y / year 
+                  :unit-of (t / temporal-quantity 
+                        :quant (a / all)))))
+
+# ::snt members of the association of university teachers have decided not to boycott this weeks degree ceremony in protest at the sackings
+# ::tok members of the association of university teachers have decided not to boycott this weeks degree ceremony in protest at the sackings
+# ::alignments 17-18|0.1.0.3 15-16|0.1.0 14-15|0.1.0.1 13-14|0.1.0.0.0+0.1.0.0 12-13|0.1.0.2 11-12|0.1 8-9|0 6-7|0.0.0+0.0 3-6|0.0.1.0.0.0+0.0.1.0.0.1+0.0.1.0.0.2+0.0.1.0.0+0.0.1.0 0-1|0.0.1.1+0.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:58.248
+# ::node	0	decide-01	8-9
+# ::node	0.0	person	6-7
+# ::node	0.0.0	teach-01	6-7
+# ::node	0.0.1	have-org-role-91	0-1
+# ::node	0.0.1.0	organization	3-6
+# ::node	0.0.1.0.0	name	3-6
+# ::node	0.0.1.0.0.0	"university"	3-6
+# ::node	0.0.1.0.0.1	"of"	3-6
+# ::node	0.0.1.0.0.2	"association"	3-6
+# ::node	0.0.1.1	member	0-1
+# ::node	0.1	boycott-01	11-12
+# ::node	0.1.0	ceremony	15-16
+# ::node	0.1.0.0	temporal-quantity	13-14
+# ::node	0.1.0.0.0	week	13-14
+# ::node	0.1.0.1	degree	14-15
+# ::node	0.1.0.2	this	12-13
+# ::node	0.1.0.3	protest-01	17-18
+# ::root	0	decide-01
+# ::edge	boycott-01	ARG1	ceremony	0.1	0.1.0	
+# ::edge	ceremony	duration	temporal-quantity	0.1.0	0.1.0.0	
+# ::edge	ceremony	mod	degree	0.1.0	0.1.0.1	
+# ::edge	ceremony	mod	this	0.1.0	0.1.0.2	
+# ::edge	ceremony	purpose	protest-01	0.1.0	0.1.0.3	
+# ::edge	decide-01	ARG0	person	0	0.0	
+# ::edge	decide-01	ARG1	boycott-01	0	0.1	
+# ::edge	have-org-role-91	ARG0	person	0.0.1	0.0	
+# ::edge	have-org-role-91	ARG1	organization	0.0.1	0.0.1.0	
+# ::edge	have-org-role-91	ARG2	member	0.0.1	0.0.1.1	
+# ::edge	name	op1	"university"	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	name	op2	"of"	0.0.1.0.0	0.0.1.0.0.1	
+# ::edge	name	op3	"association"	0.0.1.0.0	0.0.1.0.0.2	
+# ::edge	organization	name	name	0.0.1.0	0.0.1.0.0	
+# ::edge	teach-01	ARG0	person	0.0.0	0.0	
+# ::edge	temporal-quantity	unit	week	0.1.0.0	0.1.0.0.0	
+(d2 / decide-01 
+      :ARG0 (p2 / person 
+            :ARG0-of (t3 / teach-01) 
+            :ARG0-of (h / have-org-role-91 
+                  :ARG1 (o / organization 
+                        :name (n / name 
+                              :op1 "university" 
+                              :op2 "of" 
+                              :op3 "association")) 
+                  :ARG2 (m / member))) 
+      :ARG1 (b / boycott-01 
+            :ARG1 (c / ceremony 
+                  :duration (t / temporal-quantity 
+                        :unit (w / week)) 
+                  :mod (d / degree) 
+                  :mod (t2 / this) 
+                  :purpose (p / protest-01))))
+
+# ::snt  with its astonishing description of the horrors that accompany the sack of cities
+# ::tok with its astonishing description of the horrors that accompany the sack of cities
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:58.249
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.lang.AssertionError: assertion failed
+# 	at scala.Predef$.assert(Predef.scala:165)
+# 	at edu.cmu.lti.nlp.amr.Annotation$$anonfun$makeLeftRight$1.apply$mcVI$sp(Annotation.scala:70)
+# 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+# 	at edu.cmu.lti.nlp.amr.Annotation.makeLeftRight(Annotation.scala:51)
+# 	at edu.cmu.lti.nlp.amr.Annotation.<init>(Annotation.scala:89)
+# 	at edu.cmu.lti.nlp.amr.Input.<init>(Input.scala:19)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply$mcV$sp(AMRParser.scala:200)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3$$anonfun$apply$1.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.time(AMRParser.scala:78)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:194)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$$anonfun$main$3.apply(AMRParser.scala:192)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:192)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# ::snt these days the word salame is also used to refer to an idiot with less brains than a sack of potatoes
+# ::tok these days the word salame is also used to refer to an idiot with less brains than a sack of potatoes
+# ::alignments 20-21|0.4 15-16|0.0 14-15|0.0.0 12-13|0.2.1 9-10|0.2 7-8|0 6-7|0.3 3-4|0.2.0 1-2|0.1.0+0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:58.353
+# ::node	0	use-01	7-8
+# ::node	0.0	brain	15-16
+# ::node	0.0.0	less	14-15
+# ::node	0.1	temporal-quantity	1-2
+# ::node	0.1.0	day	1-2
+# ::node	0.2	refer-02	9-10
+# ::node	0.2.0	word	3-4
+# ::node	0.2.1	idiot	12-13
+# ::node	0.3	also	6-7
+# ::node	0.4	potatoe	20-21
+# ::root	0	use-01
+# ::edge	brain	degree	less	0.0	0.0.0	
+# ::edge	potatoe	op1	use-01	0.4	0	
+# ::edge	refer-02	ARG0	word	0.2	0.2.0	
+# ::edge	refer-02	ARG1	idiot	0.2	0.2.1	
+# ::edge	temporal-quantity	unit	day	0.1	0.1.0	
+# ::edge	use-01	ARG0	brain	0	0.0	
+# ::edge	use-01	ARG1	temporal-quantity	0	0.1	
+# ::edge	use-01	ARG2	refer-02	0	0.2	
+# ::edge	use-01	mod	also	0	0.3	
+(u / use-01 
+      :ARG0 (b / brain 
+            :degree (l / less)) 
+      :ARG1 (t / temporal-quantity 
+            :unit (d / day)) 
+      :ARG2 (r / refer-02 
+            :ARG0 (w / word) 
+            :ARG1 (i / idiot)) 
+      :mod (a / also) 
+      :op-of (p / potatoe))
+
+# ::snt in plastic bags or sacks dash
+# ::tok in plastic bags or sacks dash
+# ::alignments 3-4|0 2-3|0.0 1-2|0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:58.362
+# ::node	0	or	3-4
+# ::node	0.0	bag	2-3
+# ::node	0.0.0	plastic	1-2
+# ::root	0	or
+# ::edge	bag	mod	plastic	0.0	0.0.0	
+# ::edge	or	op1	bag	0	0.0	
+(o / or 
+      :op1 (b / bag 
+            :mod (p / plastic)))
+
+# ::snt her recently born pups were five helpless whimpering bundles curled in the dirty sacking at her feet
+# ::tok her recently born pups were five helpless whimpering bundles curled in the dirty sacking at her feet
+# ::alignments 16-17|0.0.0.0.1 12-13|0.0.0.0.0 8-9|0.0 6-7|0 5-6|0.0.1 2-3|0.0.0.0 1-2|0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:58.404
+# ::node	0	helpless	6-7
+# ::node	0.0	bundle-02	8-9
+# ::node	0.0.0	recent	1-2
+# ::node	0.0.0.0	bear-02	2-3
+# ::node	0.0.0.0.0	dirty	12-13
+# ::node	0.0.0.0.1	foot	16-17
+# ::node	0.0.1	5	5-6
+# ::root	0	helpless
+(h / helpless 
+      :mod-of (b / bundle-02 
+            :ARG1 (r / recent 
+                  :time-of (b2 / bear-02 
+                        :ARG0 (d / dirty) 
+                        :op-of (f / foot))) 
+            :quant 5))
+
+# ::snt international conservation groups yesterday demanded the immediate sacking of eugene lapointe the secretarygeneral of the convention on international trade in endangered species amid mounting controversy over the conduct and funding of the cites secretariat
+# ::tok international conservation groups yesterday demanded the immediate sacking of eugene lapointe the secretarygeneral of the convention on international trade in endangered species amid mounting controversy over the conduct and funding of the cites secretariat
+# ::alignments 33-34|0.0.1.3.1 29-30|0.0.1.3 28-29|0.0.1 27-28|0.0.1.2 24-25|0.0.1.1 23-24|0.0.1.1.0 21-22|0.0 20-21|0 18-19|0.0.0 17-18|0.0.0.0 15-16|0.0.0.1 6-7|0.0.1.3.0 4-5|0.0.1.0 3-4|0.0.1.0.1 2-3|0.0.1.0.0 1-2|0.0.1.0.0.0 0-1|0.0.1.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:58.555
+# ::node	0	endanger-01	20-21
+# ::node	0.0	species	21-22
+# ::node	0.0.0	trade-01	18-19
+# ::node	0.0.0.0	international	17-18
+# ::node	0.0.0.1	convention	15-16
+# ::node	0.0.1	and	28-29
+# ::node	0.0.1.0	demand-01	4-5
+# ::node	0.0.1.0.0	group	2-3
+# ::node	0.0.1.0.0.0	conserve-01	1-2
+# ::node	0.0.1.0.0.0.0	international	0-1
+# ::node	0.0.1.0.1	yesterday	3-4
+# ::node	0.0.1.1	controversy	24-25
+# ::node	0.0.1.1.0	mount-02	23-24
+# ::node	0.0.1.2	conduct-01	27-28
+# ::node	0.0.1.3	fund-01	29-30
+# ::node	0.0.1.3.0	immediate	6-7
+# ::node	0.0.1.3.1	secretariat	33-34
+# ::root	0	endanger-01
+# ::edge	and	op1	demand-01	0.0.1	0.0.1.0	
+# ::edge	and	op2	controversy	0.0.1	0.0.1.1	
+# ::edge	and	op3	conduct-01	0.0.1	0.0.1.2	
+# ::edge	and	op4	fund-01	0.0.1	0.0.1.3	
+# ::edge	and	path	species	0.0.1	0.0	
+# ::edge	conserve-01	ARG0	group	0.0.1.0.0.0	0.0.1.0.0	
+# ::edge	conserve-01	mod	international	0.0.1.0.0.0	0.0.1.0.0.0.0	
+# ::edge	convention	mod	trade-01	0.0.0.1	0.0.0	
+# ::edge	demand-01	ARG1	group	0.0.1.0	0.0.1.0.0	
+# ::edge	demand-01	time	yesterday	0.0.1.0	0.0.1.0.1	
+# ::edge	endanger-01	ARG1	species	0	0.0	
+# ::edge	fund-01	ARG0	immediate	0.0.1.3	0.0.1.3.0	
+# ::edge	fund-01	ARG1	secretariat	0.0.1.3	0.0.1.3.1	
+# ::edge	mount-02	ARG1	controversy	0.0.1.1.0	0.0.1.1	
+# ::edge	trade-01	ARG1	species	0.0.0	0.0	
+# ::edge	trade-01	mod	international	0.0.0	0.0.0.0	
+(e / endanger-01 
+      :ARG1 (s2 / species 
+            :ARG1-of (t / trade-01 
+                  :mod (i / international) 
+                  :mod-of (c3 / convention)) 
+            :path-of (a / and 
+                  :op1 (d / demand-01 
+                        :ARG1 (g / group 
+                              :ARG0-of (c4 / conserve-01 
+                                    :mod (i3 / international))) 
+                        :time (y / yesterday)) 
+                  :op2 (c2 / controversy 
+                        :ARG1-of (m / mount-02)) 
+                  :op3 (c / conduct-01) 
+                  :op4 (f / fund-01 
+                        :ARG0 (i2 / immediate) 
+                        :ARG1 (s / secretariat)))))
+
+# ::snt the crows are in any case often to be seen on the roofs of the houses opposite and it is not unusual to see them trying their luck with plastic refuse sacks on dustbin days
+# ::tok the crows are in any case often to be seen on the roofs of the houses opposite and it is not unusual to see them trying their luck with plastic refuse sacks on dustbin days
+# ::alignments 34-35|0.0.1.1.0.0.0.0+0.0.1.1.0.0.0 30-31|0.0.1.1.0.0 29-30|0.0.1.1.0.0.1 27-28|0 25-26|0.0 23-24|0.0.1 21-22|0.0.1.1.1+0.0.1.1 18-19|0.0.1.0 17-18|0.0.1.1.0 16-17|0.0.1.1.0.2 15-16|0.0.1.1.0.2.0 12-13|0.0.1.1.0.1.0 9-10|0.0.1.1.0.1 6-7|0.0.0.0.0 5-6|0.0.0.0 4-5|0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:58.863
+# ::node	0	luck	27-28
+# ::node	0.0	try-01	25-26
+# ::node	0.0.0	any	4-5
+# ::node	0.0.0.0	case	5-6
+# ::node	0.0.0.0.0	often	6-7
+# ::node	0.0.1	see-01	23-24
+# ::node	0.0.1.0	it	18-19
+# ::node	0.0.1.1	usual	21-22
+# ::node	0.0.1.1.0	and	17-18
+# ::node	0.0.1.1.0.0	refuse-01	30-31
+# ::node	0.0.1.1.0.0.0	temporal-quantity	34-35
+# ::node	0.0.1.1.0.0.0.0	day	34-35
+# ::node	0.0.1.1.0.0.1	plastic	29-30
+# ::node	0.0.1.1.0.1	see-01	9-10
+# ::node	0.0.1.1.0.1.0	roof	12-13
+# ::node	0.0.1.1.0.2	opposite-41	16-17
+# ::node	0.0.1.1.0.2.0	house	15-16
+# ::node	0.0.1.1.1	-	21-22
+# ::root	0	luck
+(l / luck 
+      :ARG1-of (t2 / try-01 
+            :ARG0 (a2 / any 
+                  :mod-of (c / case 
+                        :mod (o2 / often))) 
+            :ARG1-of (s / see-01 
+                  :ARG0 (i / it) 
+                  :domain-of (u / usual 
+                        :op-of (a / and 
+                              :ARG0-of (r / refuse-01 
+                                    :ARG1 (t / temporal-quantity 
+                                          :unit (d / day)) 
+                                    :mod (p / plastic)) 
+                              :op1 (s2 / see-01 
+                                    :ARG1 (r2 / roof)) 
+                              :op2 (o / opposite-41 
+                                    :ARG1 (h / house))) 
+                        :polarity -))))
+
+# ::snt when i offered to carry her sack she waved me aside
+# ::tok when i offered to carry her sack she waved me aside
+# ::alignments 10-11|0.1.1 8-9|0.1 7-8|0.1.0 2-3|0 1-2|0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:58.876
+# ::node	0	offer-01	2-3
+# ::node	0.0	i	1-2
+# ::node	0.1	wave-01	8-9
+# ::node	0.1.0	she	7-8
+# ::node	0.1.1	aside	10-11
+# ::root	0	offer-01
+# ::edge	offer-01	ARG0	i	0	0.0	
+# ::edge	wave-01	ARG0	she	0.1	0.1.0	
+# ::edge	wave-01	ARG1	offer-01	0.1	0	
+# ::edge	wave-01	ARG2	aside	0.1	0.1.1	
+(o / offer-01 
+      :ARG0 (i / i) 
+      :ARG1-of (w / wave-01 
+            :ARG0 (s / she) 
+            :ARG2 (a / aside)))
+
+# ::snt for him to win the spanish league and lose the european cup on penalties and get the sack shows you how high expectations are when you work in spain
+# ::tok for him to win the spanish league and lose the european cup on penalties and get the sack shows you how high expectations are when you work in spain
+# ::alignments 25-26|0.0 22-23|0 21-22|0.1 19-20|0.0.0.0 18-19|0.0.0 14-15|0.0.0.1 13-14|0.0.0.1.0.1.1 11-12|0.0.0.1.0.0 10-11|0.0.0.1.0.0.0.0.0+0.0.0.1.0.0.0.0+0.0.0.1.0.0.0 8-9|0.0.0.1.0 7-8|0.0.0.1.0.1 6-7|0.0.0.1.0.1.0.0 5-6|0.0.0.1.0.1.0.0.0.0.0+0.0.0.1.0.1.0.0.0.0+0.0.0.1.0.1.0.0.0 3-4|0.0.0.1.0.1.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:59.108
+# ::node	0	expect-01	22-23
+# ::node	0.0	you	25-26
+# ::node	0.0.0	show-01	18-19
+# ::node	0.0.0.0	you	19-20
+# ::node	0.0.0.1	and	14-15
+# ::node	0.0.0.1.0	lose-02	8-9
+# ::node	0.0.0.1.0.0	cup	11-12
+# ::node	0.0.0.1.0.0.0	continent	10-11
+# ::node	0.0.0.1.0.0.0.0	name	10-11
+# ::node	0.0.0.1.0.0.0.0.0	"Europe"	10-11
+# ::node	0.0.0.1.0.1	and	7-8
+# ::node	0.0.0.1.0.1.0	win-01	3-4
+# ::node	0.0.0.1.0.1.0.0	league	6-7
+# ::node	0.0.0.1.0.1.0.0.0	language	5-6
+# ::node	0.0.0.1.0.1.0.0.0.0	name	5-6
+# ::node	0.0.0.1.0.1.0.0.0.0.0	"Spanish"	5-6
+# ::node	0.0.0.1.0.1.1	penalize-01	13-14
+# ::node	0.1	high	21-22
+# ::root	0	expect-01
+# ::edge	and	op1	lose-02	0.0.0.1	0.0.0.1.0	
+# ::edge	and	op1	win-01	0.0.0.1.0.1	0.0.0.1.0.1.0	
+# ::edge	and	op2	lose-02	0.0.0.1.0.1	0.0.0.1.0	
+# ::edge	and	op2	show-01	0.0.0.1	0.0.0	
+# ::edge	and	op3	penalize-01	0.0.0.1.0.1	0.0.0.1.0.1.1	
+# ::edge	continent	consist	cup	0.0.0.1.0.0.0	0.0.0.1.0.0	
+# ::edge	continent	name	name	0.0.0.1.0.0.0	0.0.0.1.0.0.0.0	
+# ::edge	expect-01	ARG0	you	0	0.0	
+# ::edge	expect-01	mod	high	0	0.1	
+# ::edge	language	name	name	0.0.0.1.0.1.0.0.0	0.0.0.1.0.1.0.0.0.0	
+# ::edge	league	medium	language	0.0.0.1.0.1.0.0	0.0.0.1.0.1.0.0.0	
+# ::edge	lose-02	ARG1	cup	0.0.0.1.0	0.0.0.1.0.0	
+# ::edge	name	op1	"Europe"	0.0.0.1.0.0.0.0	0.0.0.1.0.0.0.0.0	
+# ::edge	name	op1	"Spanish"	0.0.0.1.0.1.0.0.0.0	0.0.0.1.0.1.0.0.0.0.0	
+# ::edge	show-01	ARG0	you	0.0.0	0.0	
+# ::edge	show-01	ARG1	you	0.0.0	0.0.0.0	
+# ::edge	win-01	ARG1	league	0.0.0.1.0.1.0	0.0.0.1.0.1.0.0	
+(e / expect-01 
+      :ARG0 (y / you 
+            :ARG0-of (s / show-01 
+                  :ARG1 (y2 / you) 
+                  :op-of (a / and 
+                        :op1 (l / lose-02 
+                              :ARG1 (c / cup 
+                                    :consist-of (c2 / continent 
+                                          :name (n / name 
+                                                :op1 "Europe"))) 
+                              :op-of (a2 / and 
+                                    :op1 (w / win-01 
+                                          :ARG1 (l2 / league 
+                                                :medium (l3 / language 
+                                                      :name (n2 / name 
+                                                            :op1 "Spanish")))) 
+                                    :op2 (p / penalize-01)))))) 
+      :mod (h / high))
+
+# ::snt executives of the ford motor company have been subpoenaed to appear before the tribunal next month to be questioned about fords alleged subscription to the league in connection with the sacking of an employee who worked at the dagenham plant in essex
+# ::tok executives of the ford motor company have been subpoenaed to appear before the tribunal next month to be questioned about fords alleged subscription to the league in connection with the sacking of an employee who worked at the dagenham plant in essex
+# ::alignments 39-40|0.0.0.0.0.0 35-36|0.0.0.0.0 33-34|0.0.0.0.1+0.0.0.0 27-28|0 25-26|0.1 21-22|0.0.0.2 18-19|0.0.0.1.0 15-16|0.0.0.1.0.0.0+0.0.0.1.0.0 14-15|0.0.0.1.0.0.0.0 13-14|0.0.0.1.1.0 11-12|0.0.0.1.1 10-11|0.0.0.1 3-6|0.0.1.0+0.0.1.1+0.0.1.2+0.0.1+0.0 0-1|0.0.0.3+0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:59.405
+# ::node	0	connect-01	27-28
+# ::node	0.0	organization	3-6
+# ::node	0.0.0	have-org-role-91	0-1
+# ::node	0.0.0.0	person	33-34
+# ::node	0.0.0.0.0	work-01	35-36
+# ::node	0.0.0.0.0.0	plant	39-40
+# ::node	0.0.0.0.1	employ-01	33-34
+# ::node	0.0.0.1	appear-02	10-11
+# ::node	0.0.0.1.0	question-01	18-19
+# ::node	0.0.0.1.0.0	temporal-quantity	15-16
+# ::node	0.0.0.1.0.0.0	month	15-16
+# ::node	0.0.0.1.0.0.0.0	next	14-15
+# ::node	0.0.0.1.1	before	11-12
+# ::node	0.0.0.1.1.0	tribunal	13-14
+# ::node	0.0.0.2	allege-01	21-22
+# ::node	0.0.0.3	executive	0-1
+# ::node	0.0.1	name	3-6
+# ::node	0.0.1.0	"company"	3-6
+# ::node	0.0.1.1	"motor"	3-6
+# ::node	0.0.1.2	"ford"	3-6
+# ::node	0.1	league	25-26
+# ::root	0	connect-01
+# ::edge	allege-01	ARG1	have-org-role-91	0.0.0.2	0.0.0	
+# ::edge	appear-02	ARG1	have-org-role-91	0.0.0.1	0.0.0	
+# ::edge	appear-02	ARG2	question-01	0.0.0.1	0.0.0.1.0	
+# ::edge	appear-02	time	before	0.0.0.1	0.0.0.1.1	
+# ::edge	before	op1	tribunal	0.0.0.1.1	0.0.0.1.1.0	
+# ::edge	connect-01	ARG1	organization	0	0.0	
+# ::edge	employ-01	ARG1	person	0.0.0.0.1	0.0.0.0	
+# ::edge	have-org-role-91	ARG0	person	0.0.0	0.0.0.0	
+# ::edge	have-org-role-91	ARG1	organization	0.0.0	0.0	
+# ::edge	have-org-role-91	ARG2	executive	0.0.0	0.0.0.3	
+# ::edge	league	topic	connect-01	0.1	0	
+# ::edge	month	mod	next	0.0.0.1.0.0.0	0.0.0.1.0.0.0.0	
+# ::edge	name	op1	"company"	0.0.1	0.0.1.0	
+# ::edge	name	op2	"motor"	0.0.1	0.0.1.1	
+# ::edge	name	op3	"ford"	0.0.1	0.0.1.2	
+# ::edge	organization	name	name	0.0	0.0.1	
+# ::edge	question-01	duration	temporal-quantity	0.0.0.1.0	0.0.0.1.0.0	
+# ::edge	temporal-quantity	unit	month	0.0.0.1.0.0	0.0.0.1.0.0.0	
+# ::edge	work-01	ARG0	person	0.0.0.0.0	0.0.0.0	
+# ::edge	work-01	ARG1	plant	0.0.0.0.0	0.0.0.0.0.0	
+(c / connect-01 
+      :ARG1 (o / organization 
+            :ARG1-of (h / have-org-role-91 
+                  :ARG0 (p2 / person 
+                        :ARG0-of (w / work-01 
+                              :ARG1 (p / plant)) 
+                        :ARG1-of (e / employ-01)) 
+                  :ARG1-of (a2 / appear-02 
+                        :ARG2 (q / question-01 
+                              :duration (t / temporal-quantity 
+                                    :unit (m / month 
+                                          :mod (n / next)))) 
+                        :time (b / before 
+                              :op1 (t2 / tribunal))) 
+                  :ARG1-of (a / allege-01) 
+                  :ARG2 (e2 / executive)) 
+            :name (n2 / name 
+                  :op1 "company" 
+                  :op2 "motor" 
+                  :op3 "ford")) 
+      :topic-of (l / league))
+
+# ::snt for it was the lord who sent the sheikh sacks of wheat and grain and seed even money when necessary and who leased out land to other members of the family
+# ::tok for it was the lord who sent the sheikh sacks of wheat and grain and seed even money when necessary and who leased out land to other members of the family
+# ::alignments 30-31|0.1.0.0.0.1 27-28|0.1.0.0.0.1.0.0+0.1.0.0.0.1.0 26-27|0.2.0.2 24-25|0.2.0.1 22-23|0.2.0 20-21|0.2 17-18|0.2.0.0 15-16|0.1 14-15|0.1.0 13-14|0.0 12-13|0 11-12|0.1.0.0 6-7|0.1.0.0.0 4-5|0.1.0.0.0.0 1-2|0.1.0.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:59.696
+# ::node	0	and	12-13
+# ::node	0.0	grain	13-14
+# ::node	0.1	seed	15-16
+# ::node	0.1.0	and	14-15
+# ::node	0.1.0.0	wheat	11-12
+# ::node	0.1.0.0.0	send-01	6-7
+# ::node	0.1.0.0.0.0	lord	4-5
+# ::node	0.1.0.0.0.0.0	it	1-2
+# ::node	0.1.0.0.0.1	family	30-31
+# ::node	0.1.0.0.0.1.0	have-org-role-91	27-28
+# ::node	0.1.0.0.0.1.0.0	member	27-28
+# ::node	0.2	and	20-21
+# ::node	0.2.0	lease-01	22-23
+# ::node	0.2.0.0	money	17-18
+# ::node	0.2.0.1	land	24-25
+# ::node	0.2.0.2	other	26-27
+# ::root	0	and
+# ::edge	and	op1	grain	0	0.0	
+# ::edge	and	op1	lease-01	0.2	0.2.0	
+# ::edge	and	op1	wheat	0.1.0	0.1.0.0	
+# ::edge	and	op2	seed	0	0.1	
+# ::edge	and	op2	seed	0.1.0	0.1	
+# ::edge	and	op3	and	0	0.2	
+# ::edge	have-org-role-91	ARG1	family	0.1.0.0.0.1.0	0.1.0.0.0.1	
+# ::edge	have-org-role-91	ARG2	member	0.1.0.0.0.1.0	0.1.0.0.0.1.0.0	
+# ::edge	lease-01	ARG0	money	0.2.0	0.2.0.0	
+# ::edge	lease-01	ARG1	land	0.2.0	0.2.0.1	
+# ::edge	lease-01	ARG2	other	0.2.0	0.2.0.2	
+# ::edge	lord	domain	it	0.1.0.0.0.0	0.1.0.0.0.0.0	
+# ::edge	send-01	ARG0	lord	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	send-01	ARG1	wheat	0.1.0.0.0	0.1.0.0	
+# ::edge	send-01	purpose	family	0.1.0.0.0	0.1.0.0.0.1	
+(a3 / and 
+      :op1 (g / grain) 
+      :op2 (s / seed 
+            :op-of (a2 / and 
+                  :op1 (w / wheat 
+                        :ARG1-of (s2 / send-01 
+                              :ARG0 (l3 / lord 
+                                    :domain (i / it)) 
+                              :purpose (f / family 
+                                    :ARG1-of (h / have-org-role-91 
+                                          :ARG2 (m / member))))))) 
+      :op3 (a / and 
+            :op1 (l2 / lease-01 
+                  :ARG0 (m2 / money) 
+                  :ARG1 (l / land) 
+                  :ARG2 (o / other))))
+
+# ::snt it was absolutely freezing and by the time we got the fish to the deeper water the carp sacks were frozen added ian who also broke two landing nets during the rescue
+# ::tok it was absolutely freezing and by the time we got the fish to the deeper water the carp sacks were frozen added ian who also broke two landing nets during the rescue
+# ::alignments 31-32|0.0.2.1.1 27-28|0.0.2.1 26-27|0.0.2.1.2 24-25|0.0.2.1.0 21-22|0 20-21|0.0 15-16|0.0.1 14-15|0.0.1.0 11-12|0.0.0 8-9|0.0.0.0 7-8|0.0.2.0.0 4-5|0.0.2 3-4|0.0.2.0 2-3|0.0.2.0.2 0-1|0.0.2.0.1 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:59.941
+# ::node	0	add-01	21-22
+# ::node	0.0	freeze-02	20-21
+# ::node	0.0.0	fish	11-12
+# ::node	0.0.0.0	we	8-9
+# ::node	0.0.1	water	15-16
+# ::node	0.0.1.0	deep	14-15
+# ::node	0.0.2	and	4-5
+# ::node	0.0.2.0	freeze-02	3-4
+# ::node	0.0.2.0.0	time	7-8
+# ::node	0.0.2.0.1	it	0-1
+# ::node	0.0.2.0.2	absolute	2-3
+# ::node	0.0.2.1	land-01	27-28
+# ::node	0.0.2.1.0	also	24-25
+# ::node	0.0.2.1.1	rescue-01	31-32
+# ::node	0.0.2.1.2	2	26-27
+# ::root	0	add-01
+(a2 / add-01 
+      :ARG2-of (f / freeze-02 
+            :ARG0 (f2 / fish 
+                  :ARG0 (w2 / we)) 
+            :ARG1 (w / water 
+                  :mod (d / deep)) 
+            :op-of (a3 / and 
+                  :op1 (f3 / freeze-02 
+                        :ARG0 (t / time) 
+                        :ARG1 (i / it) 
+                        :degree (a4 / absolute)) 
+                  :op2 (l / land-01 
+                        :ARG0 (a / also) 
+                        :ARG1 (r / rescue-01) 
+                        :quant 2))))
+
+# ::snt include the ink sacks in the cooking
+# ::tok include the ink sacks in the cooking
+# ::alignments 6-7|0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2015-05-11T22:56:59.946
+# ::node	0	include-01	0-1
+# ::node	0.0	cook-01	6-7
+# ::root	0	include-01
+# ::edge	include-01	ARG2	cook-01	0	0.0	
+(i / include-01 
+      :ARG2 (c / cook-01))
+
